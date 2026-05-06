@@ -7,7 +7,7 @@
   })
 
   return (
-    <div className="border-b border-borda bg-white py-2">
+    <div className="hidden md:block border-b border-borda bg-white py-2">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-8">
         <span className="text-[14px] text-gray-400" style={{ fontFamily: 'var(--font-barlow)' }}>
           {date.charAt(0).toUpperCase() + date.slice(1)}

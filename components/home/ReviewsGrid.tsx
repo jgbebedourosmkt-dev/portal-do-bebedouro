@@ -11,7 +11,7 @@ const ratings: Record<string, number> = {}
 
 export default function ReviewsGrid({ posts }: ReviewsGridProps) {
   return (
-    <section className="border-t border-borda py-8 pr-8">
+    <section className="border-t border-borda py-8 md:pr-8">
       <div className="mb-4 flex items-center justify-between">
         <h2
           className="text-[26px] font-black text-txt"
@@ -27,7 +27,7 @@ export default function ReviewsGrid({ posts }: ReviewsGridProps) {
           Ver todos →
         </Link>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {posts.slice(0, 4).map((post, i) => (
           <article key={post.slug} className="group rounded border border-borda p-4 hover:border-az transition-colors">
             <Link href={`/artigo/${post.slug}`}>

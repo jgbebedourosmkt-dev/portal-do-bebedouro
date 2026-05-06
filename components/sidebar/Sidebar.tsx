@@ -12,7 +12,7 @@ interface SidebarProps {
 
 export default function Sidebar({ posts }: SidebarProps) {
   return (
-    <aside className="w-[320px] pl-6 pt-8 space-y-6">
+    <aside className="hidden md:block w-[320px] flex-shrink-0 pl-6 pt-8 space-y-6">
       <BannerJG />
       <MaisLidas posts={posts} />
       <BannerOzean />

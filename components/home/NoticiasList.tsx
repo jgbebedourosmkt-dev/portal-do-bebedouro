@@ -22,15 +22,15 @@ export default function NoticiasList({ posts }: NoticiasListProps) {
     activeTab === 'all' ? posts : posts.filter((p) => p.categoria === activeTab)
 
   return (
-    <section className="py-8 pr-8">
-      <div className="mb-4 flex items-center justify-between">
+    <section className="py-8 md:pr-8">
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
         <h2
           className="text-[26px] font-black text-txt"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Notícias Populares
         </h2>
-        <div className="flex gap-1">
+        <div className="flex flex-wrap gap-1">
           {tabs.map((tab) => (
             <button
               key={tab.key}

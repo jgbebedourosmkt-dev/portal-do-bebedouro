@@ -54,8 +54,8 @@ export default async function ArtigoPage({ params }: PageProps) {
       <Topbar />
       <Header />
       <Nav />
-      <div className="mx-auto flex max-w-[1280px]">
-        <main className="flex-1 min-w-0 border-r border-borda px-8 py-8">
+      <div className="mx-auto flex flex-col md:flex-row max-w-[1280px]">
+        <main className="flex-1 min-w-0 md:border-r border-borda px-4 md:px-8 py-8">
           <script
             type="application/ld+json"
             dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema(post)) }}

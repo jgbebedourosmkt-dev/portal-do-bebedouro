@@ -17,12 +17,9 @@ const categoriaLabel: Record<string, string> = {
 export default function Strip({ posts }: StripProps) {
   return (
     <section className="border-b border-borda bg-white" aria-label="Notícias rápidas">
-      <div
-        className="mx-auto grid max-w-[1280px] divide-x divide-borda"
-        style={{ gridTemplateColumns: 'repeat(4, 1fr)' }}
-      >
+      <div className="mx-auto grid max-w-[1280px] divide-y md:divide-y-0 md:divide-x divide-borda grid-cols-1 md:grid-cols-4">
         {posts.slice(0, 4).map((post, i) => (
-          <article key={post.slug} className={`py-4 ${i === 0 ? 'pl-8 pr-6' : 'px-6'}`}>
+          <article key={post.slug} className={`py-4 px-4 md:py-4 ${i === 0 ? 'md:pl-8 md:pr-6' : 'md:px-6'}`}>
             <Link href={`/artigo/${post.slug}`} className="group">
               <div className="mb-1.5">
                 <span

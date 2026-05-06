@@ -52,9 +52,9 @@ export default function HomePage() {
       <Hero featured={featured} secondary={secondary} />
       <Strip posts={stripPosts} />
 
-      <div className="mx-auto flex max-w-[1280px] border-r border-borda">
+      <div className="mx-auto flex flex-col md:flex-row max-w-[1280px] md:border-r border-borda">
         {/* Coluna principal */}
-        <main className="flex-1 min-w-0 border-r border-borda pl-8">
+        <main className="flex-1 min-w-0 md:border-r border-borda px-4 md:px-0 md:pl-8">
           <NoticiasList posts={allPosts} />
           {guiasPosts.length > 0 && <GuiasGrid posts={guiasPosts} />}
           {legislacaoPosts.length > 0 && <LegislacaoList posts={legislacaoPosts} />}

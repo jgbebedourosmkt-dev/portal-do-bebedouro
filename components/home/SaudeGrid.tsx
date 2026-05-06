@@ -8,7 +8,7 @@ interface SaudeGridProps {
 
 export default function SaudeGrid({ posts }: SaudeGridProps) {
   return (
-    <section className="border-t border-borda py-8 pr-8">
+    <section className="border-t border-borda py-8 md:pr-8">
       <div className="mb-4 flex items-center justify-between">
         <h2
           className="text-[26px] font-black text-txt"
@@ -24,7 +24,7 @@ export default function SaudeGrid({ posts }: SaudeGridProps) {
           Ver todos →
         </Link>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {posts.slice(0, 4).map((post) => (
           <article key={post.slug} className="group">
             <Link href={`/artigo/${post.slug}`}>

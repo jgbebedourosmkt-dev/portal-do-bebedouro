@@ -17,7 +17,7 @@ export default function ArtigoRelacionados({ posts }: ArtigoRelacionadosProps) {
       >
         Artigos relacionados
       </h2>
-      <div className="grid grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {posts.slice(0, 3).map((post) => (
           <article key={post.slug} className="group">
             <Link href={`/artigo/${post.slug}`}>

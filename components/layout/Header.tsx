@@ -2,7 +2,7 @@
 
 export default function Header() {
   return (
-    <header className="border-b border-borda bg-white py-2.5">
+    <header className="hidden md:block border-b border-borda bg-white py-2.5">
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-8">
         <Link href="/" className="leading-none">
           <h1
