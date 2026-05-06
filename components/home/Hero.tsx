@@ -87,7 +87,6 @@ export default function Hero({ featured, secondary }: HeroProps) {
                   sizes="38vw"
                 />
               )}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-black/10" />
               <div className="relative z-10 mb-2">
                 <span
                   className="text-[10px] font-extrabold uppercase tracking-widest text-az3"
