@@ -1,5 +1,5 @@
 ﻿const tickerItems = [
-  'NBR 13713 atualizada entra em vigor em julho de 2025',
+  'NBR 13713 atualizada entra em vigor em julho de 2026',
   'Mercado de bebedouros cresce 18% no primeiro trimestre',
   'INMETRO lança novo programa de certificação para purificadores',
   'Saúde da água: ANVISA publica nova resolução sobre padrões',
