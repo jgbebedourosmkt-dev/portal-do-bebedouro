@@ -10,7 +10,7 @@ const tickerItems = [
 ]
 
 export default function Ticker() {
-  const text = tickerItems.join('   •   ')
+  const text = tickerItems.join('          •          ')
 
   return (
     <div
