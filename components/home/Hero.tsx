@@ -75,7 +75,7 @@ export default function Hero({ featured, secondary }: HeroProps) {
         </div>
 
         {/* Mini cards */}
-        <div className="flex flex-col divide-y divide-white/10 border-l border-white/10 bg-[#061828]">
+        <div className="flex flex-col divide-y divide-white/10 border-l border-white/10 bg-black">
           {secondary.slice(0, 2).map((post) => (
             <div key={post.slug} className="relative flex flex-1 flex-col justify-end p-6 overflow-hidden">
               {post.ogImage && (
@@ -83,7 +83,7 @@ export default function Hero({ featured, secondary }: HeroProps) {
                   src={post.ogImage}
                   alt={post.title}
                   fill
-                  className="object-cover opacity-30"
+                  className="object-cover"
                   sizes="38vw"
                 />
               )}
