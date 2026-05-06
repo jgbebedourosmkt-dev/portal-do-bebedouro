@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import StarRating from '@/components/ui/StarRating'
 import type { Post } from '@/lib/posts'
@@ -30,7 +31,11 @@ export default function ReviewsGrid({ posts }: ReviewsGridProps) {
         {posts.slice(0, 4).map((post, i) => (
           <article key={post.slug} className="group rounded border border-borda p-4 hover:border-az transition-colors">
             <Link href={`/artigo/${post.slug}`}>
-              <div className="mb-3 h-28 rounded overflow-hidden bg-gradient-to-br from-txt3 to-txt2" />
+              <div className="relative mb-3 h-28 rounded overflow-hidden bg-gradient-to-br from-txt3 to-txt2">
+                {post.ogImage && (
+                  <Image src={post.ogImage} alt={post.title} fill className="object-cover" sizes="50vw" />
+                )}
+              </div>
               <div className="mb-2">
                 <StarRating rating={ratings[post.slug] ?? (5 - (i % 2))} />
               </div>

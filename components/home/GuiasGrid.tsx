@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import type { Post } from '@/lib/posts'
 
@@ -27,7 +28,11 @@ export default function GuiasGrid({ posts }: GuiasGridProps) {
         {posts.slice(0, 3).map((post) => (
           <article key={post.slug} className="group">
             <Link href={`/artigo/${post.slug}`}>
-              <div className="mb-2 h-32 rounded overflow-hidden bg-gradient-to-br from-vd to-vd2" />
+              <div className="relative mb-2 h-32 rounded overflow-hidden bg-gradient-to-br from-vd to-vd2">
+                {post.ogImage && (
+                  <Image src={post.ogImage} alt={post.title} fill className="object-cover" sizes="33vw" />
+                )}
+              </div>
               <span
                 className="text-[10px] font-extrabold uppercase tracking-widest text-vd2"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}

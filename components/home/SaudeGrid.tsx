@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import type { Post } from '@/lib/posts'
 
@@ -27,7 +28,11 @@ export default function SaudeGrid({ posts }: SaudeGridProps) {
         {posts.slice(0, 4).map((post) => (
           <article key={post.slug} className="group">
             <Link href={`/artigo/${post.slug}`}>
-              <div className="mb-2 h-36 rounded overflow-hidden bg-gradient-to-br from-az2 to-az3" />
+              <div className="relative mb-2 h-36 rounded overflow-hidden bg-gradient-to-br from-az2 to-az3">
+                {post.ogImage && (
+                  <Image src={post.ogImage} alt={post.title} fill className="object-cover" sizes="50vw" />
+                )}
+              </div>
               <span
                 className="text-[10px] font-extrabold uppercase tracking-widest text-az3"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}

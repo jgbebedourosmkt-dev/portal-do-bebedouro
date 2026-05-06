@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import Badge from './Badge'
 import type { Post } from '@/lib/posts'
@@ -23,8 +24,12 @@ export default function CardNoticia({ post, size = 'md' }: CardNoticiaProps) {
     <article className="group">
       <Link href={`/artigo/${post.slug}`}>
         <div
-          className={`mb-2 rounded overflow-hidden ${size === 'lg' ? 'h-48' : size === 'sm' ? 'h-28' : 'h-36'} bg-gradient-to-br from-az2 to-az`}
-        />
+          className={`relative mb-2 rounded overflow-hidden ${size === 'lg' ? 'h-48' : size === 'sm' ? 'h-28' : 'h-36'} bg-gradient-to-br from-az2 to-az`}
+        >
+          {post.ogImage && (
+            <Image src={post.ogImage} alt={post.title} fill className="object-cover" sizes="50vw" />
+          )}
+        </div>
         <div>
           <div className="mb-1 flex items-center gap-2">
             <span
