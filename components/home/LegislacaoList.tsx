@@ -34,12 +34,12 @@ export default function LegislacaoList({ posts }: LegislacaoListProps) {
             </span>
             <Link href={`/artigo/${post.slug}`} className="group flex-1">
               <h3
-                className="text-[15px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
+                className="text-[19px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {post.title}
               </h3>
-              <p className="mt-0.5 text-[12px] text-txt3">
+              <p className="mt-0.5 text-[14px] text-txt3">
                 {new Date(post.date).toLocaleDateString('pt-BR')}
               </p>
             </Link>

@@ -35,12 +35,12 @@ export default function SaudeGrid({ posts }: SaudeGridProps) {
                 Saúde
               </span>
               <h3
-                className="mt-1 text-[15px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
+                className="mt-1 text-[19px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {post.title}
               </h3>
-              <p className="mt-1 text-[12px] text-txt3">{post.readTime} min</p>
+              <p className="mt-1 text-[14px] text-txt3">{post.readTime} min</p>
             </Link>
           </article>
         ))}
