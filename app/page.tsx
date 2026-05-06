@@ -35,8 +35,8 @@ export default function HomePage() {
     )
   }
 
-  const secondary = allPosts.filter((p) => p.slug !== featured.slug).slice(0, 2)
-  const stripPosts = allPosts.filter((p) => p.slug !== featured.slug).slice(2, 6)
+  const secondary = allPosts.filter((p) => p.slug !== featured.slug).slice(0, 4)
+  const stripPosts = allPosts.filter((p) => p.slug !== featured.slug).slice(4, 8)
   const guiasPosts = allPosts.filter((p) => p.categoria === 'guias')
   const legislacaoPosts = allPosts.filter((p) => p.categoria === 'legislacao')
   const saudePosts = allPosts.filter((p) => p.categoria === 'saude')
