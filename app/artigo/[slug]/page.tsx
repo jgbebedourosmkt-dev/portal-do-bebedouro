@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import { getAllPosts, getPostBySlug } from '@/lib/posts'
 import { articleSchema } from '@/lib/seo'
@@ -59,7 +60,18 @@ export default async function ArtigoPage({ params }: PageProps) {
             dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema(post)) }}
           />
           <ArtigoHeader post={post} />
-          <div className="mb-6 h-64 rounded overflow-hidden bg-gradient-to-br from-az to-az2" />
+          <div className="relative mb-6 h-72 rounded overflow-hidden bg-gradient-to-br from-az to-az2">
+            {post.ogImage && (
+              <Image
+                src={post.ogImage}
+                alt={post.title}
+                fill
+                className="object-cover"
+                priority
+                sizes="(max-width: 1280px) 100vw, 960px"
+              />
+            )}
+          </div>
           <ArtigoBody content={post.content} />
           <ArtigoRelacionados posts={relacionados} />
         </main>

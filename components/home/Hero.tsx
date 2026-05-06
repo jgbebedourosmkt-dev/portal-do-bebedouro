@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import Badge from '@/components/ui/Badge'
 import type { Post } from '@/lib/posts'
@@ -17,14 +18,22 @@ export default function Hero({ featured, secondary }: HeroProps) {
         {/* Card principal */}
         <div
           className="relative min-h-[480px] flex flex-col justify-end overflow-hidden"
-          style={{
-            background: 'linear-gradient(135deg, #051C31 0%, #0B3D6B 50%, #103D1C 100%)',
-          }}
+          style={!featured.ogImage ? { background: 'linear-gradient(135deg, #051C31 0%, #0B3D6B 50%, #103D1C 100%)' } : undefined}
         >
+          {featured.ogImage && (
+            <Image
+              src={featured.ogImage}
+              alt={featured.title}
+              fill
+              className="object-cover"
+              priority
+              sizes="62vw"
+            />
+          )}
           <div
             className="absolute inset-0"
             style={{
-              background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%)',
+              background: 'linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.4) 55%, rgba(0,0,0,0.15) 100%)',
             }}
           />
           <div
@@ -68,8 +77,18 @@ export default function Hero({ featured, secondary }: HeroProps) {
         {/* Mini cards */}
         <div className="flex flex-col divide-y divide-white/10 border-l border-white/10 bg-[#061828]">
           {secondary.slice(0, 2).map((post) => (
-            <div key={post.slug} className="flex flex-1 flex-col justify-end p-6">
-              <div className="mb-2">
+            <div key={post.slug} className="relative flex flex-1 flex-col justify-end p-6 overflow-hidden">
+              {post.ogImage && (
+                <Image
+                  src={post.ogImage}
+                  alt={post.title}
+                  fill
+                  className="object-cover opacity-30"
+                  sizes="38vw"
+                />
+              )}
+              <div className="absolute inset-0 bg-gradient-to-t from-[#061828]/95 via-[#061828]/60 to-transparent" />
+              <div className="relative z-10 mb-2">
                 <span
                   className="text-[10px] font-extrabold uppercase tracking-widest text-az3"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -77,7 +96,7 @@ export default function Hero({ featured, secondary }: HeroProps) {
                   {post.categoria}
                 </span>
               </div>
-              <Link href={`/artigo/${post.slug}`}>
+              <Link href={`/artigo/${post.slug}`} className="relative z-10">
                 <h3
                   className="text-[18px] font-black text-white leading-tight hover:text-acc transition-colors line-clamp-3"
                   style={{ fontFamily: 'var(--font-barlow-condensed)' }}
@@ -85,8 +104,8 @@ export default function Hero({ featured, secondary }: HeroProps) {
                   {post.title}
                 </h3>
               </Link>
-              <p className="mt-2 text-[12px] text-white/50 line-clamp-2">{post.excerpt}</p>
-              <p className="mt-2 text-[11px] text-white/30">
+              <p className="relative z-10 mt-2 text-[12px] text-white/50 line-clamp-2">{post.excerpt}</p>
+              <p className="relative z-10 mt-2 text-[11px] text-white/30">
                 {new Date(post.date).toLocaleDateString('pt-BR')} · {post.readTime} min
               </p>
             </div>
