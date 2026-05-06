@@ -1,4 +1,5 @@
-﻿import Link from 'next/link'
+﻿import Image from 'next/image'
+import Link from 'next/link'
 import type { Post } from '@/lib/posts'
 
 interface ArtigoRelacionadosProps {
@@ -20,7 +21,17 @@ export default function ArtigoRelacionados({ posts }: ArtigoRelacionadosProps) {
         {posts.slice(0, 3).map((post) => (
           <article key={post.slug} className="group">
             <Link href={`/artigo/${post.slug}`}>
-              <div className="mb-2 h-32 rounded overflow-hidden bg-gradient-to-br from-az to-az2" />
+              <div className="relative mb-2 h-32 rounded overflow-hidden bg-gradient-to-br from-az to-az2">
+                {post.ogImage && (
+                  <Image
+                    src={post.ogImage}
+                    alt={post.title}
+                    fill
+                    className="object-cover"
+                    sizes="25vw"
+                  />
+                )}
+              </div>
               <h3
                 className="text-[18px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}

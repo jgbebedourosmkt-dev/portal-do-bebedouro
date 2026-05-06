@@ -10,6 +10,7 @@ import Footer from '@/components/layout/Footer'
 import ArtigoHeader from '@/components/artigo/ArtigoHeader'
 import ArtigoBody from '@/components/artigo/ArtigoBody'
 import ArtigoRelacionados from '@/components/artigo/ArtigoRelacionados'
+import ComentariosForm from '@/components/artigo/ComentariosForm'
 import Sidebar from '@/components/sidebar/Sidebar'
 
 interface PageProps {
@@ -74,6 +75,7 @@ export default async function ArtigoPage({ params }: PageProps) {
           </div>
           <ArtigoBody content={post.content} />
           <ArtigoRelacionados posts={relacionados} />
+          <ComentariosForm />
         </main>
         <Sidebar posts={allPosts} />
       </div>
