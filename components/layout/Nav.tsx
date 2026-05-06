@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
@@ -37,7 +37,7 @@ export default function Nav() {
               <li key={href}>
                 <Link
                   href={href}
-                  className={`flex items-center px-4 py-3.5 text-[14px] font-extrabold uppercase tracking-wide transition-colors ${
+                  className={`flex items-center px-4 py-3.5 text-[17px] font-extrabold uppercase tracking-wide transition-colors ${
                     isActive
                       ? 'text-az border-b-[3px] border-acc -mb-[3px]'
                       : 'text-txt2 hover:text-az'
@@ -56,7 +56,7 @@ export default function Nav() {
               key={label}
               href={href}
               aria-label={label}
-              className="flex items-center justify-center w-8 h-8 rounded bg-bg border border-borda text-[11px] font-black text-txt3 hover:border-az hover:text-az transition-colors"
+              className="flex items-center justify-center w-8 h-8 rounded bg-bg border border-borda text-[13px] font-black text-txt3 hover:border-az hover:text-az transition-colors"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {icon}

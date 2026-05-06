@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 
 const columns = [
   {
@@ -63,7 +63,7 @@ export default function Footer() {
           {columns.map((col) => (
             <div key={col.title}>
               <h3
-                className="mb-4 text-[13px] font-black uppercase tracking-wider text-white"
+                className="mb-4 text-[16px] font-black uppercase tracking-wider text-white"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {col.title}
@@ -73,7 +73,7 @@ export default function Footer() {
                   <li key={link.label}>
                     <Link
                       href={link.href}
-                      className="text-[13px] text-white/50 hover:text-white/80 transition-colors"
+                      className="text-[16px] text-white/50 hover:text-white/80 transition-colors"
                     >
                       {link.label}
                     </Link>
@@ -85,7 +85,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-12 border-t border-white/10 pt-8">
-          <p className="text-[12px] text-white/30 text-center">
+          <p className="text-[14px] text-white/30 text-center">
             Parceiros:{' '}
             {['JG Bebedouros', 'Ozean Purificadores', 'ABNT', 'INMETRO', 'AquaTech'].map((p, i, arr) => (
               <span key={p}>
@@ -94,7 +94,7 @@ export default function Footer() {
               </span>
             ))}
           </p>
-          <p className="mt-4 text-center text-[12px] text-white/20">
+          <p className="mt-4 text-center text-[14px] text-white/20">
             © {new Date().getFullYear()} Portal do Bebedouro — Todos os direitos reservados
           </p>
         </div>

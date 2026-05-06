@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 import type { Post } from '@/lib/posts'
 
 interface ArtigoRelacionadosProps {
@@ -11,7 +11,7 @@ export default function ArtigoRelacionados({ posts }: ArtigoRelacionadosProps) {
   return (
     <section className="mt-12 border-t border-borda pt-8">
       <h2
-        className="mb-6 text-[24px] font-black text-txt"
+        className="mb-6 text-[29px] font-black text-txt"
         style={{ fontFamily: 'var(--font-barlow-condensed)' }}
       >
         Artigos relacionados
@@ -22,12 +22,12 @@ export default function ArtigoRelacionados({ posts }: ArtigoRelacionadosProps) {
             <Link href={`/artigo/${post.slug}`}>
               <div className="mb-2 h-32 rounded overflow-hidden bg-gradient-to-br from-az to-az2" />
               <h3
-                className="text-[15px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
+                className="text-[18px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {post.title}
               </h3>
-              <p className="mt-1 text-[12px] text-txt3">
+              <p className="mt-1 text-[14px] text-txt3">
                 {new Date(post.date).toLocaleDateString('pt-BR')}
               </p>
             </Link>

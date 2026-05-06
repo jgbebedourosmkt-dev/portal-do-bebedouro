@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { useState } from 'react'
 import Link from 'next/link'
@@ -25,7 +25,7 @@ export default function NoticiasList({ posts }: NoticiasListProps) {
     <section className="py-8 pr-8">
       <div className="mb-4 flex items-center justify-between">
         <h2
-          className="text-[22px] font-black text-txt"
+          className="text-[26px] font-black text-txt"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Notícias Populares
@@ -35,7 +35,7 @@ export default function NoticiasList({ posts }: NoticiasListProps) {
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              className={`px-3 py-1 text-[12px] font-bold uppercase tracking-wide transition-colors ${
+              className={`px-3 py-1 text-[14px] font-bold uppercase tracking-wide transition-colors ${
                 activeTab === tab.key
                   ? 'bg-az text-white'
                   : 'bg-bg text-txt3 hover:bg-borda'
@@ -51,19 +51,19 @@ export default function NoticiasList({ posts }: NoticiasListProps) {
         {filtered.slice(0, 6).map((post, i) => (
           <li key={post.slug} className="flex items-start gap-4 border-b border-borda pb-4">
             <span
-              className="flex-shrink-0 text-[32px] font-black text-borda leading-none"
+              className="flex-shrink-0 text-[38px] font-black text-borda leading-none"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {String(i + 1).padStart(2, '0')}
             </span>
             <Link href={`/artigo/${post.slug}`} className="group">
               <h3
-                className="text-[20px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
+                className="text-[24px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {post.title}
               </h3>
-              <p className="mt-1 text-[14px] text-txt3">
+              <p className="mt-1 text-[17px] text-txt3">
                 {new Date(post.date).toLocaleDateString('pt-BR')} · {post.readTime} min
               </p>
             </Link>

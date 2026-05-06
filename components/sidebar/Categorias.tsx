@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 
 const categorias = [
   { label: 'Mercado', href: '/mercado', count: 12 },
@@ -13,7 +13,7 @@ export default function Categorias() {
   return (
     <div className="rounded border border-borda p-4 bg-white">
       <h3
-        className="mb-3 text-[14px] font-black uppercase tracking-wider text-txt border-b-2 border-az pb-2"
+        className="mb-3 text-[17px] font-black uppercase tracking-wider text-txt border-b-2 border-az pb-2"
         style={{ fontFamily: 'var(--font-barlow-condensed)' }}
       >
         Categorias
@@ -23,10 +23,10 @@ export default function Categorias() {
           <li key={href}>
             <Link
               href={href}
-              className="flex items-center justify-between py-1.5 text-[13px] font-semibold text-txt2 hover:text-az transition-colors group"
+              className="flex items-center justify-between py-1.5 text-[16px] font-semibold text-txt2 hover:text-az transition-colors group"
             >
               <span className="group-hover:translate-x-0.5 transition-transform">{label}</span>
-              <span className="text-[11px] font-bold text-txt3 bg-bg px-1.5 py-0.5 rounded">
+              <span className="text-[13px] font-bold text-txt3 bg-bg px-1.5 py-0.5 rounded">
                 {count}
               </span>
             </Link>

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 
 export default function Header() {
   return (
@@ -6,7 +6,7 @@ export default function Header() {
       <div className="mx-auto flex max-w-[1280px] items-center justify-between px-8">
         <Link href="/" className="leading-none">
           <h1
-            className="text-[44px] font-black tracking-tight leading-none"
+            className="text-[53px] font-black tracking-tight leading-none"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             <span className="text-[#111]">Portal</span>
@@ -16,8 +16,8 @@ export default function Header() {
         </Link>
         <div className="hidden lg:flex items-center gap-4">
           <div className="text-right">
-            <p className="text-[11px] text-txt3 uppercase tracking-wider font-semibold">O portal do setor</p>
-            <p className="text-[11px] text-txt3">portalbebedouro.com.br</p>
+            <p className="text-[13px] text-txt3 uppercase tracking-wider font-semibold">O portal do setor</p>
+            <p className="text-[13px] text-txt3">portalbebedouro.com.br</p>
           </div>
         </div>
       </div>

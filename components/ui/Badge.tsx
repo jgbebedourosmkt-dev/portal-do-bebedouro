@@ -1,4 +1,4 @@
-interface BadgeProps {
+﻿interface BadgeProps {
   label: string
   variant?: string
 }
@@ -15,7 +15,7 @@ export default function Badge({ label, variant = 'default' }: BadgeProps) {
   const cls = variantClasses[variant] ?? variantClasses.default
   return (
     <span
-      className={`inline-block px-2 py-0.5 text-[10px] font-black uppercase tracking-wider ${cls}`}
+      className={`inline-block px-2 py-0.5 text-[12px] font-black uppercase tracking-wider ${cls}`}
       style={{ fontFamily: 'var(--font-barlow-condensed)' }}
     >
       {label}

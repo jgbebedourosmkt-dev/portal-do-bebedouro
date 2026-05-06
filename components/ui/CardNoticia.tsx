@@ -1,4 +1,4 @@
-import Image from 'next/image'
+﻿import Image from 'next/image'
 import Link from 'next/link'
 import Badge from './Badge'
 import type { Post } from '@/lib/posts'
@@ -33,7 +33,7 @@ export default function CardNoticia({ post, size = 'md' }: CardNoticiaProps) {
         <div>
           <div className="mb-1 flex items-center gap-2">
             <span
-              className="text-[11px] font-extrabold uppercase tracking-widest text-az2"
+              className="text-[13px] font-extrabold uppercase tracking-widest text-az2"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
               {label}
@@ -42,13 +42,13 @@ export default function CardNoticia({ post, size = 'md' }: CardNoticiaProps) {
           </div>
           <h3
             className={`font-bold text-txt leading-tight group-hover:text-az transition-colors ${
-              size === 'lg' ? 'text-[20px]' : size === 'sm' ? 'text-[14px]' : 'text-[17px]'
+              size === 'lg' ? 'text-[24px]' : size === 'sm' ? 'text-[17px]' : 'text-[20px]'
             } line-clamp-2`}
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             {post.title}
           </h3>
-          <p className="mt-1 text-[12px] text-txt3">
+          <p className="mt-1 text-[14px] text-txt3">
             {new Date(post.date).toLocaleDateString('pt-BR')} · {post.readTime} min
           </p>
         </div>

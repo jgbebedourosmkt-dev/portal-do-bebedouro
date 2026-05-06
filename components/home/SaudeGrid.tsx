@@ -1,4 +1,4 @@
-import Image from 'next/image'
+﻿import Image from 'next/image'
 import Link from 'next/link'
 import type { Post } from '@/lib/posts'
 
@@ -11,14 +11,14 @@ export default function SaudeGrid({ posts }: SaudeGridProps) {
     <section className="border-t border-borda py-8 pr-8">
       <div className="mb-4 flex items-center justify-between">
         <h2
-          className="text-[22px] font-black text-txt"
+          className="text-[26px] font-black text-txt"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Saúde da Água
         </h2>
         <Link
           href="/saude"
-          className="text-[12px] font-bold text-az2 hover:underline"
+          className="text-[14px] font-bold text-az2 hover:underline"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
           Ver todos →
@@ -34,18 +34,18 @@ export default function SaudeGrid({ posts }: SaudeGridProps) {
                 )}
               </div>
               <span
-                className="text-[10px] font-extrabold uppercase tracking-widest text-az3"
+                className="text-[12px] font-extrabold uppercase tracking-widest text-az3"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 Saúde
               </span>
               <h3
-                className="mt-1 text-[19px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
+                className="mt-1 text-[23px] font-bold text-txt leading-tight group-hover:text-az transition-colors line-clamp-2"
                 style={{ fontFamily: 'var(--font-barlow-condensed)' }}
               >
                 {post.title}
               </h3>
-              <p className="mt-1 text-[14px] text-txt3">{post.readTime} min</p>
+              <p className="mt-1 text-[17px] text-txt3">{post.readTime} min</p>
             </Link>
           </article>
         ))}

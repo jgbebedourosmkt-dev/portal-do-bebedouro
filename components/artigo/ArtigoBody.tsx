@@ -1,4 +1,4 @@
-import { MDXRemote } from 'next-mdx-remote/rsc'
+﻿import { MDXRemote } from 'next-mdx-remote/rsc'
 
 interface ArtigoBodyProps {
   content: string
@@ -9,9 +9,9 @@ export default function ArtigoBody({ content }: ArtigoBodyProps) {
     <div
       className="prose prose-lg max-w-none text-txt2 leading-relaxed
         prose-headings:font-black prose-headings:text-txt
-        prose-h2:text-[26px] prose-h2:mt-8 prose-h2:mb-3
-        prose-h3:text-[20px] prose-h3:mt-6 prose-h3:mb-2
-        prose-p:mb-4 prose-p:text-[16px]
+        prose-h2:text-[31px] prose-h2:mt-8 prose-h2:mb-3
+        prose-h3:text-[24px] prose-h3:mt-6 prose-h3:mb-2
+        prose-p:mb-4 prose-p:text-[19px]
         prose-a:text-az2 prose-a:no-underline hover:prose-a:underline
         prose-strong:text-txt prose-strong:font-bold
         prose-ul:pl-5 prose-ol:pl-5
