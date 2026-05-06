@@ -56,7 +56,7 @@ const columns = [
 
 export default function Footer() {
   return (
-    <footer className="bg-az">
+    <footer className="bg-[#001F5B]">
       <div className="h-1 bg-gradient-to-r from-az via-vd2 to-az3" />
       <div className="mx-auto max-w-[1280px] px-8 py-12">
         <div className="grid grid-cols-2 gap-8 md:grid-cols-5">
