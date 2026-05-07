@@ -8,16 +8,16 @@
 
   return (
     <section
-      className="w-full py-16"
+      className="w-full py-10 md:py-16"
       style={{
         background: 'linear-gradient(135deg, #051C30 0%, #0B3D6B 50%, #0A3018 100%)',
       }}
     >
-      <div className="mx-auto grid max-w-[1280px] grid-cols-2 gap-16 px-8">
+      <div className="mx-auto grid max-w-[1280px] grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 px-4 md:px-8">
         {/* Esquerda */}
         <div>
           <h2
-            className="mb-2 text-[50px] font-black text-white leading-tight"
+            className="mb-2 text-[36px] md:text-[50px] font-black text-white leading-tight"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             Fique por dentro do{' '}
