@@ -33,11 +33,6 @@ const faqs = [
     answer:
       'A higienização deve ser feita a cada 6 meses, conforme a RDC 275/2005 da Anvisa. A troca de filtros varia por modelo: geralmente a cada 6 a 12 meses, dependendo do volume de uso e da qualidade da água local.',
   },
-  {
-    question: 'Posso alugar bebedouro industrial em vez de comprar?',
-    answer:
-      'Sim. O aluguel de bebedouro industrial é uma modalidade popular que inclui instalação, manutenção preventiva e troca de filtros. O custo mensal varia entre R$ 80 e R$ 300 por equipamento, dependendo do modelo e do plano.',
-  },
 ]
 
 export default function BebedouroIndustrialPage() {
@@ -226,7 +221,7 @@ export default function BebedouroIndustrialPage() {
             Precisa de bebedouro industrial?
           </p>
           <p className="text-[14px] mb-4 opacity-90">
-            A JG Bebedouros oferece venda, aluguel e manutenção de bebedouros industriais com atendimento em todo o Brasil.
+            A JG Bebedouros oferece venda e manutenção de bebedouros industriais com atendimento em todo o Brasil.
           </p>
           <a
             href="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=cta-fim&utm_campaign=bebedouro-industrial"

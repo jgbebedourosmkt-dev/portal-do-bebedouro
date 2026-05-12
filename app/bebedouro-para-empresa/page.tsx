@@ -26,12 +26,7 @@ const faqs = [
   {
     question: 'Qual o custo de manter um bebedouro na empresa?',
     answer:
-      'O custo médio anual de manutenção varia entre R$ 800 e R$ 3.200 por equipamento, incluindo higienização semestral e troca de filtros. Na modalidade de aluguel, o valor mensal costuma incluir toda a manutenção, entre R$ 80 e R$ 300 por mês.',
-  },
-  {
-    question: 'Vale mais a pena comprar ou alugar bebedouro para empresa?',
-    answer:
-      'Para empresas com menos de 5 funcionários ou contrato temporário, o aluguel é mais vantajoso. Para empresas com mais de 10 colaboradores e uso permanente, a compra tende a ser mais econômica no longo prazo, especialmente com modelos industriais.',
+      'O custo médio anual de manutenção varia entre R$ 800 e R$ 3.200 por equipamento, incluindo higienização semestral e troca de filtros. O valor depende do modelo, da frequência de uso e da qualidade da água local.',
   },
   {
     question: 'Qual bebedouro escolher para escritório?',
@@ -161,29 +156,29 @@ export default function BebedouroParaEmpresaPage() {
             className="text-[28px] font-bold text-txt mb-3"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            Custo total: compra vs. aluguel
+            Custo total do bebedouro para empresa
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border border-borda rounded p-5">
               <h3 className="font-bold text-[18px] text-txt mb-2" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
-                Compra
+                Investimento inicial
               </h3>
               <ul className="text-[14px] text-txt2 space-y-1 list-disc pl-4">
-                <li>Investimento inicial: R$ 1.500 a R$ 8.000</li>
-                <li>Manutenção anual: R$ 800 a R$ 3.200</li>
-                <li>Melhor para uso permanente (+3 anos)</li>
-                <li>Controle total do equipamento</li>
+                <li>Bebedouros de bancada: R$ 500 a R$ 1.500</li>
+                <li>Bebedouros de coluna: R$ 800 a R$ 2.500</li>
+                <li>Bebedouros industriais: R$ 1.500 a R$ 8.000</li>
+                <li>Controle total e patrimônio da empresa</li>
               </ul>
             </div>
             <div className="border border-az rounded p-5 bg-az/5">
               <h3 className="font-bold text-[18px] text-txt mb-2" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
-                Aluguel
+                Manutenção anual
               </h3>
               <ul className="text-[14px] text-txt2 space-y-1 list-disc pl-4">
-                <li>Mensalidade: R$ 80 a R$ 300</li>
-                <li>Inclui manutenção e troca de filtros</li>
-                <li>Ideal para contratos temporários</li>
-                <li>Sem imobilização de capital</li>
+                <li>Higienização semestral (obrigatória pela Anvisa)</li>
+                <li>Troca de filtros a cada 6–12 meses</li>
+                <li>Custo médio: R$ 800 a R$ 3.200/ano</li>
+                <li>Planos de manutenção preventiva disponíveis</li>
               </ul>
             </div>
           </div>
@@ -231,7 +226,7 @@ export default function BebedouroParaEmpresaPage() {
             Sua empresa precisa de bebedouro?
           </p>
           <p className="text-[14px] mb-4 opacity-90">
-            A JG Bebedouros atende empresas de todos os portes com venda, aluguel, instalação e manutenção preventiva.
+            A JG Bebedouros atende empresas de todos os portes com venda, instalação e manutenção preventiva.
           </p>
           <a
             href="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=cta-fim&utm_campaign=bebedouro-para-empresa"

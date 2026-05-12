@@ -232,7 +232,7 @@ export default function TiposDeBebedouroPage() {
             Encontre o bebedouro certo para o seu negócio
           </p>
           <p className="text-[14px] mb-4 opacity-90">
-            A JG Bebedouros tem todos os tipos disponíveis para venda e aluguel, com suporte técnico especializado.
+            A JG Bebedouros tem todos os tipos disponíveis para venda, com suporte técnico especializado.
           </p>
           <a
             href="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=cta-fim&utm_campaign=tipos-de-bebedouro"

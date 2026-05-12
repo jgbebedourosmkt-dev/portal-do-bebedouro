@@ -103,7 +103,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!city) return {}
   return buildMetadata({
     title: `Bebedouro Industrial em ${city.name} — ${city.stateAbbr}: Fornecedores e Preços`,
-    description: `Encontre bebedouro industrial em ${city.name}/${city.stateAbbr}. Venda, aluguel e manutenção com atendimento local. Solicite orçamento grátis.`,
+    description: `Bebedouro industrial em ${city.name}/${city.stateAbbr}. Venda e manutenção com atendimento local. Solicite orçamento grátis.`,
     slug: `local/${slug}`,
   })
 }
@@ -117,10 +117,6 @@ export default async function LocalPage({ params }: PageProps) {
     {
       question: `Onde comprar bebedouro industrial em ${city.name}?`,
       answer: `Em ${city.name} você encontra bebedouros industriais na JG Bebedouros, com atendimento local, entrega e instalação na região. Entre em contato para verificar disponibilidade e prazo.`,
-    },
-    {
-      question: `É possível alugar bebedouro industrial em ${city.name}/${city.stateAbbr}?`,
-      answer: `Sim. O aluguel de bebedouro industrial em ${city.name} é disponível com planos mensais que incluem instalação, manutenção preventiva e troca de filtros. O valor varia entre R$ 80 e R$ 300 por mês.`,
     },
     {
       question: `Qual o prazo de entrega de bebedouro industrial em ${city.name}?`,
@@ -289,7 +285,7 @@ export default async function LocalPage({ params }: PageProps) {
             Bebedouro industrial em {city.name} com entrega rápida
           </p>
           <p className="text-[14px] mb-4 opacity-90">
-            JG Bebedouros oferece venda, aluguel e manutenção com atendimento em {city.name}/{city.stateAbbr}.
+            JG Bebedouros oferece venda e manutenção com atendimento em {city.name}/{city.stateAbbr}.
           </p>
           <a
             href={`https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=cta-fim&utm_campaign=bebedouro-industrial-${city.name.toLowerCase().replace(/\s+/g, '-')}`}
