@@ -1,0 +1,166 @@
+[
+  {
+    "id": 1,
+    "keyword": "bebedouro industrial",
+    "slug": "bebedouro-industrial",
+    "prioridade": 1,
+    "status": "publicado",
+    "url": "/bebedouro-industrial",
+    "volume": 5400,
+    "dificuldade": "media",
+    "tipo": "pilar"
+  },
+  {
+    "id": 2,
+    "keyword": "tipos de bebedouro",
+    "slug": "tipos-de-bebedouro",
+    "prioridade": 2,
+    "status": "publicado",
+    "url": "/tipos-de-bebedouro",
+    "volume": 3600,
+    "dificuldade": "baixa",
+    "tipo": "pilar"
+  },
+  {
+    "id": 3,
+    "keyword": "bebedouro para empresa",
+    "slug": "bebedouro-para-empresa",
+    "prioridade": 3,
+    "status": "publicado",
+    "url": "/bebedouro-para-empresa",
+    "volume": 2900,
+    "dificuldade": "baixa",
+    "tipo": "pilar"
+  },
+  {
+    "id": 4,
+    "keyword": "bebedouro industrial inox",
+    "slug": "bebedouro-industrial-inox",
+    "prioridade": 4,
+    "status": "pendente",
+    "volume": 1900,
+    "dificuldade": "baixa",
+    "tipo": "subpilar",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 5,
+    "keyword": "bebedouro industrial 100 litros",
+    "slug": "bebedouro-industrial-100-litros",
+    "prioridade": 5,
+    "status": "pendente",
+    "volume": 1600,
+    "dificuldade": "baixa",
+    "tipo": "subpilar",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 6,
+    "keyword": "bebedouro industrial gelado",
+    "slug": "bebedouro-industrial-gelado",
+    "prioridade": 6,
+    "status": "pendente",
+    "volume": 1300,
+    "dificuldade": "baixa",
+    "tipo": "subpilar",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 7,
+    "keyword": "bebedouro industrial com filtro",
+    "slug": "bebedouro-industrial-com-filtro",
+    "prioridade": 7,
+    "status": "pendente",
+    "volume": 1100,
+    "dificuldade": "baixa",
+    "tipo": "subpilar",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 8,
+    "keyword": "bebedouro industrial preço",
+    "slug": "bebedouro-industrial-preco",
+    "prioridade": 8,
+    "status": "pendente",
+    "volume": 980,
+    "dificuldade": "media",
+    "tipo": "subpilar",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 9,
+    "keyword": "bebedouro de pressão",
+    "slug": "bebedouro-de-pressao",
+    "prioridade": 9,
+    "status": "pendente",
+    "volume": 2200,
+    "dificuldade": "baixa",
+    "tipo": "subpilar",
+    "pilar": "tipos-de-bebedouro"
+  },
+  {
+    "id": 10,
+    "keyword": "purificador de água para empresa",
+    "slug": "purificador-de-agua-para-empresa",
+    "prioridade": 10,
+    "status": "pendente",
+    "volume": 1800,
+    "dificuldade": "media",
+    "tipo": "subpilar",
+    "pilar": "bebedouro-para-empresa"
+  },
+  {
+    "id": 11,
+    "keyword": "bebedouro industrial São Paulo",
+    "slug": "bebedouro-industrial-sao-paulo",
+    "prioridade": 11,
+    "status": "pendente",
+    "volume": 720,
+    "dificuldade": "baixa",
+    "tipo": "local",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 12,
+    "keyword": "bebedouro industrial Belo Horizonte",
+    "slug": "bebedouro-industrial-belo-horizonte",
+    "prioridade": 12,
+    "status": "pendente",
+    "volume": 480,
+    "dificuldade": "baixa",
+    "tipo": "local",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 13,
+    "keyword": "bebedouro industrial Curitiba",
+    "slug": "bebedouro-industrial-curitiba",
+    "prioridade": 13,
+    "status": "pendente",
+    "volume": 390,
+    "dificuldade": "baixa",
+    "tipo": "local",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 14,
+    "keyword": "aluguel de bebedouro industrial",
+    "slug": "aluguel-de-bebedouro-industrial",
+    "prioridade": 14,
+    "status": "pendente",
+    "volume": 1400,
+    "dificuldade": "media",
+    "tipo": "subpilar",
+    "pilar": "bebedouro-industrial"
+  },
+  {
+    "id": 15,
+    "keyword": "manutenção de bebedouro",
+    "slug": "manutencao-de-bebedouro",
+    "prioridade": 15,
+    "status": "pendente",
+    "volume": 1100,
+    "dificuldade": "baixa",
+    "tipo": "blog"
+  }
+]
