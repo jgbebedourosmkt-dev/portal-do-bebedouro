@@ -21,6 +21,34 @@ const socials = [
   { href: '#', label: 'LinkedIn', icon: 'in' },
 ]
 
+function IconSearch({ size = 18 }: { size?: number }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="11" cy="11" r="8" />
+      <path d="m21 21-4.35-4.35" />
+    </svg>
+  )
+}
+
+function IconMenu() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+      <line x1="3" y1="6" x2="21" y2="6" />
+      <line x1="3" y1="12" x2="21" y2="12" />
+      <line x1="3" y1="18" x2="21" y2="18" />
+    </svg>
+  )
+}
+
+function IconClose() {
+  return (
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
+      <line x1="18" y1="6" x2="6" y2="18" />
+      <line x1="6" y1="6" x2="18" y2="18" />
+    </svg>
+  )
+}
+
 export default function Nav() {
   const pathname = usePathname()
   const [open, setOpen] = useState(false)
@@ -49,29 +77,46 @@ export default function Nav() {
           })}
         </ul>
 
-        {/* Mobile: logo compacto + hamburger */}
-        <div className="flex md:hidden items-center justify-between w-full py-2">
+        {/* Mobile: logo + ícones na mesma linha */}
+        <div className="flex md:hidden items-center justify-between w-full py-1.5">
           <Link href="/" className="leading-none">
             <span
-              className="text-[28px] font-black tracking-tight leading-none text-az italic"
+              className="text-[32px] font-black tracking-tight leading-none"
               style={{ fontFamily: 'var(--font-barlow-condensed)' }}
             >
-              Portal do Bebedouro
+              <span className="text-[#111]">Portal</span>
+              <span className="text-gray-300 font-light mx-1">do</span>
+              <span className="text-az font-black italic">Bebedouro</span>
             </span>
           </Link>
-          <button
-            onClick={() => setOpen(!open)}
-            aria-label="Abrir menu"
-            className="flex flex-col justify-center gap-[5px] p-2"
-          >
-            <span className={`block h-[2px] w-6 bg-az transition-all ${open ? 'rotate-45 translate-y-[7px]' : ''}`} />
-            <span className={`block h-[2px] w-6 bg-az transition-all ${open ? 'opacity-0' : ''}`} />
-            <span className={`block h-[2px] w-6 bg-az transition-all ${open ? '-rotate-45 -translate-y-[7px]' : ''}`} />
-          </button>
+          <div className="flex items-center gap-1">
+            <a
+              href="/busca"
+              aria-label="Buscar"
+              className="flex items-center justify-center w-9 h-9 text-txt3 hover:text-az transition-colors"
+            >
+              <IconSearch size={20} />
+            </a>
+            <button
+              onClick={() => setOpen(!open)}
+              aria-label={open ? 'Fechar menu' : 'Abrir menu'}
+              className="flex items-center justify-center w-9 h-9 text-az transition-colors"
+            >
+              {open ? <IconClose /> : <IconMenu />}
+            </button>
+          </div>
         </div>
 
-        {/* Desktop socials */}
+        {/* Desktop: busca + socials */}
         <div className="hidden md:flex items-center gap-1">
+          <a
+            href="/busca"
+            aria-label="Buscar"
+            className="flex items-center justify-center w-8 h-8 rounded bg-bg border border-borda text-txt3 hover:border-az hover:text-az transition-colors"
+          >
+            <IconSearch size={14} />
+          </a>
+          <div className="w-px h-5 bg-borda mx-1" />
           {socials.map(({ href, label, icon }) => (
             <a
               key={label}

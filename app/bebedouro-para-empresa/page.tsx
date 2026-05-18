@@ -4,6 +4,7 @@ import Topbar from '@/components/layout/Topbar'
 import Header from '@/components/layout/Header'
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
+import PilarLayout from '@/components/pilar/PilarLayout'
 
 export const metadata = buildMetadata({
   title: 'Bebedouro para Empresa: Como Escolher, Lei e Onde Comprar',
@@ -56,188 +57,138 @@ export default function BebedouroParaEmpresaPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
       />
 
-      <main className="mx-auto max-w-[900px] px-4 md:px-8 py-10">
-        {/* Breadcrumb */}
-        <nav className="text-[13px] text-txt3 mb-6">
-          <a href="/" className="hover:text-az">Home</a>
-          <span className="mx-2">/</span>
-          <span className="text-txt">Bebedouro para Empresa</span>
-        </nav>
-
-        <h1
-          className="text-[42px] font-black text-txt leading-tight mb-4"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-        >
-          Bebedouro para Empresa: Como Escolher, Lei e Onde Comprar
-        </h1>
-        <p className="text-[17px] text-txt2 leading-relaxed mb-8">
-          Fornecer água potável é obrigação legal de toda empresa brasileira. Mas escolher o bebedouro certo vai além
-          de cumprir a NR-24 — envolve calcular capacidade, avaliar custo total e garantir a qualidade da água para
-          seus colaboradores.
-        </p>
-
-        <a
-          href="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=pilar&utm_campaign=bebedouro-para-empresa"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-az text-white font-bold px-6 py-3 rounded mb-10 hover:bg-az2 transition-colors"
-        >
-          Solicitar orçamento para sua empresa
-        </a>
-
-        {/* Seção Lei */}
-        <section className="mb-10">
+      <PilarLayout
+        badge="Guia Legal"
+        title="Bebedouro para Empresa"
+        excerpt="Fornecer água potável é obrigação legal de toda empresa brasileira. Saiba o que diz a lei, quantos bebedouros você precisa e como calcular o custo total."
+        breadcrumbLabel="Bebedouro para Empresa"
+        breadcrumbSlug="bebedouro-para-empresa"
+        ctaHref="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=pilar&utm_campaign=bebedouro-para-empresa"
+        ctaLabel="Solicitar orçamento para sua empresa"
+        sidebarCtaHref="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=sidebar&utm_campaign=bebedouro-para-empresa"
+        finalCtaTitle="Sua empresa precisa de bebedouro?"
+        finalCtaDesc="Atendimento para empresas de todos os portes com venda, instalação e manutenção preventiva."
+        finalCtaLabel="Solicitar orçamento grátis"
+        tocItems={[
+          { href: '#lei', label: 'O que diz a lei' },
+          { href: '#tipos', label: 'Qual tipo escolher' },
+          { href: '#custo', label: 'Custo total' },
+          { href: '#faq', label: 'Perguntas frequentes' },
+        ]}
+        stats={[
+          { valor: 'NR-24', label: 'norma de obrigatoriedade' },
+          { valor: '1 / 50', label: 'trabalhadores por bebedouro' },
+          { valor: 'R$ 800–3.200', label: 'custo médio anual de manutenção' },
+          { valor: '6 meses', label: 'higienização obrigatória (Anvisa)' },
+        ]}
+        faqs={faqs}
+        internalLinks={[
+          { href: '/bebedouro-industrial', label: 'Guia completo: bebedouro industrial' },
+          { href: '/tipos-de-bebedouro', label: 'Todos os tipos de bebedouro comparados' },
+          { href: '/artigo/como-escolher-bebedouro-corporativo', label: 'Como escolher bebedouro corporativo passo a passo' },
+          { href: '/artigo/inmetro-certificacao-purificadores', label: 'Certificação INMETRO para purificadores' },
+        ]}
+      >
+        <section id="lei" className="mb-12 scroll-mt-20">
           <h2
-            className="text-[28px] font-bold text-txt mb-3"
+            className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             O que diz a lei sobre bebedouro em empresas?
           </h2>
-          <div className="border-l-4 border-az pl-4 mb-4">
-            <p className="text-[15px] text-txt2 italic">
+          <div className="border-l-4 border-az pl-5 mb-5 py-1">
+            <p className="text-[16px] text-txt2 italic leading-relaxed">
               &quot;Todo estabelecimento deve ter instalações adequadas para o fornecimento de água potável e fresca,
               em quantidade suficiente para atender às necessidades dos trabalhadores.&quot;
             </p>
-            <p className="text-[13px] text-txt3 mt-1">— NR-24, item 24.7, Ministério do Trabalho e Emprego</p>
+            <p className="text-[13px] text-txt3 mt-2 font-semibold">— NR-24, item 24.7, Ministério do Trabalho e Emprego</p>
           </div>
-          <p className="text-[16px] text-txt2 leading-relaxed">
-            A norma não estabelece um número fixo de equipamentos, mas a prática de mercado consolidada é de
-            <strong> 1 bebedouro para cada 50 trabalhadores</strong> em turno. Empresas fiscalizadas pelo MTE
+          <p className="text-[17px] text-txt2 leading-relaxed">
+            A norma não estabelece um número fixo de equipamentos, mas a prática de mercado consolidada é de{' '}
+            <strong>1 bebedouro para cada 50 trabalhadores</strong> em turno. Empresas fiscalizadas pelo MTE
             que não cumprem a obrigação estão sujeitas a autuação e multa.
           </p>
         </section>
 
-        {/* Seção Tipos */}
-        <section className="mb-10">
+        <section id="tipos" className="mb-12 scroll-mt-20">
           <h2
-            className="text-[28px] font-bold text-txt mb-3"
+            className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             Qual tipo de bebedouro escolher para a sua empresa?
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-3">
             {[
-              {
-                perfil: 'Escritório até 50 pessoas',
-                recomendado: 'Purificador de bancada ou bebedouro de garrafão',
-                motivo: 'Instalação simples, sem necessidade de obra hidráulica.',
-              },
-              {
-                perfil: 'Escritório 50 a 200 pessoas',
-                recomendado: 'Bebedouro industrial de pressão ou purificador de coluna',
-                motivo: 'Ligação direta à rede, sem custo recorrente de galão.',
-              },
-              {
-                perfil: 'Indústria ou galpão logístico',
-                recomendado: 'Bebedouro industrial inox (20–200 L/h)',
-                motivo: 'Alta capacidade, durabilidade e resistência ao ambiente industrial.',
-              },
-              {
-                perfil: 'Obras e canteiros',
-                recomendado: 'Bebedouro industrial portátil ou de garrafão',
-                motivo: 'Facilidade de transporte e independência de rede hidráulica.',
-              },
+              { perfil: 'Escritório até 50 pessoas', recomendado: 'Purificador de bancada ou bebedouro de garrafão', motivo: 'Instalação simples, sem necessidade de obra hidráulica.' },
+              { perfil: 'Escritório 50 a 200 pessoas', recomendado: 'Bebedouro industrial de pressão ou purificador de coluna', motivo: 'Ligação direta à rede, sem custo recorrente de galão.' },
+              { perfil: 'Indústria ou galpão logístico', recomendado: 'Bebedouro industrial inox (20–200 L/h)', motivo: 'Alta capacidade, durabilidade e resistência ao ambiente industrial.' },
+              { perfil: 'Obras e canteiros', recomendado: 'Bebedouro industrial portátil ou de garrafão', motivo: 'Facilidade de transporte e independência de rede hidráulica.' },
             ].map(({ perfil, recomendado, motivo }) => (
-              <div key={perfil} className="border border-borda rounded p-4 flex gap-4">
-                <div className="w-2 shrink-0 bg-az rounded-full" />
+              <div key={perfil} className="border border-borda rounded-lg p-5 flex gap-4 hover:border-az transition-colors">
+                <div className="w-1 shrink-0 bg-az rounded-full" />
                 <div>
-                  <p className="font-bold text-txt">{perfil}</p>
-                  <p className="text-[15px] text-az font-semibold">{recomendado}</p>
-                  <p className="text-[13px] text-txt3">{motivo}</p>
+                  <p className="font-black text-txt text-[15px]" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>{perfil}</p>
+                  <p className="text-[15px] text-az font-bold mt-0.5">{recomendado}</p>
+                  <p className="text-[13px] text-txt3 mt-1">{motivo}</p>
                 </div>
               </div>
             ))}
           </div>
         </section>
 
-        {/* Seção Custo */}
-        <section className="mb-10">
+        <section id="custo" className="mb-12 scroll-mt-20">
           <h2
-            className="text-[28px] font-bold text-txt mb-3"
+            className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             Custo total do bebedouro para empresa
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="border border-borda rounded p-5">
-              <h3 className="font-bold text-[18px] text-txt mb-2" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
+            <div className="border border-borda rounded-lg p-5">
+              <h3
+                className="font-black text-[20px] text-txt mb-3"
+                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              >
                 Investimento inicial
               </h3>
-              <ul className="text-[14px] text-txt2 space-y-1 list-disc pl-4">
-                <li>Bebedouros de bancada: R$ 500 a R$ 1.500</li>
-                <li>Bebedouros de coluna: R$ 800 a R$ 2.500</li>
-                <li>Bebedouros industriais: R$ 1.500 a R$ 8.000</li>
-                <li>Controle total e patrimônio da empresa</li>
+              <ul className="text-[14px] text-txt2 space-y-2">
+                {[
+                  'Bebedouros de bancada: R$ 500 a R$ 1.500',
+                  'Bebedouros de coluna: R$ 800 a R$ 2.500',
+                  'Bebedouros industriais: R$ 1.500 a R$ 8.000',
+                  'Controle total e patrimônio da empresa',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="text-az mt-0.5">•</span>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
-            <div className="border border-az rounded p-5 bg-az/5">
-              <h3 className="font-bold text-[18px] text-txt mb-2" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
+            <div className="border border-az rounded-lg p-5 bg-az/5">
+              <h3
+                className="font-black text-[20px] text-txt mb-3"
+                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              >
                 Manutenção anual
               </h3>
-              <ul className="text-[14px] text-txt2 space-y-1 list-disc pl-4">
-                <li>Higienização semestral (obrigatória pela Anvisa)</li>
-                <li>Troca de filtros a cada 6–12 meses</li>
-                <li>Custo médio: R$ 800 a R$ 3.200/ano</li>
-                <li>Planos de manutenção preventiva disponíveis</li>
+              <ul className="text-[14px] text-txt2 space-y-2">
+                {[
+                  'Higienização semestral (obrigatória pela Anvisa)',
+                  'Troca de filtros a cada 6–12 meses',
+                  'Custo médio: R$ 800 a R$ 3.200/ano',
+                  'Planos de manutenção preventiva disponíveis',
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2">
+                    <span className="text-az mt-0.5">•</span>
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
         </section>
-
-        {/* Links internos */}
-        <section className="mb-10 bg-bg rounded p-6">
-          <h2
-            className="text-[22px] font-bold text-txt mb-3"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-          >
-            Continue lendo
-          </h2>
-          <ul className="space-y-2 text-[15px]">
-            <li>→ <a href="/bebedouro-industrial" className="text-az hover:underline">Guia completo: bebedouro industrial</a></li>
-            <li>→ <a href="/tipos-de-bebedouro" className="text-az hover:underline">Todos os tipos de bebedouro comparados</a></li>
-            <li>→ <a href="/artigo/como-escolher-bebedouro-corporativo" className="text-az hover:underline">Como escolher bebedouro corporativo passo a passo</a></li>
-            <li>→ <a href="/artigo/inmetro-certificacao-purificadores" className="text-az hover:underline">Certificação INMETRO para purificadores</a></li>
-          </ul>
-        </section>
-
-        {/* FAQ */}
-        <section className="mb-10">
-          <h2
-            className="text-[28px] font-bold text-txt mb-6"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-          >
-            Perguntas frequentes
-          </h2>
-          <div className="space-y-4">
-            {faqs.map(({ question, answer }) => (
-              <details key={question} className="border border-borda rounded">
-                <summary className="px-4 py-3 font-semibold text-txt cursor-pointer hover:bg-bg">
-                  {question}
-                </summary>
-                <p className="px-4 py-3 text-[15px] text-txt2 border-t border-borda">{answer}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-
-        {/* CTA */}
-        <div className="bg-az rounded p-6 text-center text-white">
-          <p className="text-[20px] font-bold mb-2" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
-            Sua empresa precisa de bebedouro?
-          </p>
-          <p className="text-[14px] mb-4 opacity-90">
-            A JG Bebedouros atende empresas de todos os portes com venda, instalação e manutenção preventiva.
-          </p>
-          <a
-            href="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=cta-fim&utm_campaign=bebedouro-para-empresa"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-acc text-az font-bold px-8 py-3 rounded hover:opacity-90 transition-opacity"
-          >
-            Solicitar orçamento grátis
-          </a>
-        </div>
-      </main>
+      </PilarLayout>
 
       <Footer />
     </>

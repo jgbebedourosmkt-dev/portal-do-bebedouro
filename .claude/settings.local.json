@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "PowerShell(reg add \"HKCU\\\\Control Panel\\\\Keyboard\" /v \"PrintScreenKeyForSnippingEnabled\" /t REG_DWORD /d 1 /f)",
+      "Bash(git clone *)",
+      "Bash(git -C \"c:\\\\Users\\\\Lenovo\\\\Desktop\\\\portal-do-bebedouro\\\\portal-do-bebedouro\" remote -v)",
+      "Bash(git -C \"c:\\\\Users\\\\Lenovo\\\\Desktop\\\\portal-do-bebedouro\\\\portal-do-bebedouro\" log --oneline -5)",
+      "Bash(git remote *)",
+      "Bash(git fetch *)",
+      "Bash(git checkout *)",
+      "Bash(git reset *)",
+      "Bash(npm install *)",
+      "PowerShell(Get-Command node -ErrorAction SilentlyContinue)",
+      "PowerShell(Get-Command npm -ErrorAction SilentlyContinue)",
+      "PowerShell($env:PATH -split \";\")"
+    ]
+  }
+}

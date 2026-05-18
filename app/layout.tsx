@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { Barlow, Barlow_Condensed } from 'next/font/google'
+import { GoogleAnalytics } from '@next/third-parties/google'
 import { websiteSchema } from '@/lib/seo'
 import './globals.css'
 
@@ -47,7 +48,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema()) }}
         />
       </head>
-      <body className="min-h-screen bg-white">{children}</body>
+      <body className="min-h-screen bg-white">
+        {children}
+        <GoogleAnalytics gaId="G-XYZ123" />
+      </body>
     </html>
   )
 }

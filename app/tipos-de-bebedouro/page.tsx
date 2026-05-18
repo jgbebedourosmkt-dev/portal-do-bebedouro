@@ -4,6 +4,7 @@ import Topbar from '@/components/layout/Topbar'
 import Header from '@/components/layout/Header'
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
+import PilarLayout from '@/components/pilar/PilarLayout'
 
 export const metadata = buildMetadata({
   title: 'Tipos de Bebedouro: Qual é o Ideal para Você? Guia Completo 2025',
@@ -13,48 +14,12 @@ export const metadata = buildMetadata({
 })
 
 const tipos = [
-  {
-    nome: 'Bebedouro industrial',
-    descricao:
-      'Projetado para ambientes de alta demanda como fábricas, galpões e obras. Alta capacidade de produção de água gelada (20 a 200 L/h). Corpo geralmente em aço inox ou polietileno.',
-    indicado: 'Indústrias, galpões logísticos, canteiros de obra',
-    href: '/bebedouro-industrial',
-  },
-  {
-    nome: 'Bebedouro de pressão',
-    descricao:
-      'Dispensa água por jato sem uso de copo. Muito comum em escolas e espaços públicos. Baixo custo de manutenção e alta higiene por eliminar contato com copos descartáveis.',
-    indicado: 'Escolas, academias, parques, espaços públicos',
-    href: null,
-  },
-  {
-    nome: 'Purificador de água',
-    descricao:
-      'Combina filtragem (carvão ativado, UV ou osmose reversa) com refrigeração. Indicado quando a qualidade da água da rede é duvidosa. Dispensa garrafão.',
-    indicado: 'Escritórios, clínicas, residências, empresas',
-    href: null,
-  },
-  {
-    nome: 'Bebedouro de garrafão',
-    descricao:
-      'Utiliza galão de 20 litros. Solução popular para ambientes sem ligação direta à rede. Custo fixo de recarga do galão. Modelos com e sem refrigeração.',
-    indicado: 'Escritórios pequenos, home office, locais sem rede',
-    href: null,
-  },
-  {
-    nome: 'Bebedouro escolar',
-    descricao:
-      'Projetado para o público infantil com alturas de torneira adaptadas e proteções de segurança. Modelos com jato de pressão e bica de inox.',
-    indicado: 'Escolas de educação infantil e fundamental',
-    href: null,
-  },
-  {
-    nome: 'Bebedouro de bancada',
-    descricao:
-      'Compacto, instalado sobre balcões ou mesas. Ideal para pequenos escritórios onde o espaço é limitado. Geralmente com filtragem e refrigeração.',
-    indicado: 'Pequenos escritórios, consultórios, recepções',
-    href: null,
-  },
+  { nome: 'Bebedouro industrial', icon: '🏭', descricao: 'Projetado para ambientes de alta demanda como fábricas, galpões e obras. Alta capacidade de produção de água gelada (20 a 200 L/h). Corpo geralmente em aço inox ou polietileno.', indicado: 'Indústrias, galpões logísticos, canteiros de obra', href: '/bebedouro-industrial' },
+  { nome: 'Bebedouro de pressão', icon: '💦', descricao: 'Dispensa água por jato sem uso de copo. Muito comum em escolas e espaços públicos. Baixo custo de manutenção e alta higiene por eliminar contato com copos descartáveis.', indicado: 'Escolas, academias, parques, espaços públicos', href: null },
+  { nome: 'Purificador de água', icon: '🔬', descricao: 'Combina filtragem (carvão ativado, UV ou osmose reversa) com refrigeração. Indicado quando a qualidade da água da rede é duvidosa. Dispensa garrafão.', indicado: 'Escritórios, clínicas, residências, empresas', href: null },
+  { nome: 'Bebedouro de garrafão', icon: '🫙', descricao: 'Utiliza galão de 20 litros. Solução popular para ambientes sem ligação direta à rede. Custo fixo de recarga do galão. Modelos com e sem refrigeração.', indicado: 'Escritórios pequenos, home office, locais sem rede', href: null },
+  { nome: 'Bebedouro escolar', icon: '🏫', descricao: 'Projetado para o público infantil com alturas de torneira adaptadas e proteções de segurança. Modelos com jato de pressão e bica de inox.', indicado: 'Escolas de educação infantil e fundamental', href: null },
+  { nome: 'Bebedouro de bancada', icon: '🖥️', descricao: 'Compacto, instalado sobre balcões ou mesas. Ideal para pequenos escritórios onde o espaço é limitado. Geralmente com filtragem e refrigeração.', indicado: 'Pequenos escritórios, consultórios, recepções', href: null },
 ]
 
 const faqs = [
@@ -101,39 +66,58 @@ export default function TiposDeBebedouroPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema(faqs)) }}
       />
 
-      <main className="mx-auto max-w-[900px] px-4 md:px-8 py-10">
-        {/* Breadcrumb */}
-        <nav className="text-[13px] text-txt3 mb-6">
-          <a href="/" className="hover:text-az">Home</a>
-          <span className="mx-2">/</span>
-          <span className="text-txt">Tipos de Bebedouro</span>
-        </nav>
-
-        <h1
-          className="text-[42px] font-black text-txt leading-tight mb-4"
-          style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-        >
-          Tipos de Bebedouro: Qual é o Ideal para Você?
-        </h1>
-        <p className="text-[17px] text-txt2 leading-relaxed mb-10">
-          Bebedouro industrial, de pressão, purificador, garrafão ou escolar — cada modelo tem características,
-          capacidades e custos distintos. Este guia explica cada tipo para você tomar a melhor decisão.
-        </p>
-
-        {/* Grid de tipos */}
-        <section className="mb-12">
-          <div className="space-y-5">
-            {tipos.map(({ nome, descricao, indicado, href }) => (
-              <div key={nome} className="border border-borda rounded p-5">
+      <PilarLayout
+        badge="Comparativo"
+        title="Tipos de Bebedouro"
+        excerpt="Bebedouro industrial, de pressão, purificador, garrafão ou escolar — cada modelo tem características, capacidades e custos distintos. Encontre o ideal para você."
+        breadcrumbLabel="Tipos de Bebedouro"
+        breadcrumbSlug="tipos-de-bebedouro"
+        ctaHref="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=pilar&utm_campaign=tipos-de-bebedouro"
+        ctaLabel="Ver catálogo completo"
+        sidebarCtaHref="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=sidebar&utm_campaign=tipos-de-bebedouro"
+        finalCtaTitle="Encontre o bebedouro certo"
+        finalCtaDesc="Todos os tipos disponíveis para venda, com suporte técnico especializado."
+        finalCtaLabel="Ver catálogo completo"
+        tocItems={[
+          { href: '#tipos', label: 'Todos os tipos' },
+          { href: '#comparativo', label: 'Tabela comparativa' },
+          { href: '#faq', label: 'Dúvidas frequentes' },
+        ]}
+        stats={[
+          { valor: '6', label: 'tipos principais de bebedouro' },
+          { valor: '20–200', label: 'litros/hora (industriais)' },
+          { valor: '60–400 W', label: 'consumo energético médio' },
+          { valor: 'NR-24', label: 'norma que obriga fornecimento' },
+        ]}
+        faqs={faqs}
+        internalLinks={[
+          { href: '/bebedouro-industrial', label: 'Guia completo: bebedouro industrial' },
+          { href: '/bebedouro-para-empresa', label: 'Como escolher bebedouro para empresa' },
+          { href: '/artigo/como-escolher-bebedouro-corporativo', label: 'Critérios para escolha de bebedouro corporativo' },
+        ]}
+      >
+        <section id="tipos" className="mb-12 scroll-mt-20">
+          <h2
+            className="text-[30px] font-black text-txt mb-6 pb-2 border-b-2 border-borda"
+            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+          >
+            Todos os tipos de bebedouro
+          </h2>
+          <div className="space-y-4">
+            {tipos.map(({ nome, icon, descricao, indicado, href }) => (
+              <div key={nome} className="border border-borda rounded-lg p-5 hover:border-az transition-colors">
                 <div className="flex items-start justify-between gap-4">
-                  <div>
-                    <h2
-                      className="text-[22px] font-bold text-txt mb-1"
-                      style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-                    >
-                      {href ? <a href={href} className="hover:text-az">{nome}</a> : nome}
-                    </h2>
-                    <p className="text-[15px] text-txt2 mb-2">{descricao}</p>
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-[20px]">{icon}</span>
+                      <h3
+                        className="text-[20px] font-black text-txt"
+                        style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+                      >
+                        {href ? <a href={href} className="hover:text-az transition-colors">{nome}</a> : nome}
+                      </h3>
+                    </div>
+                    <p className="text-[15px] text-txt2 leading-relaxed mb-2">{descricao}</p>
                     <p className="text-[13px] text-txt3">
                       <span className="font-semibold">Indicado para:</span> {indicado}
                     </p>
@@ -141,7 +125,8 @@ export default function TiposDeBebedouroPage() {
                   {href && (
                     <a
                       href={href}
-                      className="shrink-0 text-[13px] font-bold text-az border border-az rounded px-3 py-1 hover:bg-az hover:text-white transition-colors"
+                      className="shrink-0 text-[13px] font-black text-az border border-az rounded-lg px-3 py-1.5 hover:bg-az hover:text-white transition-colors"
+                      style={{ fontFamily: 'var(--font-barlow-condensed)' }}
                     >
                       Ver guia →
                     </a>
@@ -152,22 +137,20 @@ export default function TiposDeBebedouroPage() {
           </div>
         </section>
 
-        {/* Tabela comparativa */}
-        <section className="mb-12">
+        <section id="comparativo" className="mb-12 scroll-mt-20">
           <h2
-            className="text-[28px] font-bold text-txt mb-4"
+            className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
             Comparativo rápido
           </h2>
-          <div className="overflow-x-auto">
-            <table className="w-full text-[13px] border border-borda rounded">
-              <thead className="bg-az text-white">
-                <tr>
-                  <th className="px-3 py-2 text-left">Tipo</th>
-                  <th className="px-3 py-2 text-left">Capacidade</th>
-                  <th className="px-3 py-2 text-left">Filtra?</th>
-                  <th className="px-3 py-2 text-left">Custo médio</th>
+          <div className="overflow-x-auto rounded-lg border border-borda">
+            <table className="w-full text-[14px]">
+              <thead>
+                <tr className="bg-az text-white">
+                  {['Tipo', 'Capacidade', 'Filtra?', 'Custo médio'].map((h) => (
+                    <th key={h} className="px-4 py-3 text-left font-black" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>{h}</th>
+                  ))}
                 </tr>
               </thead>
               <tbody>
@@ -175,75 +158,27 @@ export default function TiposDeBebedouroPage() {
                   ['Industrial', 'Alta (20–200 L/h)', 'Opcional', 'R$ 1.500–8.000'],
                   ['De pressão', 'Média (5–20 L/h)', 'Opcional', 'R$ 300–1.200'],
                   ['Purificador', 'Baixa-média (1–5 L/h)', 'Sim', 'R$ 400–2.000'],
-                  ['Garrafão', 'Baixa (garrafão 20 L)', 'Não', 'R$ 150–600'],
+                  ['Garrafão', 'Baixa (galão 20 L)', 'Não', 'R$ 150–600'],
                   ['Escolar', 'Média (5–15 L/h)', 'Opcional', 'R$ 350–900'],
                   ['Bancada', 'Baixa (1–3 L/h)', 'Sim', 'R$ 250–800'],
-                ].map(([tipo, cap, filtra, custo]) => (
-                  <tr key={tipo} className="border-t border-borda even:bg-bg">
-                    <td className="px-3 py-2 font-semibold">{tipo}</td>
-                    <td className="px-3 py-2">{cap}</td>
-                    <td className="px-3 py-2">{filtra}</td>
-                    <td className="px-3 py-2">{custo}</td>
+                ].map(([tipo, cap, filtra, custo], i) => (
+                  <tr key={tipo} className={i % 2 === 1 ? 'bg-bg' : 'bg-white'}>
+                    <td className="px-4 py-3 font-bold text-txt">{tipo}</td>
+                    <td className="px-4 py-3 text-txt2">{cap}</td>
+                    <td className="px-4 py-3">
+                      <span className={`inline-block px-2 py-0.5 rounded text-[12px] font-black ${filtra === 'Sim' ? 'bg-vd/10 text-vd' : filtra === 'Não' ? 'bg-bg text-txt3' : 'bg-az/10 text-az'}`}
+                        style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
+                        {filtra}
+                      </span>
+                    </td>
+                    <td className="px-4 py-3 text-az font-bold">{custo}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
           </div>
         </section>
-
-        {/* Links internos */}
-        <section className="mb-10 bg-bg rounded p-6">
-          <h2
-            className="text-[22px] font-bold text-txt mb-3"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-          >
-            Aprofunde o tema
-          </h2>
-          <ul className="space-y-2 text-[15px]">
-            <li>→ <a href="/bebedouro-industrial" className="text-az hover:underline">Guia completo: bebedouro industrial</a></li>
-            <li>→ <a href="/bebedouro-para-empresa" className="text-az hover:underline">Como escolher bebedouro para empresa</a></li>
-            <li>→ <a href="/artigo/como-escolher-bebedouro-corporativo" className="text-az hover:underline">Critérios para escolha de bebedouro corporativo</a></li>
-          </ul>
-        </section>
-
-        {/* FAQ */}
-        <section className="mb-10">
-          <h2
-            className="text-[28px] font-bold text-txt mb-6"
-            style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-          >
-            Dúvidas frequentes
-          </h2>
-          <div className="space-y-4">
-            {faqs.map(({ question, answer }) => (
-              <details key={question} className="border border-borda rounded">
-                <summary className="px-4 py-3 font-semibold text-txt cursor-pointer hover:bg-bg">
-                  {question}
-                </summary>
-                <p className="px-4 py-3 text-[15px] text-txt2 border-t border-borda">{answer}</p>
-              </details>
-            ))}
-          </div>
-        </section>
-
-        {/* CTA */}
-        <div className="bg-az rounded p-6 text-center text-white">
-          <p className="text-[20px] font-bold mb-2" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>
-            Encontre o bebedouro certo para o seu negócio
-          </p>
-          <p className="text-[14px] mb-4 opacity-90">
-            A JG Bebedouros tem todos os tipos disponíveis para venda, com suporte técnico especializado.
-          </p>
-          <a
-            href="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=cta-fim&utm_campaign=tipos-de-bebedouro"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-acc text-az font-bold px-8 py-3 rounded hover:opacity-90 transition-opacity"
-          >
-            Ver catálogo completo
-          </a>
-        </div>
-      </main>
+      </PilarLayout>
 
       <Footer />
     </>

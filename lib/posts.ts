@@ -1,6 +1,5 @@
 import fs from 'fs'
 import path from 'path'
-import matter from 'gray-matter'
 
 export interface Post {
   slug: string
@@ -23,27 +22,35 @@ const postsDirectory = path.join(process.cwd(), 'content/posts')
 
 export function getAllPosts(): Post[] {
   if (!fs.existsSync(postsDirectory)) return []
-  const fileNames = fs.readdirSync(postsDirectory).filter(f => f.endsWith('.mdx'))
-  const posts = fileNames.map((fileName) => {
-    const slug = fileName.replace(/\.mdx$/, '')
-    const fullPath = path.join(postsDirectory, fileName)
-    const fileContents = fs.readFileSync(fullPath, 'utf8')
-    const { data, content } = matter(fileContents)
-    return { ...data, slug, content } as Post
+  const files = fs.readdirSync(postsDirectory).filter(f => f.endsWith('.json'))
+  const posts = files.map((file) => {
+    const raw = fs.readFileSync(path.join(postsDirectory, file), 'utf8')
+    const data = JSON.parse(raw) as Post
+    if (!data.slug) data.slug = file.replace(/\.json$/, '')
+    return data
   })
   return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 }
 
 export function getPostBySlug(slug: string): Post | undefined {
-  const fullPath = path.join(postsDirectory, `${slug}.mdx`)
+  const fullPath = path.join(postsDirectory, `${slug}.json`)
   if (!fs.existsSync(fullPath)) return undefined
-  const fileContents = fs.readFileSync(fullPath, 'utf8')
-  const { data, content } = matter(fileContents)
-  return { ...data, slug, content } as Post
+  const data = JSON.parse(fs.readFileSync(fullPath, 'utf8')) as Post
+  if (!data.slug) data.slug = slug
+  return data
 }
 
 export function getPostsByCategoria(categoria: string): Post[] {
   return getAllPosts().filter((p) => p.categoria === categoria)
+}
+
+export function getPostsByTag(tag: string): Post[] {
+  return getAllPosts().filter((p) => p.tags?.includes(tag))
+}
+
+export function getAllTags(): string[] {
+  const all = getAllPosts().flatMap((p) => p.tags ?? [])
+  return [...new Set(all)].sort()
 }
 
 export function getFeaturedPost(): Post | undefined {

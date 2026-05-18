@@ -1,5 +1,3 @@
-﻿import { MDXRemote } from 'next-mdx-remote/rsc'
-
 interface ArtigoBodyProps {
   content: string
 }
@@ -18,8 +16,7 @@ export default function ArtigoBody({ content }: ArtigoBodyProps) {
         prose-li:mb-1
         prose-blockquote:border-l-4 prose-blockquote:border-acc prose-blockquote:pl-4 prose-blockquote:italic prose-blockquote:text-txt3"
       style={{ fontFamily: 'var(--font-barlow)' }}
-    >
-      <MDXRemote source={content} />
-    </div>
+      dangerouslySetInnerHTML={{ __html: content }}
+    />
   )
 }
