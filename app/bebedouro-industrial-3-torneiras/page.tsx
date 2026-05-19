@@ -82,10 +82,10 @@ export default function BebedouroIndustrial3TorneirasPage() {
           { href: '#preco-e-orcamento', label: 'Preço e Orçamento' },
         ]}
         stats={[
-          { label: 'Capacidade máx. de resfriamento', value: '100 L/h' },
-          { label: 'Torneiras por unidade', value: '3' },
-          { label: 'Capacidade do reservatório', value: '25–100 L' },
-          { label: 'Certificação', value: 'INMETRO / NBR 13713' },
+          { label: 'Capacidade máx. de resfriamento', valor:'100 L/h' },
+          { label: 'Torneiras por unidade', valor:'3' },
+          { label: 'Capacidade do reservatório', valor:'25–100 L' },
+          { label: 'Certificação', valor:'INMETRO / NBR 13713' },
         ]}
         faqs={faqs}
         internalLinks={[

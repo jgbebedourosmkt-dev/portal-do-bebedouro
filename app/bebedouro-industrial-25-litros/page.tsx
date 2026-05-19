@@ -82,10 +82,10 @@ export default function BebedouroIndustrial25LitrosPage() {
           { href: '#preco-onde-comprar', label: 'Preço e Onde Comprar' },
         ]}
         stats={[
-          { value: '25 L', label: 'Capacidade do reservatório' },
-          { value: 'até 50', label: 'Colaboradores por turno (NR-24)' },
-          { value: '46/h', label: 'Pessoas atendidas por hora' },
-          { value: 'R-134A', label: 'Gás ecológico certificado' },
+          { valor: '25 L', label: 'Capacidade do reservatório' },
+          { valor: 'até 50', label: 'Colaboradores por turno (NR-24)' },
+          { valor: '46/h', label: 'Pessoas atendidas por hora' },
+          { valor: 'R-134A', label: 'Gás ecológico certificado' },
         ]}
         faqs={faqs}
         internalLinks={[

@@ -83,10 +83,10 @@ export default function BebedouroIndustrial4TorneirasPage() {
           { href: '#modelos-relacionados', label: 'Modelos Relacionados' },
         ]}
         stats={[
-          { label: 'Pontos de saída simultânea', value: '4' },
-          { label: 'Capacidade do reservatório', value: '25 a 200 L' },
-          { label: 'Colaboradores atendidos por turno', value: 'até 300' },
-          { label: 'Temperatura de saída', value: '4°C a 12°C' },
+          { label: 'Pontos de saída simultânea', valor:'4' },
+          { label: 'Capacidade do reservatório', valor:'25 a 200 L' },
+          { label: 'Colaboradores atendidos por turno', valor:'até 300' },
+          { label: 'Temperatura de saída', valor:'4°C a 12°C' },
         ]}
         faqs={faqs}
         internalLinks={[
