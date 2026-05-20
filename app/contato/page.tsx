@@ -1,14 +1,15 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { getPageBySlug } from '@/lib/pages'
 import Topbar from '@/components/layout/Topbar'
 import Header from '@/components/layout/Header'
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
+import ContatoForm from '@/components/contato/ContatoForm'
 
 export const metadata: Metadata = {
   title: 'Contato',
   description: 'Entre em contato com a equipe do Portal do Bebedouro.',
-  alternates: { canonical: 'https://portalbebedouro.com.br/contato' },
+  alternates: { canonical: 'https://portaldobebedouro.com.br/contato' },
 }
 
 export default function ContatoPage() {
@@ -41,6 +42,7 @@ export default function ContatoPage() {
             dangerouslySetInnerHTML={{ __html: page.content }}
           />
         )}
+        <ContatoForm />
       </div>
       <Footer />
     </>

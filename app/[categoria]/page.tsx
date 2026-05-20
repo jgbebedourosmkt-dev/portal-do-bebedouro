@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: label,
     description: `Artigos sobre ${label.toLowerCase()} no setor de bebedouros`,
-    alternates: { canonical: `https://portalbebedouro.com.br/${categoria}` },
+    alternates: { canonical: `https://portaldobebedouro.com.br/${categoria}` },
   }
 }
 

@@ -1,4 +1,4 @@
-import Link from 'next/link'
+﻿import Link from 'next/link'
 
 export default function Header() {
   return (
@@ -17,7 +17,7 @@ export default function Header() {
         <div className="hidden lg:flex items-center gap-4">
           <div className="text-right">
             <p className="text-[13px] text-txt3 uppercase tracking-wider font-semibold">O portal do setor</p>
-            <p className="text-[13px] text-txt3">portalbebedouro.com.br</p>
+            <p className="text-[13px] text-txt3">portaldobebedouro.com.br</p>
           </div>
         </div>
       </div>

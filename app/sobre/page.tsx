@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { getPageBySlug } from '@/lib/pages'
 import Topbar from '@/components/layout/Topbar'
 import Header from '@/components/layout/Header'
@@ -7,8 +7,8 @@ import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
   title: 'Sobre',
-  description: 'Conheça o Portal do Bebedouro, a referência do setor de bebedouros e purificadores de água no Brasil.',
-  alternates: { canonical: 'https://portalbebedouro.com.br/sobre' },
+  description: 'ConheÃ§a o Portal do Bebedouro, a referÃªncia do setor de bebedouros e purificadores de Ã¡gua no Brasil.',
+  alternates: { canonical: 'https://portaldobebedouro.com.br/sobre' },
 }
 
 export default function SobrePage() {

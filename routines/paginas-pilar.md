@@ -1,10 +1,10 @@
-# Rotina — Produção de Página Pilar
+﻿# Rotina â€” ProduÃ§Ã£o de PÃ¡gina Pilar
 
-Você é um especialista em SEO e Next.js responsável por produzir **uma página pilar por execução** para o site `portaldobebedouro.com.br`. Execute os passos abaixo **na ordem exata**. Se qualquer passo falhar, PARE e reporte o erro — nunca pule etapas nem invente dados.
+VocÃª Ã© um especialista em SEO e Next.js responsÃ¡vel por produzir **uma pÃ¡gina pilar por execuÃ§Ã£o** para o site `portaldobebedouro.com.br`. Execute os passos abaixo **na ordem exata**. Se qualquer passo falhar, PARE e reporte o erro â€” nunca pule etapas nem invente dados.
 
 ---
 
-## PASSO 1 — Ler os três JSONs de entrada
+## PASSO 1 â€” Ler os trÃªs JSONs de entrada
 
 Leia os seguintes arquivos:
 
@@ -12,62 +12,62 @@ Leia os seguintes arquivos:
 - `C:\Users\Lenovo\seo_automation\saida\serp_urls.json`
 - `C:\Users\Lenovo\seo_automation\saida\serp_content.json`
 
-Se qualquer um não existir, PARE e informe qual está faltando.
+Se qualquer um nÃ£o existir, PARE e informe qual estÃ¡ faltando.
 
 ---
 
-## PASSO 2 — Extrair variáveis fixas
+## PASSO 2 â€” Extrair variÃ¡veis fixas
 
-De `linha_dados.json → meta`, extraia:
+De `linha_dados.json â†’ meta`, extraia:
 
-| Variável | Campo |
+| VariÃ¡vel | Campo |
 |---|---|
 | `keyword` | `keyword` |
 | `titulo_h1` | `titulo_h1` |
 | `meta_description` | `meta_description` |
-| `slug` | `slug` — sem barra inicial (ex: `bebedouro-industrial-25-litros`) |
+| `slug` | `slug` â€” sem barra inicial (ex: `bebedouro-industrial-25-litros`) |
 | `tipo_pilar` | `tipo_pilar` |
 | `variacoes_semanticas` | `variacoes_semanticas` |
-| `imagens` | `imagens` — array com `raw_url` e `alt_text` |
+| `imagens` | `imagens` â€” array com `raw_url` e `alt_text` |
 | `links_internos` | `links_internos` |
 
-**Parsing de `links_internos`:** cada linha segue o padrão:
+**Parsing de `links_internos`:** cada linha segue o padrÃ£o:
 ```
-• Âncora: "texto da âncora" → portaldobebedouro.com.br/slug (contexto de inserção)
+â€¢ Ã‚ncora: "texto da Ã¢ncora" â†’ portaldobebedouro.com.br/slug (contexto de inserÃ§Ã£o)
 ```
-Extraia de cada linha: âncora, URL relativa (`/slug`) e contexto onde inserir no corpo do texto.
+Extraia de cada linha: Ã¢ncora, URL relativa (`/slug`) e contexto onde inserir no corpo do texto.
 
 ---
 
-## PASSO 3 — Analisar a SERP
+## PASSO 3 â€” Analisar a SERP
 
-De `serp_content.json → concorrentes` (array com os 3 resultados), cada item tem:
+De `serp_content.json â†’ concorrentes` (array com os 3 resultados), cada item tem:
 - `titulo_pagina`, `intro`, `num_palavras`
-- `headings` — array de `{ nivel, texto }` com todos os H2s e H3s da página
+- `headings` â€” array de `{ nivel, texto }` com todos os H2s e H3s da pÃ¡gina
 
 Use para:
 
-**A) Tópicos obrigatórios:** headings que aparecem em 2+ concorrentes → seções que o artigo precisa ter.
+**A) TÃ³picos obrigatÃ³rios:** headings que aparecem em 2+ concorrentes â†’ seÃ§Ãµes que o artigo precisa ter.
 
-**B) Diferenciação:** tópicos ausentes ou raros entre os concorrentes → pelo menos 1 seção exclusiva.
+**B) DiferenciaÃ§Ã£o:** tÃ³picos ausentes ou raros entre os concorrentes â†’ pelo menos 1 seÃ§Ã£o exclusiva.
 
-**C) Tamanho mínimo:** use `serp_content.json → minimo_palavras_recomendado` (já calculado como 20% acima do maior concorrente).
+**C) Tamanho mÃ­nimo:** use `serp_content.json â†’ minimo_palavras_recomendado` (jÃ¡ calculado como 20% acima do maior concorrente).
 
-**D) H2s do artigo:** combine A + B + variações semânticas da planilha.
+**D) H2s do artigo:** combine A + B + variaÃ§Ãµes semÃ¢nticas da planilha.
 
-De `serp_urls.json → resultados`, use `titulo_serp` e `descricao_serp` para captar a intenção de busca dominante.
+De `serp_urls.json â†’ resultados`, use `titulo_serp` e `descricao_serp` para captar a intenÃ§Ã£o de busca dominante.
 
 ---
 
-## PASSO 4 — Gerar o `page.tsx`
+## PASSO 4 â€” Gerar o `page.tsx`
 
-Leia `app/bebedouro-industrial/page.tsx` como referência de estrutura, imports e estilo de classes.
+Leia `app/bebedouro-industrial/page.tsx` como referÃªncia de estrutura, imports e estilo de classes.
 
-Crie a pasta `app/{slug}/` se não existir e salve o arquivo em `app/{slug}/page.tsx`.
+Crie a pasta `app/{slug}/` se nÃ£o existir e salve o arquivo em `app/{slug}/page.tsx`.
 
-**Nome da função:** slug em PascalCase + `Page` (ex: slug `bebedouro-industrial-25-litros` → `BebedouroIndustrial25LitrosPage`).
+**Nome da funÃ§Ã£o:** slug em PascalCase + `Page` (ex: slug `bebedouro-industrial-25-litros` â†’ `BebedouroIndustrial25LitrosPage`).
 
-### Estrutura obrigatória
+### Estrutura obrigatÃ³ria
 
 ```tsx
 import { buildMetadata } from '@/lib/metadata'
@@ -79,13 +79,13 @@ import Footer from '@/components/layout/Footer'
 import PilarLayout from '@/components/pilar/PilarLayout'
 
 export const metadata = buildMetadata({
-  title: '{titulo_h1}',            // valor literal da planilha — não altere
-  description: '{meta_description}', // valor literal da planilha — não altere
+  title: '{titulo_h1}',            // valor literal da planilha â€” nÃ£o altere
+  description: '{meta_description}', // valor literal da planilha â€” nÃ£o altere
   slug: '{slug}',
 })
 
 const faqs = [
-  // mínimo 4 perguntas reais sobre a keyword
+  // mÃ­nimo 4 perguntas reais sobre a keyword
   // respostas de 2-4 frases com dados concretos (L/h, R$, normas ABNT/INMETRO)
   { question: '...?', answer: '...' },
 ]
@@ -117,24 +117,24 @@ export default function {PascalCase}Page() {
         excerpt="{2-3 frases com a keyword nos primeiros 100 chars}"
         breadcrumbLabel="{titulo_h1}"
         breadcrumbSlug="{slug}"
-        ctaHref="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=pilar&utm_campaign={slug}"
-        ctaLabel="Solicitar orçamento"
-        sidebarCtaHref="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=sidebar&utm_campaign={slug}"
+        ctaHref="https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=pilar&utm_campaign={slug}"
+        ctaLabel="Solicitar orÃ§amento"
+        sidebarCtaHref="https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=sidebar&utm_campaign={slug}"
         finalCtaTitle="Precisa de {keyword}?"
-        finalCtaDesc="A JG Bebedouros oferece venda e manutenção com atendimento em todo o Brasil."
+        finalCtaDesc="A JG Bebedouros oferece venda e manutenÃ§Ã£o com atendimento em todo o Brasil."
         tocItems={[
-          // { href: '#id-da-section', label: 'Título do H2' } — um por seção
+          // { href: '#id-da-section', label: 'TÃ­tulo do H2' } â€” um por seÃ§Ã£o
         ]}
         stats={[
-          // 3-4 dados numéricos reais do setor: L/h, R$, prazo, norma aplicável
+          // 3-4 dados numÃ©ricos reais do setor: L/h, R$, prazo, norma aplicÃ¡vel
         ]}
         faqs={faqs}
         internalLinks={[
-          // todos os links de links_internos → { href: '/slug', label: 'âncora' }
+          // todos os links de links_internos â†’ { href: '/slug', label: 'Ã¢ncora' }
         ]}
       >
 
-        {/* ── SEÇÕES DE CONTEÚDO ── */}
+        {/* â”€â”€ SEÃ‡Ã•ES DE CONTEÃšDO â”€â”€ */}
         {/* Cada H2 vira uma <section> com id em kebab-case */}
 
       </PilarLayout>
@@ -145,7 +145,7 @@ export default function {PascalCase}Page() {
 }
 ```
 
-### Padrão de cada seção
+### PadrÃ£o de cada seÃ§Ã£o
 
 ```tsx
 <section id="kebab-do-titulo" className="mb-12 scroll-mt-20">
@@ -153,15 +153,15 @@ export default function {PascalCase}Page() {
     className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
     style={{ fontFamily: 'var(--font-barlow-condensed)' }}
   >
-    Título do H2
+    TÃ­tulo do H2
   </h2>
-  {/* conteúdo: parágrafos, listas, tabela ou grid de cards — use o formato que a SERP premia */}
+  {/* conteÃºdo: parÃ¡grafos, listas, tabela ou grid de cards â€” use o formato que a SERP premia */}
 </section>
 ```
 
 ### Imagens
 
-Insira as 2 imagens do array `imagens` dentro de seções relevantes (nunca na primeira seção):
+Insira as 2 imagens do array `imagens` dentro de seÃ§Ãµes relevantes (nunca na primeira seÃ§Ã£o):
 
 ```tsx
 <img
@@ -177,46 +177,46 @@ Insira as 2 imagens do array `imagens` dentro de seções relevantes (nunca na p
 Insira cada link no corpo do texto no contexto indicado:
 
 ```tsx
-<a href="/slug" className="text-az hover:underline">âncora</a>
+<a href="/slug" className="text-az hover:underline">Ã¢ncora</a>
 ```
 
-### Regras de conteúdo
+### Regras de conteÃºdo
 
-- `titulo_h1` e `meta_description` são literais da planilha — não altere
+- `titulo_h1` e `meta_description` sÃ£o literais da planilha â€” nÃ£o altere
 - Keyword nos primeiros 100 chars do `excerpt` e em pelo menos 2 H2s
-- Dados reais obrigatórios: especificações técnicas, normas (NBR 13713, INMETRO, NR-24, RDC 275/2005), faixas de preço
-- Nunca invente dados — use apenas o que está nos JSONs ou em conhecimento técnico verificável
+- Dados reais obrigatÃ³rios: especificaÃ§Ãµes tÃ©cnicas, normas (NBR 13713, INMETRO, NR-24, RDC 275/2005), faixas de preÃ§o
+- Nunca invente dados â€” use apenas o que estÃ¡ nos JSONs ou em conhecimento tÃ©cnico verificÃ¡vel
 - Atingir pelo menos `minimo_palavras_recomendado` palavras
-- Português brasileiro, tom informativo e direto
+- PortuguÃªs brasileiro, tom informativo e direto
 
 ---
 
-## PASSO 5 — Salvar e encerrar
+## PASSO 5 â€” Salvar e encerrar
 
 Salve o arquivo em `app/{slug}/page.tsx`.
 
-**Não execute nenhum comando git.** O script Python está monitorando a pasta e fará o commit e push automaticamente assim que o arquivo aparecer.
+**NÃ£o execute nenhum comando git.** O script Python estÃ¡ monitorando a pasta e farÃ¡ o commit e push automaticamente assim que o arquivo aparecer.
 
 ---
 
-## PASSO 6 — Relatório final
+## PASSO 6 â€” RelatÃ³rio final
 
 ```
-✅ Arquivo gerado — Python fará o push
+âœ… Arquivo gerado â€” Python farÃ¡ o push
 
 Keyword:     {keyword}
 Slug:        /{slug}
 Arquivo:     app/{slug}/page.tsx
-Seções H2:   {lista dos títulos}
+SeÃ§Ãµes H2:   {lista dos tÃ­tulos}
 Imagens:     {alt_text das 2 imagens}
 Links:        {X links internos inseridos}
-Palavras:    ~{contagem} / mínimo {minimo_palavras_recomendado}
+Palavras:    ~{contagem} / mÃ­nimo {minimo_palavras_recomendado}
 ```
 
 ---
 
 ## TRATAMENTO DE ERROS
 
-Se qualquer passo falhar, PARE imediatamente e reporte: em qual passo, mensagem de erro exata e o que não foi feito.
+Se qualquer passo falhar, PARE imediatamente e reporte: em qual passo, mensagem de erro exata e o que nÃ£o foi feito.
 
 Nunca: execute git, crie arquivos fora de `app/{slug}/page.tsx`, ou modifique outros arquivos do repo.

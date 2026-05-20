@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: page.title,
     description: page.description,
-    alternates: { canonical: `https://portalbebedouro.com.br/pagina/${page.slug}` },
+    alternates: { canonical: `https://portaldobebedouro.com.br/pagina/${page.slug}` },
   }
 }
 

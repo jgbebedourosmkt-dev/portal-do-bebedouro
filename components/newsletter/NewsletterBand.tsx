@@ -1,10 +1,41 @@
-﻿export default function NewsletterBand() {
-  const temas = [
-    'Normas & Legislação',
-    'Mercado & Setor',
-    'Saúde da Água',
-    'Reviews & Guias',
-  ]
+'use client'
+
+import { useState } from 'react'
+
+type Status = 'idle' | 'loading' | 'ok' | 'error'
+
+const temas = [
+  'Normas & Legislação',
+  'Mercado & Setor',
+  'Saúde da Água',
+  'Reviews & Guias',
+]
+
+export default function NewsletterBand() {
+  const [form, setForm] = useState({ nome: '', email: '', temas: [] as string[] })
+  const [status, setStatus] = useState<Status>('idle')
+
+  function toggleTema(tema: string) {
+    setForm((prev) => ({
+      ...prev,
+      temas: prev.temas.includes(tema)
+        ? prev.temas.filter((t) => t !== tema)
+        : [...prev.temas, tema],
+    }))
+  }
+
+  async function handleSubmit(e: React.FormEvent) {
+    e.preventDefault()
+    setStatus('loading')
+
+    const res = await fetch('/api/newsletter', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(form),
+    })
+
+    setStatus(res.ok ? 'ok' : 'error')
+  }
 
   return (
     <section
@@ -53,51 +84,79 @@
 
         {/* Direita — form */}
         <div className="flex flex-col justify-center">
-          <form className="space-y-4 bg-white/5 rounded p-6 border border-white/10">
-            <div>
-              <label className="block text-[14px] font-bold text-white/60 mb-1 uppercase tracking-wide">
-                Seu nome
-              </label>
-              <input
-                type="text"
-                placeholder="Nome completo"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/30 text-[17px] focus:outline-none focus:border-acc"
-              />
-            </div>
-            <div>
-              <label className="block text-[14px] font-bold text-white/60 mb-1 uppercase tracking-wide">
-                Seu e-mail
-              </label>
-              <input
-                type="email"
-                placeholder="seu@email.com"
-                className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/30 text-[17px] focus:outline-none focus:border-acc"
-              />
-            </div>
-            <div>
-              <p className="text-[14px] font-bold text-white/60 mb-2 uppercase tracking-wide">
-                Temas de interesse
+          {status === 'ok' ? (
+            <div className="bg-white/5 rounded p-6 border border-white/10 text-center">
+              <p
+                className="text-[26px] font-black text-acc"
+                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              >
+                Inscrição confirmada!
               </p>
-              <div className="grid grid-cols-2 gap-2">
-                {temas.map((tema) => (
-                  <label key={tema} className="flex items-center gap-2 cursor-pointer">
-                    <input type="checkbox" className="w-4 h-4 accent-acc" />
-                    <span className="text-[14px] text-white/70">{tema}</span>
-                  </label>
-                ))}
-              </div>
+              <p className="mt-2 text-[16px] text-white/60">
+                Você receberá as próximas edições no seu e-mail.
+              </p>
             </div>
-            <button
-              type="submit"
-              className="w-full py-3.5 text-[17px] font-black uppercase tracking-wide bg-acc text-[#111] hover:bg-yellow-300 transition-colors"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-            >
-              Assinar newsletter gratuitamente →
-            </button>
-            <p className="text-center text-[13px] text-white/30">
-              Sem spam. Cancele quando quiser.
-            </p>
-          </form>
+          ) : (
+            <form onSubmit={handleSubmit} className="space-y-4 bg-white/5 rounded p-6 border border-white/10">
+              <div>
+                <label className="block text-[14px] font-bold text-white/60 mb-1 uppercase tracking-wide">
+                  Seu nome
+                </label>
+                <input
+                  type="text"
+                  value={form.nome}
+                  onChange={(e) => setForm({ ...form, nome: e.target.value })}
+                  placeholder="Nome completo"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/30 text-[17px] focus:outline-none focus:border-acc"
+                />
+              </div>
+              <div>
+                <label className="block text-[14px] font-bold text-white/60 mb-1 uppercase tracking-wide">
+                  Seu e-mail <span className="text-red-400">*</span>
+                </label>
+                <input
+                  type="email"
+                  required
+                  value={form.email}
+                  onChange={(e) => setForm({ ...form, email: e.target.value })}
+                  placeholder="seu@email.com"
+                  className="w-full px-4 py-3 bg-white/10 border border-white/20 text-white placeholder-white/30 text-[17px] focus:outline-none focus:border-acc"
+                />
+              </div>
+              <div>
+                <p className="text-[14px] font-bold text-white/60 mb-2 uppercase tracking-wide">
+                  Temas de interesse
+                </p>
+                <div className="grid grid-cols-2 gap-2">
+                  {temas.map((tema) => (
+                    <label key={tema} className="flex items-center gap-2 cursor-pointer">
+                      <input
+                        type="checkbox"
+                        className="w-4 h-4 accent-acc"
+                        checked={form.temas.includes(tema)}
+                        onChange={() => toggleTema(tema)}
+                      />
+                      <span className="text-[14px] text-white/70">{tema}</span>
+                    </label>
+                  ))}
+                </div>
+              </div>
+              {status === 'error' && (
+                <p className="text-[13px] text-red-400">Erro ao processar inscrição. Tente novamente.</p>
+              )}
+              <button
+                type="submit"
+                disabled={status === 'loading'}
+                className="w-full py-3.5 text-[17px] font-black uppercase tracking-wide bg-acc text-[#111] hover:bg-yellow-300 transition-colors disabled:opacity-60"
+                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              >
+                {status === 'loading' ? 'Enviando...' : 'Assinar newsletter gratuitamente →'}
+              </button>
+              <p className="text-center text-[13px] text-white/30">
+                Sem spam. Cancele quando quiser.
+              </p>
+            </form>
+          )}
         </div>
       </div>
     </section>

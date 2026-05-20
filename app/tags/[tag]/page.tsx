@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `Tag: ${label}`,
     description: `Artigos com a tag "${label}" no Portal do Bebedouro.`,
-    alternates: { canonical: `https://portalbebedouro.com.br/tags/${tag}` },
+    alternates: { canonical: `https://portaldobebedouro.com.br/tags/${tag}` },
   }
 }
 

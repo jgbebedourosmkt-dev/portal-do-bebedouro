@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 
 interface MetadataInput {
   title: string
@@ -8,7 +8,7 @@ interface MetadataInput {
   noIndex?: boolean
 }
 
-const BASE_URL = 'https://portalbebedouro.com.br'
+const BASE_URL = 'https://portaldobebedouro.com.br'
 
 export function buildMetadata({ title, description, slug, ogImage, noIndex }: MetadataInput): Metadata {
   const url = `${BASE_URL}/${slug}`

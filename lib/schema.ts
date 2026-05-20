@@ -1,4 +1,4 @@
-const BASE_URL = 'https://portalbebedouro.com.br'
+﻿const BASE_URL = 'https://portaldobebedouro.com.br'
 
 export interface FaqItem {
   question: string

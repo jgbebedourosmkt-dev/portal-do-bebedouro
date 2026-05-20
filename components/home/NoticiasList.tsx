@@ -18,8 +18,9 @@ const tabs = [
 export default function NoticiasList({ posts }: NoticiasListProps) {
   const [activeTab, setActiveTab] = useState('all')
 
-  const filtered =
+  const filtered = (
     activeTab === 'all' ? posts : posts.filter((p) => p.categoria === activeTab)
+  ).sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
 
   return (
     <section className="py-8 md:pr-8">

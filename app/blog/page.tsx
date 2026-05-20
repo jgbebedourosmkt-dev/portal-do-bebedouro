@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { getAllPosts } from '@/lib/posts'
 import Topbar from '@/components/layout/Topbar'
 import Header from '@/components/layout/Header'
@@ -9,8 +9,8 @@ import Sidebar from '@/components/sidebar/Sidebar'
 
 export const metadata: Metadata = {
   title: 'Blog',
-  description: 'Todos os artigos do Portal do Bebedouro — notícias, guias, legislação, saúde da água e muito mais.',
-  alternates: { canonical: 'https://portalbebedouro.com.br/blog' },
+  description: 'Todos os artigos do Portal do Bebedouro â€” notÃ­cias, guias, legislaÃ§Ã£o, saÃºde da Ã¡gua e muito mais.',
+  alternates: { canonical: 'https://portaldobebedouro.com.br/blog' },
 }
 
 export default function BlogPage() {

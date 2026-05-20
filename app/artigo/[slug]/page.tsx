@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       authors: [post.author],
       images: [{ url: post.ogImage ?? '/og-default.png', width: 1200, height: 630 }],
     },
-    alternates: { canonical: `https://portalbebedouro.com.br/artigo/${post.slug}` },
+    alternates: { canonical: `https://portaldobebedouro.com.br/artigo/${post.slug}` },
   }
 }
 

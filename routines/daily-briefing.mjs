@@ -1,6 +1,6 @@
-#!/usr/bin/env node
+﻿#!/usr/bin/env node
 /**
- * Rotina diária — gera página TSX com URL limpa a partir do keywords.json
+ * Rotina diÃ¡ria â€” gera pÃ¡gina TSX com URL limpa a partir do keywords.json
  *
  * Uso:
  *   node routines/daily-briefing.mjs
@@ -15,7 +15,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const ROOT = path.resolve(__dirname, '..')
 const KEYWORDS_PATH = path.join(ROOT, 'data', 'keywords.json')
 
-// ── Helpers ──────────────────────────────────────────────────────────────────
+// â”€â”€ Helpers â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function readKeywords() {
   return JSON.parse(fs.readFileSync(KEYWORDS_PATH, 'utf8'))
@@ -46,13 +46,13 @@ function pilarTitle(pilar) {
     .join(' ')
 }
 
-// ── Seleciona keyword ─────────────────────────────────────────────────────────
+// â”€â”€ Seleciona keyword â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function selectKeyword(keywords, kwOverride) {
   if (kwOverride) {
     const found = keywords.find((k) => k.keyword === kwOverride)
     if (!found) {
-      console.error(`❌  Keyword "${kwOverride}" não encontrada no keywords.json`)
+      console.error(`âŒ  Keyword "${kwOverride}" nÃ£o encontrada no keywords.json`)
       process.exit(1)
     }
     return found
@@ -61,13 +61,13 @@ function selectKeyword(keywords, kwOverride) {
     .filter((k) => k.status === 'pendente')
     .sort((a, b) => a.prioridade - b.prioridade)
   if (pendentes.length === 0) {
-    console.log('✅  Nenhuma keyword pendente. Todas já foram publicadas.')
+    console.log('âœ…  Nenhuma keyword pendente. Todas jÃ¡ foram publicadas.')
     process.exit(0)
   }
   return pendentes[0]
 }
 
-// ── Gera o TSX ───────────────────────────────────────────────────────────────
+// â”€â”€ Gera o TSX â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 function buildPageTsx(kw) {
   const slug = kw.slug
@@ -96,7 +96,7 @@ function buildPageTsx(kw) {
           <span className="text-txt">${keywordCap}</span>`
 
   const pilarLink = pilar
-    ? `            <li>→ <a href="/${pilar}" className="text-az hover:underline">${pTitle}: Guia Completo</a></li>`
+    ? `            <li>â†’ <a href="/${pilar}" className="text-az hover:underline">${pTitle}: Guia Completo</a></li>`
     : ''
 
   return `import { buildMetadata } from '@/lib/metadata'
@@ -107,8 +107,8 @@ import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
 
 export const metadata = buildMetadata({
-  title: '[PREENCHER] Título com "${keyword}" — máx 60 chars',
-  description: '[PREENCHER] 120–155 chars, keyword nos primeiros 60 chars.',
+  title: '[PREENCHER] TÃ­tulo com "${keyword}" â€” mÃ¡x 60 chars',
+  description: '[PREENCHER] 120â€“155 chars, keyword nos primeiros 60 chars.',
   slug: '${slug}',
 })
 
@@ -161,20 +161,20 @@ ${breadcrumbLinks}
           className="text-[42px] font-black text-txt leading-tight mb-4"
           style={{ fontFamily: 'var(--font-barlow-condensed)' }}
         >
-          [PREENCHER] H1 com "${keyword}" no início
+          [PREENCHER] H1 com "${keyword}" no inÃ­cio
         </h1>
 
         <p className="text-[17px] text-txt2 leading-relaxed mb-8">
-          [PREENCHER] Parágrafo de abertura — "${keyword}" deve aparecer nos primeiros 100 chars. 2-3 frases.
+          [PREENCHER] ParÃ¡grafo de abertura â€” "${keyword}" deve aparecer nos primeiros 100 chars. 2-3 frases.
         </p>
 
         <a
-          href="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=pilar&utm_campaign=${slug}"
+          href="https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=pilar&utm_campaign=${slug}"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-az text-white font-bold px-6 py-3 rounded mb-10 hover:bg-az2 transition-colors"
         >
-          Solicitar orçamento — JG Bebedouros
+          Solicitar orÃ§amento â€” JG Bebedouros
         </a>
 
         <section className="mb-10">
@@ -182,10 +182,10 @@ ${breadcrumbLinks}
             className="text-[28px] font-bold text-txt mb-3"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            [PREENCHER] O que é ${keyword}
+            [PREENCHER] O que Ã© ${keyword}
           </h2>
           <p className="text-[16px] text-txt2 leading-relaxed mb-3">
-            [PREENCHER] Definição técnica. Normas aplicáveis. Contexto de mercado.
+            [PREENCHER] DefiniÃ§Ã£o tÃ©cnica. Normas aplicÃ¡veis. Contexto de mercado.
           </p>
         </section>
 
@@ -197,7 +197,7 @@ ${breadcrumbLinks}
             [PREENCHER] Tipos / Modelos / Como funciona
           </h2>
           <p className="text-[16px] text-txt2 leading-relaxed mb-3">
-            [PREENCHER] Dados reais: L/h, R$, capacidades, modelos disponíveis no mercado brasileiro.
+            [PREENCHER] Dados reais: L/h, R$, capacidades, modelos disponÃ­veis no mercado brasileiro.
           </p>
         </section>
 
@@ -209,7 +209,7 @@ ${breadcrumbLinks}
             [PREENCHER] Como escolher
           </h2>
           <p className="text-[16px] text-txt2 leading-relaxed mb-3">
-            [PREENCHER] Critérios: número de usuários, normas ABNT NBR 13713, certificação INMETRO.
+            [PREENCHER] CritÃ©rios: nÃºmero de usuÃ¡rios, normas ABNT NBR 13713, certificaÃ§Ã£o INMETRO.
           </p>
         </section>
 
@@ -218,10 +218,10 @@ ${breadcrumbLinks}
             className="text-[28px] font-bold text-txt mb-3"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            [PREENCHER] Preço e custo de manutenção
+            [PREENCHER] PreÃ§o e custo de manutenÃ§Ã£o
           </h2>
           <p className="text-[16px] text-txt2 leading-relaxed mb-3">
-            [PREENCHER] Faixas de preço reais do mercado. Custo anual de manutenção.
+            [PREENCHER] Faixas de preÃ§o reais do mercado. Custo anual de manutenÃ§Ã£o.
           </p>
         </section>
 
@@ -234,8 +234,8 @@ ${breadcrumbLinks}
           </h2>
           <ul className="space-y-2 text-[15px]">
 ${pilarLink}
-            <li>→ <a href="/tipos-de-bebedouro" className="text-az hover:underline">Todos os tipos de bebedouro</a></li>
-            <li>→ <a href="/bebedouro-para-empresa" className="text-az hover:underline">Bebedouro para empresa</a></li>
+            <li>â†’ <a href="/tipos-de-bebedouro" className="text-az hover:underline">Todos os tipos de bebedouro</a></li>
+            <li>â†’ <a href="/bebedouro-para-empresa" className="text-az hover:underline">Bebedouro para empresa</a></li>
           </ul>
         </section>
 
@@ -263,10 +263,10 @@ ${pilarLink}
             Precisa de ${keyword}?
           </p>
           <p className="text-[14px] mb-4 opacity-90">
-            A JG Bebedouros oferece venda e manutenção com atendimento em todo o Brasil.
+            A JG Bebedouros oferece venda e manutenÃ§Ã£o com atendimento em todo o Brasil.
           </p>
           <a
-            href="https://jgbebedouros.com.br?utm_source=portalbebedouro&utm_medium=cta-fim&utm_campaign=${slug}"
+            href="https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=cta-fim&utm_campaign=${slug}"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-acc text-az font-bold px-8 py-3 rounded hover:opacity-90 transition-opacity"
@@ -283,17 +283,17 @@ ${pilarLink}
 `
 }
 
-// ── Main ──────────────────────────────────────────────────────────────────────
+// â”€â”€ Main â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
 const kwOverride = parseArgs()
 const keywords = readKeywords()
 const selected = selectKeyword(keywords, kwOverride)
 
 if (selected.tipo === 'local') {
-  console.log(`ℹ️  Keyword "${selected.keyword}" é do tipo local — página já existe em /local/${selected.slug}`)
+  console.log(`â„¹ï¸  Keyword "${selected.keyword}" Ã© do tipo local â€” pÃ¡gina jÃ¡ existe em /local/${selected.slug}`)
   const updated = keywords.map((k) => k.id === selected.id ? { ...k, status: 'publicado' } : k)
   writeKeywords(updated)
-  console.log('✅  Status atualizado para "publicado" no keywords.json.')
+  console.log('âœ…  Status atualizado para "publicado" no keywords.json.')
   process.exit(0)
 }
 
@@ -301,7 +301,7 @@ const pageDir = path.join(ROOT, 'app', selected.slug)
 const pagePath = path.join(pageDir, 'page.tsx')
 
 if (fs.existsSync(pagePath)) {
-  console.log(`⚠️  Página já existe: app/${selected.slug}/page.tsx`)
+  console.log(`âš ï¸  PÃ¡gina jÃ¡ existe: app/${selected.slug}/page.tsx`)
   console.log('   Delete a pasta manualmente antes de gerar novamente.')
   process.exit(0)
 }
@@ -314,9 +314,9 @@ const updated = keywords.map((k) =>
 )
 writeKeywords(updated)
 
-console.log(`\n✅  Página criada: app/${selected.slug}/page.tsx`)
-console.log(`🌐  URL pública:   https://portalbebedouro.com.br/${selected.slug}`)
-console.log(`📌  Keyword: "${selected.keyword}" (prioridade ${selected.prioridade})`)
-console.log(`\n📝  Preencha os [PREENCHER] no arquivo, depois:`)
+console.log(`\nâœ…  PÃ¡gina criada: app/${selected.slug}/page.tsx`)
+console.log(`ðŸŒ  URL pÃºblica:   https://portaldobebedouro.com.br/${selected.slug}`)
+console.log(`ðŸ“Œ  Keyword: "${selected.keyword}" (prioridade ${selected.prioridade})`)
+console.log(`\nðŸ“  Preencha os [PREENCHER] no arquivo, depois:`)
 console.log(`    1. Altere o status para "publicado" no data/keywords.json`)
 console.log(`    2. git add . && git commit -m "feat: /${selected.slug}" && git push\n`)

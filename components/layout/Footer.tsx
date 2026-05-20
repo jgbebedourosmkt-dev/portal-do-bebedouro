@@ -45,8 +45,8 @@ const columns = [
   {
     title: 'Contato',
     links: [
-      { label: 'redacao@portalbebedouro.com.br', href: 'mailto:redacao@portalbebedouro.com.br' },
-      { label: 'comercial@portalbebedouro.com.br', href: 'mailto:comercial@portalbebedouro.com.br' },
+      { label: 'redacao@portaldobebedouro.com.br', href: 'mailto:redacao@portaldobebedouro.com.br' },
+      { label: 'comercial@portaldobebedouro.com.br', href: 'mailto:comercial@portaldobebedouro.com.br' },
       { label: 'Instagram', href: '#' },
       { label: 'LinkedIn', href: '#' },
       { label: 'YouTube', href: '#' },
