@@ -29,7 +29,15 @@ export function getAllPosts(): Post[] {
     if (!data.slug) data.slug = file.replace(/\.json$/, '')
     return data
   })
-  return posts.sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+  const now = Date.now()
+  return posts.sort((a, b) => {
+    const dateA = new Date(a.date).getTime()
+    const dateB = new Date(b.date).getTime()
+    const futureA = dateA > now
+    const futureB = dateB > now
+    if (futureA !== futureB) return futureA ? 1 : -1
+    return dateB - dateA
+  })
 }
 
 export function getPostBySlug(slug: string): Post | undefined {
@@ -54,6 +62,5 @@ export function getAllTags(): string[] {
 }
 
 export function getFeaturedPost(): Post | undefined {
-  const all = getAllPosts()
-  return all.find((p) => p.featured) ?? all[0]
+  return getAllPosts()[0]
 }
