@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+﻿import type { Metadata } from 'next'
 import { Barlow, Barlow_Condensed } from 'next/font/google'
 import { GoogleAnalytics } from '@next/third-parties/google'
 import { websiteSchema } from '@/lib/seo'
@@ -19,10 +19,10 @@ const barlowCondensed = Barlow_Condensed({
 })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://portalbebedouro.com.br'),
+  metadataBase: new URL('https://portaldobebedouro.com.br'),
   title: { default: 'Portal do Bebedouro', template: '%s | Portal do Bebedouro' },
   description:
-    'O portal de referência do setor de bebedouros no Brasil. Notícias, normas ABNT, saúde da água e mercado.',
+    'O portal de referÃªncia do setor de bebedouros no Brasil. NotÃ­cias, normas ABNT, saÃºde da Ã¡gua e mercado.',
   keywords: ['bebedouro', 'normas bebedouro', 'NBR 13713', 'bebedouro corporativo', 'INMETRO bebedouro'],
   authors: [{ name: 'Portal do Bebedouro' }],
   creator: 'Portal do Bebedouro',
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'pt_BR',
-    url: 'https://portalbebedouro.com.br',
+    url: 'https://portaldobebedouro.com.br',
     siteName: 'Portal do Bebedouro',
     images: [{ url: '/og-default.png', width: 1200, height: 630 }],
   },
-  twitter: { card: 'summary_large_image', site: '@portalbebedouro' },
+  twitter: { card: 'summary_large_image', site: '@portaldobebedouro' },
   verification: { google: 'SEU_GOOGLE_SITE_VERIFICATION' },
 }
 
@@ -50,7 +50,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen bg-white">
         {children}
-        <GoogleAnalytics gaId="G-XYZ123" />
+        <GoogleAnalytics gaId="G-Q90NPN1G7N" />
       </body>
     </html>
   )
