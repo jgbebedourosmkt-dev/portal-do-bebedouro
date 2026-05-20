@@ -121,7 +121,19 @@ export default function PilarLayout({
 
           {/* Coluna principal */}
           <main className="flex-1 min-w-0">
-            {children}
+            <div className="
+              [&_p]:mb-5 [&_p]:text-[19px] [&_p]:leading-relaxed [&_p]:text-txt2
+              [&_ul]:my-4 [&_ul]:pl-6 [&_ul]:list-disc
+              [&_ol]:my-4 [&_ol]:pl-6 [&_ol]:list-decimal
+              [&_li]:mb-2 [&_li]:text-[19px]
+              [&_blockquote]:border-l-4 [&_blockquote]:border-acc [&_blockquote]:pl-5 [&_blockquote]:py-2 [&_blockquote]:my-6 [&_blockquote]:bg-bg [&_blockquote]:rounded-r-md [&_blockquote]:text-txt3
+              [&_table]:w-full [&_table]:my-6 [&_table]:border-collapse [&_table]:text-[17px]
+              [&_thead]:bg-az [&_thead]:text-white
+              [&_th]:border [&_th]:border-borda [&_th]:px-4 [&_th]:py-3 [&_th]:text-left [&_th]:font-bold
+              [&_td]:border [&_td]:border-borda [&_td]:px-4 [&_td]:py-3
+            ">
+              {children}
+            </div>
 
             {/* Leia também */}
             {internalLinks.length > 0 && (
