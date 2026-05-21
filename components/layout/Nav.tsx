@@ -78,8 +78,8 @@ export default function Nav() {
           })}
         </ul>
 
-        {/* Mobile: hamburger esquerda | logo centro absoluto | botão direita */}
-        <div className="relative md:hidden flex items-center w-full py-1.5">
+        {/* Mobile: hamburger | logo | botão direita */}
+        <div className="md:hidden flex items-center w-full py-1.5 gap-2">
           <button
             onClick={() => setOpen(!open)}
             aria-label={open ? 'Fechar menu' : 'Abrir menu'}
@@ -88,18 +88,16 @@ export default function Nav() {
             {open ? <IconClose /> : <IconMenu />}
           </button>
 
-          <div className="absolute left-1/2 -translate-x-1/2 pointer-events-none">
-            <Link href="/" className="leading-none pointer-events-auto">
-              <span
-                className="text-[26px] font-black tracking-tight leading-none whitespace-nowrap"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-              >
-                <span className="text-[#111]">Portal</span>
-                <span className="text-gray-300 font-light mx-1">do</span>
-                <span className="text-az font-black italic">Bebedouro</span>
-              </span>
-            </Link>
-          </div>
+          <Link href="/" className="leading-none">
+            <span
+              className="text-[23px] font-black tracking-tight leading-none whitespace-nowrap"
+              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+            >
+              <span className="text-[#111]">Portal</span>
+              <span className="text-gray-300 font-light mx-1">do</span>
+              <span className="text-az font-black italic">Bebedouro</span>
+            </span>
+          </Link>
 
           <div className="ml-auto shrink-0">
             <OrcamentoModal size="sm" />
