@@ -1,4 +1,4 @@
-﻿import { buildMetadata } from '@/lib/metadata'
+import { buildMetadata } from '@/lib/metadata'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import Topbar from '@/components/layout/Topbar'
 import Header from '@/components/layout/Header'
@@ -7,9 +7,9 @@ import Footer from '@/components/layout/Footer'
 import PilarLayout from '@/components/pilar/PilarLayout'
 
 export const metadata = buildMetadata({
-  title: 'Bebedouro Industrial: Guia Completo para IndÃºstrias e Empresas',
+  title: 'Bebedouro Industrial: Guia Completo para Indústrias e Empresas',
   description:
-    'Tudo sobre bebedouro industrial: tipos, capacidades, normas ABNT NBR 13713, manutenÃ§Ã£o e como escolher o modelo ideal para sua indÃºstria ou empresa.',
+    'Tudo sobre bebedouro industrial: tipos, capacidades, normas ABNT NBR 13713, manutenção e como escolher o modelo ideal para sua indústria ou empresa.',
   slug: 'bebedouro-industrial',
 })
 
@@ -17,22 +17,22 @@ const faqs = [
   {
     question: 'Qual a capacidade ideal de um bebedouro industrial?',
     answer:
-      'A regra do setor Ã© 1 bebedouro para cada 50 colaboradores em uso contÃ­nuo. Para galpÃµes e indÃºstrias de alta demanda, recomenda-se 1 para cada 30 pessoas. Modelos industriais partem de 20 L/h e chegam a mais de 200 L/h de produÃ§Ã£o de Ã¡gua gelada.',
+      'A regra do setor é 1 bebedouro para cada 50 colaboradores em uso contínuo. Para galpões e indústrias de alta demanda, recomenda-se 1 para cada 30 pessoas. Modelos industriais partem de 20 L/h e chegam a mais de 200 L/h de produção de água gelada.',
   },
   {
-    question: 'Bebedouro industrial precisa de certificaÃ§Ã£o INMETRO?',
+    question: 'Bebedouro industrial precisa de certificação INMETRO?',
     answer:
-      'Sim. A certificaÃ§Ã£o INMETRO Ã© obrigatÃ³ria para bebedouros comercializados no Brasil, conforme a NBR 13713. Exija o laudo do fabricante antes de adquirir qualquer equipamento.',
+      'Sim. A certificação INMETRO é obrigatória para bebedouros comercializados no Brasil, conforme a NBR 13713. Exija o laudo do fabricante antes de adquirir qualquer equipamento.',
   },
   {
-    question: 'Qual a diferenÃ§a entre bebedouro industrial e purificador?',
+    question: 'Qual a diferença entre bebedouro industrial e purificador?',
     answer:
-      'O bebedouro industrial resfria e dispensa Ã¡gua da rede, geralmente sem sistema de filtragem avanÃ§ado. O purificador adiciona um ou mais estÃ¡gios de filtragem (carvÃ£o ativado, osmose reversa ou UV), sendo obrigatÃ³rio em locais onde a qualidade da rede Ã© duvidosa.',
+      'O bebedouro industrial resfria e dispensa água da rede, geralmente sem sistema de filtragem avançado. O purificador adiciona um ou mais estágios de filtragem (carvão ativado, osmose reversa ou UV), sendo obrigatório em locais onde a qualidade da rede é duvidosa.',
   },
   {
-    question: 'Com que frequÃªncia fazer a manutenÃ§Ã£o do bebedouro industrial?',
+    question: 'Com que frequência fazer a manutenção do bebedouro industrial?',
     answer:
-      'A higienizaÃ§Ã£o deve ser feita a cada 6 meses, conforme a RDC 275/2005 da Anvisa. A troca de filtros varia por modelo: geralmente a cada 6 a 12 meses, dependendo do volume de uso e da qualidade da Ã¡gua local.',
+      'A higienização deve ser feita a cada 6 meses, conforme a RDC 275/2005 da Anvisa. A troca de filtros varia por modelo: geralmente a cada 6 a 12 meses, dependendo do volume de uso e da qualidade da água local.',
   },
 ]
 
@@ -60,26 +60,26 @@ export default function BebedouroIndustrialPage() {
       <PilarLayout
         badge="Guia Completo"
         title="Bebedouro Industrial"
-        excerpt="Guia completo para indÃºstrias e empresas: tipos, capacidades, normas ABNT NBR 13713 e como escolher o modelo certo."
+        excerpt="Guia completo para indústrias e empresas: tipos, capacidades, normas ABNT NBR 13713 e como escolher o modelo certo."
         breadcrumbLabel="Bebedouro Industrial"
         breadcrumbSlug="bebedouro-industrial"
         ctaHref="https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=pilar&utm_campaign=bebedouro-industrial"
-        ctaLabel="Solicitar orÃ§amento"
+        ctaLabel="Solicitar orçamento"
         sidebarCtaHref="https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=sidebar&utm_campaign=bebedouro-industrial"
         finalCtaTitle="Precisa de bebedouro industrial?"
-        finalCtaDesc="Venda e manutenÃ§Ã£o de bebedouros industriais com atendimento em todo o Brasil."
+        finalCtaDesc="Venda e manutenção de bebedouros industriais com atendimento em todo o Brasil."
         tocItems={[
-          { href: '#o-que-e', label: 'O que Ã© bebedouro industrial' },
-          { href: '#tipos', label: 'Tipos disponÃ­veis' },
+          { href: '#o-que-e', label: 'O que é bebedouro industrial' },
+          { href: '#tipos', label: 'Tipos disponíveis' },
           { href: '#capacidade', label: 'Capacidade e dimensionamento' },
-          { href: '#normas', label: 'Normas e certificaÃ§Ãµes' },
+          { href: '#normas', label: 'Normas e certificações' },
           { href: '#faq', label: 'Perguntas frequentes' },
         ]}
         stats={[
           { valor: '1 / 50', label: 'colaboradores por bebedouro' },
-          { valor: '20â€“200', label: 'litros por hora (capacidade)' },
-          { valor: '6 meses', label: 'frequÃªncia de higienizaÃ§Ã£o' },
-          { valor: 'NBR 13713', label: 'norma ABNT aplicÃ¡vel' },
+          { valor: '20–200', label: 'litros por hora (capacidade)' },
+          { valor: '6 meses', label: 'frequência de higienização' },
+          { valor: 'NBR 13713', label: 'norma ABNT aplicável' },
         ]}
         faqs={faqs}
         internalLinks={[
@@ -94,17 +94,17 @@ export default function BebedouroIndustrialPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            O que Ã© um bebedouro industrial?
+            O que é um bebedouro industrial?
           </h2>
           <p className="text-[17px] text-txt2 leading-relaxed mb-4">
-            Bebedouro industrial Ã© um equipamento de grande porte projetado para atender dezenas ou centenas de pessoas
-            simultaneamente. Diferente dos modelos residenciais, ele Ã© construÃ­do em aÃ§o inox ou polietileno de alta
-            densidade, possui compressor de alta performance e capacidade de produÃ§Ã£o de Ã¡gua gelada de{' '}
+            Bebedouro industrial é um equipamento de grande porte projetado para atender dezenas ou centenas de pessoas
+            simultaneamente. Diferente dos modelos residenciais, ele é construído em aço inox ou polietileno de alta
+            densidade, possui compressor de alta performance e capacidade de produção de água gelada de{' '}
             <strong>20 L/h a 200 L/h</strong>.
           </p>
           <p className="text-[17px] text-txt2 leading-relaxed">
-            A <strong>NBR 13713 da ABNT</strong> regulamenta os requisitos mÃ­nimos de fabricaÃ§Ã£o, desempenho e
-            seguranÃ§a para esses equipamentos no mercado brasileiro.
+            A <strong>NBR 13713 da ABNT</strong> regulamenta os requisitos mínimos de fabricação, desempenho e
+            segurança para esses equipamentos no mercado brasileiro.
           </p>
         </section>
 
@@ -117,10 +117,10 @@ export default function BebedouroIndustrialPage() {
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {[
-              { tipo: 'Inox', icon: 'ðŸ­', desc: 'Corpo em aÃ§o inox 304. Alta durabilidade, fÃ¡cil higienizaÃ§Ã£o e resistÃªncia Ã  corrosÃ£o. Ideal para indÃºstrias alimentÃ­cias e farmacÃªuticas.' },
-              { tipo: 'Gelado de alta vazÃ£o', icon: 'â„ï¸', desc: 'Compressor dedicado que mantÃ©m a Ã¡gua entre 4 Â°C e 10 Â°C. Essencial para ambientes quentes como siderÃºrgicas e galpÃµes logÃ­sticos.' },
-              { tipo: 'Com filtro', icon: 'ðŸ”¬', desc: 'Combina resfriamento com filtraÃ§Ã£o por carvÃ£o ativado ou osmose reversa. Recomendado quando a qualidade da rede Ã© incerta.' },
-              { tipo: 'De pressÃ£o (sem copo)', icon: 'ðŸ’§', desc: 'Sem copo, dispensa Ã¡gua por jato. Menor custo de manutenÃ§Ã£o e ideal para ambientes onde o uso de copos descartÃ¡veis precisa ser eliminado.' },
+              { tipo: 'Inox', icon: '🏭', desc: 'Corpo em aço inox 304. Alta durabilidade, fácil higienização e resistência à corrosão. Ideal para indústrias alimentícias e farmacêuticas.' },
+              { tipo: 'Gelado de alta vazão', icon: '❄️', desc: 'Compressor dedicado que mantém a água entre 4 °C e 10 °C. Essencial para ambientes quentes como siderúrgicas e galpões logísticos.' },
+              { tipo: 'Com filtro', icon: '🔬', desc: 'Combina resfriamento com filtração por carvão ativado ou osmose reversa. Recomendado quando a qualidade da rede é incerta.' },
+              { tipo: 'De pressão (sem copo)', icon: '💧', desc: 'Sem copo, dispensa água por jato. Menor custo de manutenção e ideal para ambientes onde o uso de copos descartáveis precisa ser eliminado.' },
             ].map(({ tipo, icon, desc }) => (
               <div key={tipo} className="border border-borda rounded-lg p-5 hover:border-az transition-colors">
                 <p className="text-[24px] mb-2">{icon}</p>
@@ -141,27 +141,27 @@ export default function BebedouroIndustrialPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            Capacidade: quantos bebedouros vocÃª precisa?
+            Capacidade: quantos bebedouros você precisa?
           </h2>
           <p className="text-[17px] text-txt2 leading-relaxed mb-5">
-            A regra bÃ¡sica do setor Ã© <strong>1 bebedouro para cada 50 colaboradores</strong> em uso contÃ­nuo.
-            Em ambientes de alta demanda (galpÃµes quentes, turnos noturnos), reduza para 1 a cada 30 pessoas.
+            A regra básica do setor é <strong>1 bebedouro para cada 50 colaboradores</strong> em uso contínuo.
+            Em ambientes de alta demanda (galpões quentes, turnos noturnos), reduza para 1 a cada 30 pessoas.
           </p>
           <div className="overflow-x-auto rounded-lg border border-borda">
             <table className="w-full text-[14px] md:text-[15px]">
               <thead>
                 <tr className="bg-az text-white">
-                  <th className="px-5 py-3 text-left font-black" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>NÂº de colaboradores</th>
+                  <th className="px-5 py-3 text-left font-black" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>Nº de colaboradores</th>
                   <th className="px-5 py-3 text-left font-black" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>Bebedouros recomendados</th>
                   <th className="px-5 py-3 text-left font-black" style={{ fontFamily: 'var(--font-barlow-condensed)' }}>Capacidade sugerida</th>
                 </tr>
               </thead>
               <tbody>
                 {[
-                  ['AtÃ© 50', '1', '20â€“30 L/h'],
-                  ['51 a 150', '2â€“3', '30â€“50 L/h cada'],
-                  ['151 a 300', '4â€“6', '50â€“100 L/h cada'],
-                  ['Acima de 300', 'Calcule 1 por 50', '100â€“200 L/h cada'],
+                  ['Até 50', '1', '20–30 L/h'],
+                  ['51 a 150', '2–3', '30–50 L/h cada'],
+                  ['151 a 300', '4–6', '50–100 L/h cada'],
+                  ['Acima de 300', 'Calcule 1 por 50', '100–200 L/h cada'],
                 ].map(([col, bebedouros, cap], i) => (
                   <tr key={col} className={i % 2 === 1 ? 'bg-bg' : 'bg-white'}>
                     <td className="px-5 py-3 font-semibold text-txt">{col}</td>
@@ -179,14 +179,14 @@ export default function BebedouroIndustrialPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            Normas e certificaÃ§Ãµes obrigatÃ³rias
+            Normas e certificações obrigatórias
           </h2>
           <div className="space-y-3">
             {[
-              { sigla: 'NBR 13713', desc: 'Define requisitos de fabricaÃ§Ã£o, desempenho e seguranÃ§a elÃ©trica para bebedouros.' },
-              { sigla: 'INMETRO', desc: 'CertificaÃ§Ã£o compulsÃ³ria para comercializaÃ§Ã£o no Brasil. Exija o laudo do fabricante.' },
-              { sigla: 'RDC 275/2005', desc: 'Determina higienizaÃ§Ã£o semestral e registro dos procedimentos (Anvisa).' },
-              { sigla: 'NR-24 (MTE)', desc: 'Estabelece que todo local de trabalho deve fornecer Ã¡gua potÃ¡vel em quantidade suficiente.' },
+              { sigla: 'NBR 13713', desc: 'Define requisitos de fabricação, desempenho e segurança elétrica para bebedouros.' },
+              { sigla: 'INMETRO', desc: 'Certificação compulsória para comercialização no Brasil. Exija o laudo do fabricante.' },
+              { sigla: 'RDC 275/2005', desc: 'Determina higienização semestral e registro dos procedimentos (Anvisa).' },
+              { sigla: 'NR-24 (MTE)', desc: 'Estabelece que todo local de trabalho deve fornecer água potável em quantidade suficiente.' },
             ].map(({ sigla, desc }) => (
               <div key={sigla} className="flex gap-4 p-4 rounded-lg border border-borda bg-bg">
                 <span

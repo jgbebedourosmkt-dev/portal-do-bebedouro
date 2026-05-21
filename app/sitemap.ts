@@ -1,5 +1,6 @@
-﻿import type { MetadataRoute } from 'next'
+import type { MetadataRoute } from 'next'
 import { getAllPosts } from '@/lib/posts'
+import { getAllLocalPages } from '@/lib/local'
 import keywordsData from '@/data/keywords.json'
 
 const BASE = 'https://portaldobebedouro.com.br'
@@ -10,7 +11,8 @@ const PILLAR_PAGES = [
   'bebedouro-para-empresa',
 ]
 
-const LOCAL_SLUGS = [
+// Cidades hardcoded (fallback)
+const HARDCODED_LOCAL_SLUGS = [
   'bebedouro-industrial-sao-paulo',
   'bebedouro-industrial-belo-horizonte',
   'bebedouro-industrial-curitiba',
@@ -31,10 +33,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const posts = getAllPosts()
   const categorias = ['mercado', 'legislacao', 'saude', 'guias', 'reviews', 'eventos']
 
-  // Subpilares publicados viram pÃ¡ginas com URL limpa (/{slug})
+  // Subpilares publicados viram páginas com URL limpa (/{slug})
   const publishedSubpilars = (keywordsData as Keyword[])
     .filter((k) => k.status === 'publicado' && (k.tipo === 'subpilar' || k.tipo === 'blog'))
     .map((k) => k.slug)
+
+  // Páginas locais: combina JSON gerados + hardcoded, sem duplicatas
+  const jsonLocalSlugs = getAllLocalPages().map((p) => p.slug)
+  const allLocalSlugs = [...new Set([...jsonLocalSlugs, ...HARDCODED_LOCAL_SLUGS])]
 
   return [
     { url: BASE, lastModified: new Date(), priority: 1.0 },
@@ -45,13 +51,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Subpilares publicados (URL limpa)
     ...publishedSubpilars.map((slug) => ({ url: `${BASE}/${slug}`, priority: 0.85 })),
 
-    // PÃ¡ginas locais
-    ...LOCAL_SLUGS.map((slug) => ({ url: `${BASE}/local/${slug}`, priority: 0.8 })),
+    // Páginas locais (JSON + hardcoded, deduplicadas)
+    ...allLocalSlugs.map((slug) => ({ url: `${BASE}/local/${slug}`, priority: 0.8 })),
 
     // Categorias do portal
     ...categorias.map((c) => ({ url: `${BASE}/${c}`, priority: 0.7 })),
 
-    // Artigos/notÃ­cias do portal
+    // Artigos/notícias do portal
     ...posts.map((p) => ({
       url: `${BASE}/artigo/${p.slug}`,
       lastModified: new Date(p.date),

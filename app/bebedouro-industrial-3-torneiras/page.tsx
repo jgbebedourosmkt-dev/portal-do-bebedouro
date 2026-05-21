@@ -1,4 +1,4 @@
-﻿import { buildMetadata } from '@/lib/metadata'
+import { buildMetadata } from '@/lib/metadata'
 import { faqSchema, breadcrumbSchema } from '@/lib/schema'
 import Topbar from '@/components/layout/Topbar'
 import Header from '@/components/layout/Header'
@@ -7,36 +7,36 @@ import Footer from '@/components/layout/Footer'
 import PilarLayout from '@/components/pilar/PilarLayout'
 
 export const metadata = buildMetadata({
-  title: 'Bebedouro Industrial 3 Torneiras: Modelos e EspecificaÃ§Ãµes',
-  description: 'Bebedouro Industrial 3 Torneiras: ideal para ambientes com fluxo alto de usuÃ¡rios. Veja capacidades e dimensÃµes.',
+  title: 'Bebedouro Industrial 3 Torneiras: Modelos e Especificações',
+  description: 'Bebedouro Industrial 3 Torneiras: ideal para ambientes com fluxo alto de usuários. Veja capacidades e dimensões.',
   slug: 'bebedouro-industrial-3-torneiras',
 })
 
 const faqs = [
   {
-    question: 'Qual a diferenÃ§a entre as torneiras de um bebedouro industrial de 3 torneiras?',
+    question: 'Qual a diferença entre as torneiras de um bebedouro industrial de 3 torneiras?',
     answer:
-      'Em modelos com 3 torneiras, as saÃ­das sÃ£o distribuÃ­das em Ã¡gua gelada (4Â°C a 10Â°C), Ã¡gua natural (temperatura ambiente) e Ã¡gua em temperatura intermediÃ¡ria. Isso permite o atendimento simultÃ¢neo de vÃ¡rios usuÃ¡rios, reduzindo filas e aumentando a produtividade em ambientes de trabalho.',
+      'Em modelos com 3 torneiras, as saídas são distribuídas em água gelada (4°C a 10°C), água natural (temperatura ambiente) e água em temperatura intermediária. Isso permite o atendimento simultâneo de vários usuários, reduzindo filas e aumentando a produtividade em ambientes de trabalho.',
   },
   {
-    question: 'O bebedouro industrial de 3 torneiras atende Ã  norma NR-24?',
+    question: 'O bebedouro industrial de 3 torneiras atende à norma NR-24?',
     answer:
-      'Sim. A NR-24 exige que empresas disponibilizem bebedouros em proporÃ§Ã£o ao nÃºmero de funcionÃ¡rios, sendo 1 unidade para cada 50 trabalhadores. O modelo com 3 torneiras Ã© especialmente indicado para refeitÃ³rios e canteiros de obras, pois permite o atendimento simultÃ¢neo, cumprindo os requisitos legais.',
+      'Sim. A NR-24 exige que empresas disponibilizem bebedouros em proporção ao número de funcionários, sendo 1 unidade para cada 50 trabalhadores. O modelo com 3 torneiras é especialmente indicado para refeitórios e canteiros de obras, pois permite o atendimento simultâneo, cumprindo os requisitos legais.',
   },
   {
     question: 'Qual a capacidade de resfriamento de um bebedouro industrial de 3 torneiras?',
     answer:
-      'A capacidade de resfriamento varia conforme o modelo, mas bebedouros industriais de 3 torneiras geralmente oferecem entre 50 e 100 litros por hora. Modelos com reservatÃ³rio de 100 litros sÃ£o recomendados para ambientes com mais de 50 usuÃ¡rios simultÃ¢neos.',
+      'A capacidade de resfriamento varia conforme o modelo, mas bebedouros industriais de 3 torneiras geralmente oferecem entre 50 e 100 litros por hora. Modelos com reservatório de 100 litros são recomendados para ambientes com mais de 50 usuários simultâneos.',
   },
   {
-    question: 'Ã‰ necessÃ¡ria instalaÃ§Ã£o especial para o bebedouro industrial de 3 torneiras?',
+    question: 'É necessária instalação especial para o bebedouro industrial de 3 torneiras?',
     answer:
-      'NÃ£o Ã© necessÃ¡ria instalaÃ§Ã£o especial. O equipamento conecta-se Ã  rede elÃ©trica padrÃ£o (110V ou 220V) e Ã  rede hidrÃ¡ulica convencional. Recomenda-se instalaÃ§Ã£o por profissional habilitado para garantir o funcionamento correto e a validade da garantia.',
+      'Não é necessária instalação especial. O equipamento conecta-se à rede elétrica padrão (110V ou 220V) e à rede hidráulica convencional. Recomenda-se instalação por profissional habilitado para garantir o funcionamento correto e a validade da garantia.',
   },
   {
-    question: 'Com que frequÃªncia o bebedouro industrial de 3 torneiras precisa de manutenÃ§Ã£o?',
+    question: 'Com que frequência o bebedouro industrial de 3 torneiras precisa de manutenção?',
     answer:
-      'A manutenÃ§Ã£o preventiva deve ser realizada a cada 6 meses, incluindo higienizaÃ§Ã£o completa do reservatÃ³rio e troca de filtros quando aplicÃ¡vel. A RDC 275 da ANVISA regulamenta a higienizaÃ§Ã£o de equipamentos de Ã¡gua em estabelecimentos produtivos e alimentÃ­cios.',
+      'A manutenção preventiva deve ser realizada a cada 6 meses, incluindo higienização completa do reservatório e troca de filtros quando aplicável. A RDC 275 da ANVISA regulamenta a higienização de equipamentos de água em estabelecimentos produtivos e alimentícios.',
   },
 ]
 
@@ -52,7 +52,7 @@ export default function BebedouroIndustrial3TorneirasPage() {
           __html: JSON.stringify(
             breadcrumbSchema([
               { name: 'Home', slug: '' },
-              { name: 'Bebedouro Industrial 3 Torneiras: Modelos e EspecificaÃ§Ãµes' },
+              { name: 'Bebedouro Industrial 3 Torneiras: Modelos e Especificações' },
             ])
           ),
         }}
@@ -63,29 +63,29 @@ export default function BebedouroIndustrial3TorneirasPage() {
       />
       <PilarLayout
         badge="Guia Completo"
-        title="Bebedouro Industrial 3 Torneiras: Modelos e EspecificaÃ§Ãµes"
-        excerpt="O bebedouro industrial 3 torneiras oferece hidrataÃ§Ã£o simultÃ¢nea para mÃºltiplos usuÃ¡rios com eficiÃªncia."
-        breadcrumbLabel="Bebedouro Industrial 3 Torneiras: Modelos e EspecificaÃ§Ãµes"
+        title="Bebedouro Industrial 3 Torneiras: Modelos e Especificações"
+        excerpt="O bebedouro industrial 3 torneiras oferece hidratação simultânea para múltiplos usuários com eficiência."
+        breadcrumbLabel="Bebedouro Industrial 3 Torneiras: Modelos e Especificações"
         breadcrumbSlug="bebedouro-industrial-3-torneiras"
         ctaHref="https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=pilar&utm_campaign=bebedouro-industrial-3-torneiras"
-        ctaLabel="Solicitar orÃ§amento"
+        ctaLabel="Solicitar orçamento"
         sidebarCtaHref="https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=sidebar&utm_campaign=bebedouro-industrial-3-torneiras"
         finalCtaTitle="Precisa de bebedouro industrial 3 torneiras?"
-        finalCtaDesc="A JG Bebedouros, fÃ¡brica de bebedouros industriais, oferece venda em todo o Brasil."
+        finalCtaDesc="A JG Bebedouros, fábrica de bebedouros industriais, oferece venda em todo o Brasil."
         tocItems={[
-          { href: '#o-que-e', label: 'O que Ã© o Bebedouro Industrial 3 Torneiras' },
-          { href: '#modelos-disponiveis', label: 'Modelos DisponÃ­veis' },
-          { href: '#capacidade-e-especificacoes', label: 'Capacidade e EspecificaÃ§Ãµes TÃ©cnicas' },
-          { href: '#normas-e-certificacoes', label: 'Normas e CertificaÃ§Ãµes' },
-          { href: '#ambientes-indicados', label: 'Para Quais Ambientes Ã© Indicado' },
+          { href: '#o-que-e', label: 'O que é o Bebedouro Industrial 3 Torneiras' },
+          { href: '#modelos-disponiveis', label: 'Modelos Disponíveis' },
+          { href: '#capacidade-e-especificacoes', label: 'Capacidade e Especificações Técnicas' },
+          { href: '#normas-e-certificacoes', label: 'Normas e Certificações' },
+          { href: '#ambientes-indicados', label: 'Para Quais Ambientes é Indicado' },
           { href: '#modelos-relacionados', label: 'Modelos Relacionados' },
-          { href: '#preco-e-orcamento', label: 'PreÃ§o e OrÃ§amento' },
+          { href: '#preco-e-orcamento', label: 'Preço e Orçamento' },
         ]}
         stats={[
-          { label: 'Capacidade mÃ¡x. de resfriamento', valor:'100 L/h' },
+          { label: 'Capacidade máx. de resfriamento', valor:'100 L/h' },
           { label: 'Torneiras por unidade', valor:'3' },
-          { label: 'Capacidade do reservatÃ³rio', valor:'25â€“100 L' },
-          { label: 'CertificaÃ§Ã£o', valor:'INMETRO / NBR 13713' },
+          { label: 'Capacidade do reservatório', valor:'25–100 L' },
+          { label: 'Certificação', valor:'INMETRO / NBR 13713' },
         ]}
         faqs={faqs}
         internalLinks={[
@@ -94,8 +94,8 @@ export default function BebedouroIndustrial3TorneirasPage() {
           { href: '/bebedouro-industrial-4-torneiras', label: 'bebedouro industrial 4 torneiras' },
           { href: '/bebedouro-industrial-25-litros', label: 'bebedouro industrial 25 litros' },
           { href: '/bebedouro-para-empresa', label: 'bebedouro para empresa' },
-          { href: '/blog/bebedouro-industrial-preco-2025', label: 'veja a faixa de preÃ§o' },
-          { href: '/local/bebedouro-industrial-sao-paulo', label: 'em SÃ£o Paulo' },
+          { href: '/blog/bebedouro-industrial-preco-2025', label: 'veja a faixa de preço' },
+          { href: '/local/bebedouro-industrial-sao-paulo', label: 'em São Paulo' },
         ]}
       >
         <section id="o-que-e" className="mb-12 scroll-mt-20">
@@ -103,17 +103,17 @@ export default function BebedouroIndustrial3TorneirasPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            O que Ã© o Bebedouro Industrial 3 Torneiras
+            O que é o Bebedouro Industrial 3 Torneiras
           </h2>
           <p className="mb-4">
             O{' '}
             <a href="/bebedouro-industrial" className="text-az hover:underline">
               bebedouro industrial
             </a>{' '}
-            3 torneiras Ã© um equipamento de hidrataÃ§Ã£o coletiva com sistema de resfriamento elÃ©trico,
-            projetado para ambientes com alto fluxo de pessoas. DisponÃ­vel em modelos com reservatÃ³rios
-            de 25 a 100 litros, oferece trÃªs saÃ­das simultÃ¢neas de Ã¡gua gelada, natural e ambiente,
-            atendendo mais usuÃ¡rios ao mesmo tempo.
+            3 torneiras é um equipamento de hidratação coletiva com sistema de resfriamento elétrico,
+            projetado para ambientes com alto fluxo de pessoas. Disponível em modelos com reservatórios
+            de 25 a 100 litros, oferece três saídas simultâneas de água gelada, natural e ambiente,
+            atendendo mais usuários ao mesmo tempo.
           </p>
         </section>
 
@@ -122,13 +122,13 @@ export default function BebedouroIndustrial3TorneirasPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            Modelos DisponÃ­veis
+            Modelos Disponíveis
           </h2>
           <p className="mb-4">
-            O bebedouro industrial com 3 torneiras estÃ¡ disponÃ­vel em diferentes capacidades de reservatÃ³rio,
-            cada uma adequada a um perfil de uso especÃ­fico. Os principais modelos sÃ£o fabricados em aÃ§o inox
-            304 ou corpo em fibra de vidro com acabamento sanitÃ¡rio, garantindo durabilidade e facilidade de
-            higienizaÃ§Ã£o conforme exigido pela RDC 275 da ANVISA.
+            O bebedouro industrial com 3 torneiras está disponível em diferentes capacidades de reservatório,
+            cada uma adequada a um perfil de uso específico. Os principais modelos são fabricados em aço inox
+            304 ou corpo em fibra de vidro com acabamento sanitário, garantindo durabilidade e facilidade de
+            higienização conforme exigido pela RDC 275 da ANVISA.
           </p>
 
           <img
@@ -140,31 +140,31 @@ export default function BebedouroIndustrial3TorneirasPage() {
 
           <p className="mb-4">
             <strong>Modelo 25 litros:</strong> Indicado para ambientes menores, como pequenas empresas,
-            escritÃ³rios ou academias com atÃ© 30 usuÃ¡rios por turno. Compacto e de fÃ¡cil instalaÃ§Ã£o, ocupa
-            pouco espaÃ§o e consome menos energia. Apesar da menor capacidade de reservatÃ³rio, as 3 torneiras
-            permitem o atendimento simultÃ¢neo, reduzindo o tempo de espera mesmo nesses espaÃ§os.
+            escritórios ou academias com até 30 usuários por turno. Compacto e de fácil instalação, ocupa
+            pouco espaço e consome menos energia. Apesar da menor capacidade de reservatório, as 3 torneiras
+            permitem o atendimento simultâneo, reduzindo o tempo de espera mesmo nesses espaços.
           </p>
 
           <p className="mb-4">
-            <strong>Modelo 30 litros:</strong> VersÃ£o intermediÃ¡ria muito procurada por empresas de mÃ©dio
-            porte. Equilibra capacidade de armazenamento e consumo energÃ©tico, sendo adequado para
-            refeitÃ³rios com fluxo moderado. Geralmente apresenta dimensÃµes compactas, facilitando a
-            instalaÃ§Ã£o em locais com espaÃ§o reduzido e jÃ¡ conta com certificaÃ§Ã£o INMETRO de sÃ©rie.
+            <strong>Modelo 30 litros:</strong> Versão intermediária muito procurada por empresas de médio
+            porte. Equilibra capacidade de armazenamento e consumo energético, sendo adequado para
+            refeitórios com fluxo moderado. Geralmente apresenta dimensões compactas, facilitando a
+            instalação em locais com espaço reduzido e já conta com certificação INMETRO de série.
           </p>
 
           <p className="mb-4">
             <strong>Modelo 50 litros:</strong> Ideal para ambientes com fluxo intenso, como canteiros de
-            obra, galpÃµes industriais e escolas. A capacidade de resfriamento supera 60 litros por hora,
-            garantindo fornecimento contÃ­nuo de Ã¡gua gelada mesmo nos horÃ¡rios de pico, como o horÃ¡rio de
-            almoÃ§o em refeitÃ³rios industriais com muitos colaboradores.
+            obra, galpões industriais e escolas. A capacidade de resfriamento supera 60 litros por hora,
+            garantindo fornecimento contínuo de água gelada mesmo nos horários de pico, como o horário de
+            almoço em refeitórios industriais com muitos colaboradores.
           </p>
 
           <p className="mb-4">
             <strong>Modelo 100 litros:</strong> O modelo de maior capacidade, indicado para grandes
-            instalaÃ§Ãµes industriais, shopping centers, hospitais e ambientes com mais de 100 usuÃ¡rios por
-            turno. Com capacidade de resfriamento de atÃ© 100 litros por hora, atende demandas intensas sem
-            interrupÃ§Ã£o. Fabricado em inox 304 com gabinete reforÃ§ado, Ã© o mais robusto da linha e o mais
-            indicado para operaÃ§Ãµes contÃ­nuas de longa duraÃ§Ã£o.
+            instalações industriais, shopping centers, hospitais e ambientes com mais de 100 usuários por
+            turno. Com capacidade de resfriamento de até 100 litros por hora, atende demandas intensas sem
+            interrupção. Fabricado em inox 304 com gabinete reforçado, é o mais robusto da linha e o mais
+            indicado para operações contínuas de longa duração.
           </p>
         </section>
 
@@ -173,7 +173,7 @@ export default function BebedouroIndustrial3TorneirasPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            Capacidade e EspecificaÃ§Ãµes TÃ©cnicas
+            Capacidade e Especificações Técnicas
           </h2>
 
           <img
@@ -184,46 +184,46 @@ export default function BebedouroIndustrial3TorneirasPage() {
           />
 
           <p className="mb-4">
-            As especificaÃ§Ãµes tÃ©cnicas variam conforme o fabricante e o modelo, mas existem parÃ¢metros
+            As especificações técnicas variam conforme o fabricante e o modelo, mas existem parâmetros
             comuns que orientam a escolha do equipamento adequado para cada ambiente. Entender esses dados
-            Ã© fundamental para garantir que o bebedouro atenda Ã  demanda real do local de instalaÃ§Ã£o e
+            é fundamental para garantir que o bebedouro atenda à demanda real do local de instalação e
             cumpra as normas vigentes.
           </p>
 
           <p className="mb-4">
             <strong>Capacidade de resfriamento:</strong> Medida em litros por hora (L/h), indica o volume
-            de Ã¡gua que o equipamento consegue resfriar continuamente. Modelos de 25 e 30 litros
+            de água que o equipamento consegue resfriar continuamente. Modelos de 25 e 30 litros
             geralmente atingem 30 a 50 L/h, enquanto os de 50 e 100 litros chegam a 60 e 100 L/h
-            respectivamente, sendo esta Ãºltima a mais adequada para ambientes industriais de grande porte.
+            respectivamente, sendo esta última a mais adequada para ambientes industriais de grande porte.
           </p>
 
           <p className="mb-4">
-            <strong>Temperatura da Ã¡gua gelada:</strong> Os bebedouros industriais de 3 torneiras mantÃªm
-            a Ã¡gua gelada entre 4Â°C e 10Â°C, conforme especificaÃ§Ã£o da NBR 13713. Alguns modelos permitem
-            regulagem da temperatura por termostato, facilitando o ajuste conforme a estaÃ§Ã£o do ano e as
-            preferÃªncias dos usuÃ¡rios do ambiente.
+            <strong>Temperatura da água gelada:</strong> Os bebedouros industriais de 3 torneiras mantêm
+            a água gelada entre 4°C e 10°C, conforme especificação da NBR 13713. Alguns modelos permitem
+            regulagem da temperatura por termostato, facilitando o ajuste conforme a estação do ano e as
+            preferências dos usuários do ambiente.
           </p>
 
           <p className="mb-4">
-            <strong>AlimentaÃ§Ã£o elÃ©trica:</strong> A maioria dos modelos Ã© disponibilizada em versÃµes 110V
-            e 220V monofÃ¡sico. A potÃªncia varia de 150W (modelos 25L) a 400W (modelos 100L). Ã‰ importante
-            verificar a tensÃ£o da rede elÃ©trica local antes da aquisiÃ§Ã£o para evitar a necessidade de
-            transformadores, que aumentam o custo de instalaÃ§Ã£o.
+            <strong>Alimentação elétrica:</strong> A maioria dos modelos é disponibilizada em versões 110V
+            e 220V monofásico. A potência varia de 150W (modelos 25L) a 400W (modelos 100L). É importante
+            verificar a tensão da rede elétrica local antes da aquisição para evitar a necessidade de
+            transformadores, que aumentam o custo de instalação.
           </p>
 
           <p className="mb-4">
-            <strong>PressÃ£o de trabalho:</strong> Os bebedouros industriais operam com pressÃ£o de Ã¡gua
-            entre 20 e 100 kPa (0,2 a 1,0 kgf/cmÂ²), compatÃ­vel com a maioria das instalaÃ§Ãµes
-            hidrÃ¡ulicas residenciais e industriais. Em locais com pressÃ£o elevada, recomenda-se a
-            instalaÃ§Ã£o de regulador de pressÃ£o para proteger o equipamento e prolongar a vida Ãºtil das
-            vedaÃ§Ãµes e torneiras.
+            <strong>Pressão de trabalho:</strong> Os bebedouros industriais operam com pressão de água
+            entre 20 e 100 kPa (0,2 a 1,0 kgf/cm²), compatível com a maioria das instalações
+            hidráulicas residenciais e industriais. Em locais com pressão elevada, recomenda-se a
+            instalação de regulador de pressão para proteger o equipamento e prolongar a vida útil das
+            vedações e torneiras.
           </p>
 
           <p className="mb-4">
-            <strong>DimensÃµes tÃ­picas:</strong> Os modelos de coluna com 3 torneiras tÃªm altura entre
-            1,20 m e 1,50 m, largura de 40 a 60 cm e profundidade de 40 a 50 cm. Modelos de bancada sÃ£o
-            mais compactos, ideais para ambientes onde o espaÃ§o vertical Ã© limitado, como cozinhas
-            industriais e laboratÃ³rios.
+            <strong>Dimensões típicas:</strong> Os modelos de coluna com 3 torneiras têm altura entre
+            1,20 m e 1,50 m, largura de 40 a 60 cm e profundidade de 40 a 50 cm. Modelos de bancada são
+            mais compactos, ideais para ambientes onde o espaço vertical é limitado, como cozinhas
+            industriais e laboratórios.
           </p>
         </section>
 
@@ -232,45 +232,45 @@ export default function BebedouroIndustrial3TorneirasPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            Normas e CertificaÃ§Ãµes
+            Normas e Certificações
           </h2>
           <p className="mb-4">
-            A aquisiÃ§Ã£o de um bebedouro industrial deve considerar as certificaÃ§Ãµes e normas tÃ©cnicas
-            vigentes no Brasil. A conformidade com esses requisitos Ã© fundamental nÃ£o apenas para garantir
-            a seguranÃ§a dos usuÃ¡rios, mas tambÃ©m para evitar autuaÃ§Ãµes em fiscalizaÃ§Ãµes trabalhistas e
-            sanitÃ¡rias, especialmente em indÃºstrias sujeitas a auditorias periÃ³dicas.
+            A aquisição de um bebedouro industrial deve considerar as certificações e normas técnicas
+            vigentes no Brasil. A conformidade com esses requisitos é fundamental não apenas para garantir
+            a segurança dos usuários, mas também para evitar autuações em fiscalizações trabalhistas e
+            sanitárias, especialmente em indústrias sujeitas a auditorias periódicas.
           </p>
 
           <p className="mb-4">
             <strong>NBR 13713:</strong> A norma ABNT NBR 13713 estabelece os requisitos de desempenho,
-            seguranÃ§a e ensaios para bebedouros domÃ©sticos e coletivos. Ela define, entre outros
-            parÃ¢metros, os limites de temperatura da Ã¡gua gelada, a resistÃªncia estrutural do equipamento
-            e os requisitos para materiais em contato com Ã¡gua potÃ¡vel, garantindo que nÃ£o haja
-            contaminaÃ§Ã£o quÃ­mica ou microbiolÃ³gica.
+            segurança e ensaios para bebedouros domésticos e coletivos. Ela define, entre outros
+            parâmetros, os limites de temperatura da água gelada, a resistência estrutural do equipamento
+            e os requisitos para materiais em contato com água potável, garantindo que não haja
+            contaminação química ou microbiológica.
           </p>
 
           <p className="mb-4">
             <strong>INMETRO:</strong> O selo INMETRO certifica que o equipamento foi submetido a ensaios
-            de conformidade em laboratÃ³rio acreditado, atestando que atende Ã s normas tÃ©cnicas aplicÃ¡veis.
+            de conformidade em laboratório acreditado, atestando que atende às normas técnicas aplicáveis.
             Ao adquirir um bebedouro industrial de 3 torneiras, verifique se o modelo possui o Registro
-            de AvaliaÃ§Ã£o da Conformidade (RAC) ativo no portal do INMETRO. Modelos sem certificaÃ§Ã£o podem
-            representar riscos Ã  saÃºde dos usuÃ¡rios.
+            de Avaliação da Conformidade (RAC) ativo no portal do INMETRO. Modelos sem certificação podem
+            representar riscos à saúde dos usuários.
           </p>
 
           <p className="mb-4">
-            <strong>NR-24:</strong> A Norma Regulamentadora nÂº 24 do MinistÃ©rio do Trabalho e PrevidÃªncia
-            estabelece condiÃ§Ãµes sanitÃ¡rias e de conforto nos locais de trabalho, incluindo a
-            obrigatoriedade de bebedouros em quantidade suficiente. A proporÃ§Ã£o exigida Ã© de 1 bebedouro
-            para cada 50 trabalhadores, devendo estar prÃ³ximos ao local de trabalho e em condiÃ§Ãµes
-            higiÃªnicas adequadas.
+            <strong>NR-24:</strong> A Norma Regulamentadora nº 24 do Ministério do Trabalho e Previdência
+            estabelece condições sanitárias e de conforto nos locais de trabalho, incluindo a
+            obrigatoriedade de bebedouros em quantidade suficiente. A proporção exigida é de 1 bebedouro
+            para cada 50 trabalhadores, devendo estar próximos ao local de trabalho e em condições
+            higiênicas adequadas.
           </p>
 
           <p className="mb-4">
-            <strong>RDC 275 (ANVISA):</strong> A ResoluÃ§Ã£o da Diretoria Colegiada nÂº 275 da ANVISA dispÃµe
-            sobre o Regulamento TÃ©cnico de Procedimentos Operacionais Padronizados aplicados a
+            <strong>RDC 275 (ANVISA):</strong> A Resolução da Diretoria Colegiada nº 275 da ANVISA dispõe
+            sobre o Regulamento Técnico de Procedimentos Operacionais Padronizados aplicados a
             estabelecimentos produtores e industrializadores de alimentos. Ela regulamenta os
-            procedimentos de higienizaÃ§Ã£o de equipamentos que entram em contato com Ã¡gua potÃ¡vel,
-            incluindo bebedouros industriais, com frequÃªncia mÃ­nima semestral de limpeza e desinfecÃ§Ã£o.
+            procedimentos de higienização de equipamentos que entram em contato com água potável,
+            incluindo bebedouros industriais, com frequência mínima semestral de limpeza e desinfecção.
           </p>
         </section>
 
@@ -279,61 +279,61 @@ export default function BebedouroIndustrial3TorneirasPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            Para Quais Ambientes Ã© Indicado
+            Para Quais Ambientes é Indicado
           </h2>
           <p className="mb-4">
-            O bebedouro industrial de 3 torneiras Ã© indicado para qualquer ambiente com fluxo de pessoas
-            acima da mÃ©dia e necessidade de hidrataÃ§Ã£o coletiva constante. A seguir, os principais
-            contextos de uso e as recomendaÃ§Ãµes para cada um.
+            O bebedouro industrial de 3 torneiras é indicado para qualquer ambiente com fluxo de pessoas
+            acima da média e necessidade de hidratação coletiva constante. A seguir, os principais
+            contextos de uso e as recomendações para cada um.
           </p>
 
           <p className="mb-4">
-            <strong>RefeitÃ³rios industriais:</strong> Ambientes com alta concentraÃ§Ã£o de usuÃ¡rios em
-            curtos perÃ­odos de tempo. O modelo com 3 torneiras reduz filas nos horÃ¡rios de pico,
-            melhorando a experiÃªncia dos colaboradores. Ã‰ comum instalar dois ou mais equipamentos em
-            refeitÃ³rios com mais de 100 usuÃ¡rios por turno, posicionados em extremidades opostas do
-            espaÃ§o para facilitar o acesso.
+            <strong>Refeitórios industriais:</strong> Ambientes com alta concentração de usuários em
+            curtos períodos de tempo. O modelo com 3 torneiras reduz filas nos horários de pico,
+            melhorando a experiência dos colaboradores. É comum instalar dois ou mais equipamentos em
+            refeitórios com mais de 100 usuários por turno, posicionados em extremidades opostas do
+            espaço para facilitar o acesso.
           </p>
 
           <p className="mb-4">
             <strong>Canteiros de obra:</strong> Ambientes externos, sujeitos a altas temperaturas e
-            poeira. Nesses locais, a resistÃªncia do equipamento Ã© fundamental. Modelos com gabinete em
-            aÃ§o inox 304 ou fibra de vidro UV-resistente sÃ£o mais adequados. A NR-24 exige que os
-            bebedouros estejam acessÃ­veis a todos os trabalhadores, com Ã¡gua potÃ¡vel em quantidade
+            poeira. Nesses locais, a resistência do equipamento é fundamental. Modelos com gabinete em
+            aço inox 304 ou fibra de vidro UV-resistente são mais adequados. A NR-24 exige que os
+            bebedouros estejam acessíveis a todos os trabalhadores, com água potável em quantidade
             suficiente durante toda a jornada.
           </p>
 
           <p className="mb-4">
             <strong>Escolas e universidades:</strong> O alto fluxo de alunos nos intervalos exige
-            equipamentos de grande capacidade. Os modelos de 50 ou 100 litros com 3 torneiras sÃ£o os
-            mais recomendados, pois garantem fornecimento contÃ­nuo mesmo com dezenas de usuÃ¡rios em
-            sequÃªncia, sem reduÃ§Ã£o perceptÃ­vel da temperatura da Ã¡gua gelada.
+            equipamentos de grande capacidade. Os modelos de 50 ou 100 litros com 3 torneiras são os
+            mais recomendados, pois garantem fornecimento contínuo mesmo com dezenas de usuários em
+            sequência, sem redução perceptível da temperatura da água gelada.
           </p>
 
           <p className="mb-4">
-            Para empresas de mÃ©dio e grande porte, o{' '}
+            Para empresas de médio e grande porte, o{' '}
             <a href="/bebedouro-para-empresa" className="text-az hover:underline">
               bebedouro para empresa
             </a>{' '}
-            com 3 torneiras Ã© uma soluÃ§Ã£o que combina produtividade e conformidade com a NR-24,
-            atendendo Ã s exigÃªncias trabalhistas sem comprometer o conforto dos colaboradores e
-            facilitando a gestÃ£o de manutenÃ§Ã£o preventiva.
+            com 3 torneiras é uma solução que combina produtividade e conformidade com a NR-24,
+            atendendo às exigências trabalhistas sem comprometer o conforto dos colaboradores e
+            facilitando a gestão de manutenção preventiva.
           </p>
 
           <p className="mb-4">
-            <strong>Academias e centros esportivos:</strong> UsuÃ¡rios em atividade fÃ­sica demandam
-            hidrataÃ§Ã£o frequente. O modelo com 3 torneiras permite que vÃ¡rios atletas se hidratem
+            <strong>Academias e centros esportivos:</strong> Usuários em atividade física demandam
+            hidratação frequente. O modelo com 3 torneiras permite que vários atletas se hidratem
             simultaneamente, sem interromper o ritmo dos treinos. Prefira modelos com torneiras de
-            acionamento por alavanca para facilitar o uso sem contato das mÃ£os, reduzindo o risco de
-            contaminaÃ§Ã£o cruzada.
+            acionamento por alavanca para facilitar o uso sem contato das mãos, reduzindo o risco de
+            contaminação cruzada.
           </p>
 
           <p className="mb-4">
-            <strong>Hospitais e clÃ­nicas:</strong> Nesses ambientes, a qualidade da Ã¡gua e a facilidade
-            de higienizaÃ§Ã£o sÃ£o prioridades absolutas. Bebedouros com filtro embutido e materiais
-            certificados pela ANVISA sÃ£o obrigatÃ³rios. O modelo com 3 torneiras atende corredores com
-            grande circulaÃ§Ã£o de pacientes e visitantes, mantendo a hidrataÃ§Ã£o acessÃ­vel sem gerar
-            aglomeraÃ§Ãµes.
+            <strong>Hospitais e clínicas:</strong> Nesses ambientes, a qualidade da água e a facilidade
+            de higienização são prioridades absolutas. Bebedouros com filtro embutido e materiais
+            certificados pela ANVISA são obrigatórios. O modelo com 3 torneiras atende corredores com
+            grande circulação de pacientes e visitantes, mantendo a hidratação acessível sem gerar
+            aglomerações.
           </p>
         </section>
 
@@ -345,8 +345,8 @@ export default function BebedouroIndustrial3TorneirasPage() {
             Modelos Relacionados
           </h2>
           <p className="mb-4">
-            Se o bebedouro industrial de 3 torneiras nÃ£o for o modelo ideal para o seu ambiente, conheÃ§a
-            as alternativas disponÃ­veis na linha de bebedouros industriais da JG Bebedouros:
+            Se o bebedouro industrial de 3 torneiras não for o modelo ideal para o seu ambiente, conheça
+            as alternativas disponíveis na linha de bebedouros industriais da JG Bebedouros:
           </p>
 
           <p className="mb-4">
@@ -356,9 +356,9 @@ export default function BebedouroIndustrial3TorneirasPage() {
               </a>
               :
             </strong>{' '}
-            Indicado para ambientes menores, com fluxo de usuÃ¡rios moderado. Ocupa menos espaÃ§o e tem
-            custo de aquisiÃ§Ã£o e manutenÃ§Ã£o menores. Ideal para escritÃ³rios com atÃ© 30 funcionÃ¡rios ou
-            pequenos estabelecimentos comerciais onde o espaÃ§o Ã© um fator limitante.
+            Indicado para ambientes menores, com fluxo de usuários moderado. Ocupa menos espaço e tem
+            custo de aquisição e manutenção menores. Ideal para escritórios com até 30 funcionários ou
+            pequenos estabelecimentos comerciais onde o espaço é um fator limitante.
           </p>
 
           <p className="mb-4">
@@ -369,8 +369,8 @@ export default function BebedouroIndustrial3TorneirasPage() {
               :
             </strong>{' '}
             Para ambientes com demanda ainda maior, o modelo de 4 torneiras permite o atendimento
-            simultÃ¢neo de mais usuÃ¡rios. Recomendado para grandes refeitÃ³rios, estÃ¡dios, centros de
-            convenÃ§Ãµes e terminais de transporte pÃºblico com fluxo intenso e contÃ­nuo de pessoas.
+            simultâneo de mais usuários. Recomendado para grandes refeitórios, estádios, centros de
+            convenções e terminais de transporte público com fluxo intenso e contínuo de pessoas.
           </p>
 
           <p className="mb-4">
@@ -380,9 +380,9 @@ export default function BebedouroIndustrial3TorneirasPage() {
               </a>
               :
             </strong>{' '}
-            Modelo compacto e econÃ´mico, adequado para ambientes com menos usuÃ¡rios ou espaÃ§o reduzido.
-            Apesar da menor capacidade de reservatÃ³rio, mantÃ©m a qualidade de resfriamento e a
-            durabilidade caracterÃ­stica da linha industrial, com certificaÃ§Ã£o INMETRO e atendimento Ã s
+            Modelo compacto e econômico, adequado para ambientes com menos usuários ou espaço reduzido.
+            Apesar da menor capacidade de reservatório, mantém a qualidade de resfriamento e a
+            durabilidade característica da linha industrial, com certificação INMETRO e atendimento às
             normas NBR 13713 e NR-24.
           </p>
         </section>
@@ -392,48 +392,48 @@ export default function BebedouroIndustrial3TorneirasPage() {
             className="text-[30px] font-black text-txt mb-4 pb-2 border-b-2 border-borda"
             style={{ fontFamily: 'var(--font-barlow-condensed)' }}
           >
-            PreÃ§o e OrÃ§amento
+            Preço e Orçamento
           </h2>
           <p className="mb-4">
-            O preÃ§o do bebedouro industrial de 3 torneiras varia conforme a capacidade do reservatÃ³rio,
+            O preço do bebedouro industrial de 3 torneiras varia conforme a capacidade do reservatório,
             o material do gabinete, a marca e os recursos adicionais como filtro embutido ou sistema de
-            purificaÃ§Ã£o ultravioleta. De forma geral, modelos de entrada com reservatÃ³rio de 25 litros
-            partem de valores acessÃ­veis para pequenas empresas, enquanto os de 100 litros representam
-            investimento maior, justificado pela durabilidade e pelo desempenho em operaÃ§Ãµes contÃ­nuas.
+            purificação ultravioleta. De forma geral, modelos de entrada com reservatório de 25 litros
+            partem de valores acessíveis para pequenas empresas, enquanto os de 100 litros representam
+            investimento maior, justificado pela durabilidade e pelo desempenho em operações contínuas.
           </p>
 
           <p className="mb-4">
-            Para conhecer os valores atualizados e comparar as opÃ§Ãµes disponÃ­veis,{' '}
+            Para conhecer os valores atualizados e comparar as opções disponíveis,{' '}
             <a href="/blog/bebedouro-industrial-preco-2025" className="text-az hover:underline">
-              veja a faixa de preÃ§o
+              veja a faixa de preço
             </a>{' '}
-            dos principais modelos em 2025. O guia cobre desde modelos bÃ¡sicos atÃ© os mais sofisticados,
-            com anÃ¡lise de custo-benefÃ­cio para cada faixa de investimento e indicaÃ§Ã£o dos modelos mais
+            dos principais modelos em 2025. O guia cobre desde modelos básicos até os mais sofisticados,
+            com análise de custo-benefício para cada faixa de investimento e indicação dos modelos mais
             vendidos por segmento.
           </p>
 
           <p className="mb-4">
-            Para empresas localizadas no estado de SÃ£o Paulo, a JG Bebedouros atende com entrega e
-            instalaÃ§Ã£o{' '}
+            Para empresas localizadas no estado de São Paulo, a JG Bebedouros atende com entrega e
+            instalação{' '}
             <a href="/local/bebedouro-industrial-sao-paulo" className="text-az hover:underline">
-              em SÃ£o Paulo
+              em São Paulo
             </a>{' '}
-            e no interior, com suporte tÃ©cnico especializado e peÃ§as de reposiÃ§Ã£o disponÃ­veis em estoque
+            e no interior, com suporte técnico especializado e peças de reposição disponíveis em estoque
             para garantir a continuidade operacional dos equipamentos.
           </p>
 
           <p className="mb-4">
-            AlÃ©m do preÃ§o de aquisiÃ§Ã£o, considere os custos recorrentes de manutenÃ§Ã£o preventiva, troca
-            de filtros e consumo de energia. Um bebedouro com maior eficiÃªncia energÃ©tica pode ter custo
+            Além do preço de aquisição, considere os custos recorrentes de manutenção preventiva, troca
+            de filtros e consumo de energia. Um bebedouro com maior eficiência energética pode ter custo
             inicial mais alto, mas representar economia significativa ao longo do tempo, especialmente
-            em instalaÃ§Ãµes com uso contÃ­nuo por dois ou mais turnos diÃ¡rios.
+            em instalações com uso contínuo por dois ou mais turnos diários.
           </p>
 
           <p className="mb-4">
-            Para obter um orÃ§amento preciso e personalizado para a sua demanda, acesse o site da JG
-            Bebedouros e preencha o formulÃ¡rio de contato. Nossa equipe analisarÃ¡ o perfil do ambiente â€”
-            nÃºmero de usuÃ¡rios, horas de funcionamento e requisitos de temperatura â€” e indicarÃ¡ o modelo
-            mais adequado com o melhor custo-benefÃ­cio para a sua operaÃ§Ã£o.
+            Para obter um orçamento preciso e personalizado para a sua demanda, acesse o site da JG
+            Bebedouros e preencha o formulário de contato. Nossa equipe analisará o perfil do ambiente —
+            número de usuários, horas de funcionamento e requisitos de temperatura — e indicará o modelo
+            mais adequado com o melhor custo-benefício para a sua operação.
           </p>
         </section>
       </PilarLayout>
