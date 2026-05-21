@@ -1,4 +1,5 @@
 ﻿import Link from 'next/link'
+import OrcamentoModal from '@/components/layout/OrcamentoModal'
 
 export default function Header() {
   return (
@@ -14,11 +15,8 @@ export default function Header() {
             <span className="text-az font-black italic">Bebedouro</span>
           </h1>
         </Link>
-        <div className="hidden lg:flex items-center gap-4">
-          <div className="text-right">
-            <p className="text-[13px] text-txt3 uppercase tracking-wider font-semibold">O portal do setor</p>
-            <p className="text-[13px] text-txt3">portaldobebedouro.com.br</p>
-          </div>
+        <div className="hidden lg:flex items-center">
+          <OrcamentoModal />
         </div>
       </div>
     </header>

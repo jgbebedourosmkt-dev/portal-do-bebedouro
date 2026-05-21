@@ -7,6 +7,7 @@ import Header from '@/components/layout/Header'
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
 import { getLocalPageBySlug, getAllLocalPages, type LocalPage } from '@/lib/local'
+import OrcamentoModal from '@/components/layout/OrcamentoModal'
 
 // Páginas hardcoded (mantidas para compatibilidade)
 interface CityData {
@@ -159,8 +160,6 @@ function LocalPageFromJson({ data, slug }: { data: LocalPage; slug: string }) {
         },
       ]
 
-  const utmCity = data.name.toLowerCase().replace(/\s+/g, '-')
-
   return (
     <>
       <Topbar />
@@ -215,14 +214,9 @@ function LocalPageFromJson({ data, slug }: { data: LocalPage; slug: string }) {
           </p>
         )}
 
-        <a
-          href={`https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=local&utm_campaign=bebedouro-industrial-${utmCity}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-az text-white font-bold px-6 py-3 rounded mb-10 hover:bg-az2 transition-colors"
-        >
-          Solicitar orçamento {data.prep} {data.name}
-        </a>
+        <OrcamentoModal
+          triggerClassName="inline-block bg-az text-white font-bold px-6 py-3 rounded mb-10 hover:bg-az2 transition-colors"
+        />
 
         {/* Conteúdo principal gerado pelo Gemini */}
         {data.content && (
@@ -275,14 +269,9 @@ function LocalPageFromJson({ data, slug }: { data: LocalPage; slug: string }) {
           <p className="text-[14px] mb-4 opacity-90">
             JG Bebedouros oferece venda e manutenção com atendimento {data.prep} {localRef}.
           </p>
-          <a
-            href={`https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=cta-fim&utm_campaign=bebedouro-industrial-${utmCity}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-acc text-az font-bold px-8 py-3 rounded hover:opacity-90 transition-opacity"
-          >
-            Pedir orçamento grátis
-          </a>
+          <OrcamentoModal
+            triggerClassName="inline-block bg-acc text-az font-bold px-8 py-3 rounded hover:opacity-90 transition-opacity"
+          />
         </div>
       </main>
 
@@ -358,14 +347,9 @@ function LocalPageHardcoded({ city, slug }: { city: CityData; slug: string }) {
           galpões e empresas de todos os tamanhos.
         </p>
 
-        <a
-          href={`https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=local&utm_campaign=bebedouro-industrial-${city.name.toLowerCase().replace(/\s+/g, '-')}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-az text-white font-bold px-6 py-3 rounded mb-10 hover:bg-az2 transition-colors"
-        >
-          Solicitar orçamento em {city.name}
-        </a>
+        <OrcamentoModal
+          triggerClassName="inline-block bg-az text-white font-bold px-6 py-3 rounded mb-10 hover:bg-az2 transition-colors"
+        />
 
         <section className="mb-10">
           <h2
@@ -462,14 +446,9 @@ function LocalPageHardcoded({ city, slug }: { city: CityData; slug: string }) {
           <p className="text-[14px] mb-4 opacity-90">
             JG Bebedouros oferece venda e manutenção com atendimento em {city.name}/{city.stateAbbr}.
           </p>
-          <a
-            href={`https://jgbebedouros.com.br?utm_source=portaldobebedouro&utm_medium=cta-fim&utm_campaign=bebedouro-industrial-${city.name.toLowerCase().replace(/\s+/g, '-')}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-acc text-az font-bold px-8 py-3 rounded hover:opacity-90 transition-opacity"
-          >
-            Pedir orçamento grátis
-          </a>
+          <OrcamentoModal
+            triggerClassName="inline-block bg-acc text-az font-bold px-8 py-3 rounded hover:opacity-90 transition-opacity"
+          />
         </div>
       </main>
 

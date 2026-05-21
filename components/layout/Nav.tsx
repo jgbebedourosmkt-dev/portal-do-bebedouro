@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import OrcamentoModal from '@/components/layout/OrcamentoModal'
 
 const links = [
   { href: '/', label: 'Início' },
@@ -77,26 +78,9 @@ export default function Nav() {
           })}
         </ul>
 
-        {/* Mobile: logo + ícones na mesma linha */}
-        <div className="flex md:hidden items-center justify-between w-full py-1.5">
-          <Link href="/" className="leading-none">
-            <span
-              className="text-[32px] font-black tracking-tight leading-none"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-            >
-              <span className="text-[#111]">Portal</span>
-              <span className="text-gray-300 font-light mx-1">do</span>
-              <span className="text-az font-black italic">Bebedouro</span>
-            </span>
-          </Link>
-          <div className="flex items-center gap-1">
-            <a
-              href="/busca"
-              aria-label="Buscar"
-              className="flex items-center justify-center w-9 h-9 text-txt3 hover:text-az transition-colors"
-            >
-              <IconSearch size={20} />
-            </a>
+        {/* Mobile: hamburger esquerda | logo centro | botão direita */}
+        <div className="grid grid-cols-3 md:hidden items-center w-full py-1.5">
+          <div className="flex items-center">
             <button
               onClick={() => setOpen(!open)}
               aria-label={open ? 'Fechar menu' : 'Abrir menu'}
@@ -104,6 +88,21 @@ export default function Nav() {
             >
               {open ? <IconClose /> : <IconMenu />}
             </button>
+          </div>
+          <div className="flex justify-center">
+            <Link href="/" className="leading-none">
+              <span
+                className="text-[28px] font-black tracking-tight leading-none"
+                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
+              >
+                <span className="text-[#111]">Portal</span>
+                <span className="text-gray-300 font-light mx-1">do</span>
+                <span className="text-az font-black italic">Bebedouro</span>
+              </span>
+            </Link>
+          </div>
+          <div className="flex justify-end items-center">
+            <OrcamentoModal size="sm" />
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import React from 'react'
+import OrcamentoModal from '@/components/layout/OrcamentoModal'
 
 export interface PilarFaq {
   question: string
@@ -101,16 +102,10 @@ export default function PilarLayout({
             <p className="text-[16px] md:text-[19px] text-white/85 leading-relaxed mb-6 max-w-[600px]">
               {excerpt}
             </p>
-            <a
-              href={ctaHref}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-acc text-az font-black text-[15px] px-6 py-3 rounded hover:bg-white transition-colors"
-              style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-            >
-              {ctaLabel}
-              <IconArrow />
-            </a>
+            <OrcamentoModal
+              triggerClassName="inline-flex items-center gap-2 bg-acc text-az font-black text-[15px] px-6 py-3 rounded hover:bg-white transition-colors"
+              showArrow
+            />
           </div>
         </div>
       </div>
@@ -191,16 +186,10 @@ export default function PilarLayout({
                 {finalCtaTitle}
               </p>
               <p className="text-[15px] text-white/80 mb-6">{finalCtaDesc}</p>
-              <a
-                href={sidebarCtaHref}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-acc text-az font-black text-[16px] px-8 py-3.5 rounded-lg hover:bg-white transition-colors"
-                style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-              >
-                {finalCtaLabel}
-                <IconArrow />
-              </a>
+              <OrcamentoModal
+                triggerClassName="inline-flex items-center gap-2 bg-acc text-az font-black text-[16px] px-8 py-3.5 rounded-lg hover:bg-white transition-colors"
+                showArrow
+              />
             </div>
           </main>
 
@@ -275,15 +264,9 @@ export default function PilarLayout({
                   Precisa de orçamento?
                 </p>
                 <p className="text-[12px] text-white/70 mb-4">Atendimento em todo o Brasil</p>
-                <a
-                  href={sidebarCtaHref}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="block w-full bg-acc text-az font-black text-[14px] py-2.5 rounded-lg hover:bg-white transition-colors"
-                  style={{ fontFamily: 'var(--font-barlow-condensed)' }}
-                >
-                  {sidebarCtaLabel}
-                </a>
+                <OrcamentoModal
+                  triggerClassName="block w-full bg-acc text-az font-black text-[14px] py-2.5 rounded-lg hover:bg-white transition-colors"
+                />
               </div>
 
             </div>
