@@ -1,7 +1,7 @@
 {
   "slug": "filtro-industrial-3-torneiras",
   "metaTitle": "Filtro Industrial 3 Torneiras: Capacidade e Indicações",
-  "metaDescription": "Filtro industrial 3 torneiras (100 L): água filtrada e gelada para 50 a 150 por turno. Veja onde usar, instalação e troca do refil.",
+  "metaDescription": "Filtro industrial 3 torneiras (100 L): água filtrada e gelada para 50 a 150 pessoas por turno. Veja onde usar, instalação e troca do refil.",
   "badge": "Guia Completo",
   "title": "Filtro Industrial 3 Torneiras (100 L)",
   "excerpt": "Água filtrada e gelada com 3 saídas simultâneas e reservatório de 100 L em inox: veja para quem o modelo é indicado e como mantê-lo.",
@@ -12,6 +12,10 @@
     {
       "href": "#o-que-e",
       "label": "O que é o filtro industrial 3 torneiras"
+    },
+    {
+      "href": "#vs-galao",
+      "label": "Filtro industrial x garrafão"
     },
     {
       "href": "#onde-usar",
@@ -47,15 +51,15 @@
   "faqs": [
     {
       "question": "Quantas pessoas atende o filtro industrial 3 torneiras?",
-      "answer": "De 50 a 150 pessoas por turno, conforme o consumo e o calor do ambiente."
+      "answer": "De 50 a 150 pessoas por turno, conforme o consumo e o calor."
     },
     {
-      "question": "O filtro industrial 3 torneiras serve para escola?",
-      "answer": "Sim, é um dos usos mais comuns. As três saídas reduzem a fila do recreio, e o inox aguenta o uso pesado."
+      "question": "Serve para escola?",
+      "answer": "Sim. As três saídas reduzem a fila do recreio, e o inox aguenta uso pesado."
     },
     {
-      "question": "Qual a voltagem do filtro industrial 3 torneiras?",
-      "answer": "É vendido em 127 V ou 220 V. Confira a tensão da tomada antes da compra."
+      "question": "Qual a voltagem?",
+      "answer": "É vendido em 127 V ou 220 V. Confira a tomada antes da compra."
     }
   ],
   "internalLinks": [
@@ -111,27 +115,27 @@
           "name": "Quantas pessoas atende o filtro industrial 3 torneiras?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "De 50 a 150 pessoas por turno, conforme o consumo e o calor do ambiente."
+            "text": "De 50 a 150 pessoas por turno, conforme o consumo e o calor."
           }
         },
         {
           "@type": "Question",
-          "name": "O filtro industrial 3 torneiras serve para escola?",
+          "name": "Serve para escola?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim, é um dos usos mais comuns. As três saídas reduzem a fila do recreio, e o inox aguenta o uso pesado."
+            "text": "Sim. As três saídas reduzem a fila do recreio, e o inox aguenta uso pesado."
           }
         },
         {
           "@type": "Question",
-          "name": "Qual a voltagem do filtro industrial 3 torneiras?",
+          "name": "Qual a voltagem?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "É vendido em 127 V ou 220 V. Confira a tensão da tomada antes da compra."
+            "text": "É vendido em 127 V ou 220 V. Confira a tomada antes da compra."
           }
         }
       ]
     }
   ],
-  "html": "<section id=\"o-que-e\"><h2>O que é o filtro industrial 3 torneiras</h2><p>É um <a href=\"/filtro-industrial\">filtro industrial</a> com 3 torneiras e reservatório de 100 L: a água da rede passa por um elemento filtrante, é armazenada em tanque de aço inox e resfriada por compressor. Ele entrega água filtrada e gelada para 3 pessoas ao mesmo tempo.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20100%20litros%20inox%203%20torneiras%20robust%20angulo%20fontal.png\" alt=\"bebedouro 100 litros inox 3 torneiras robust angulo fontal\" class=\"flutua-esq\" loading=\"lazy\"/><p>O modelo substitui galões e bebedouros de garrafão com vantagem: água ilimitada da rede, sem logística de reposição e com custo recorrente limitado à energia e ao refil.</p><div class=\"limpa\"></div></section><section id=\"onde-usar\"><h2>Onde usar</h2><p>O 3 torneiras de 100 litros é o modelo mais versátil:</p><ul><li>Fábricas e galpões de porte médio.</li><li>Escolas e faculdades, no pátio ou perto da quadra.</li><li>Academias, igrejas e condomínios.</li></ul></section><section id=\"instalacao\"><h2>Instalação</h2><p>Precisa de ponto de água com registro, tomada exclusiva e aterrada na tensão do equipamento e, idealmente, ponto de esgoto para o dreno do aparador. Deixe espaço livre atrás para ventilação e evite locais com sol direto.</p><p>Antes do primeiro uso, deixe correr alguns litros para eliminar resíduos de carvão do refil novo. O passo a passo completo está em <a href=\"/artigo/como-instalar-bebedouro-industrial\">como instalar o bebedouro industrial</a>.</p></section><section id=\"manutencao\"><h2>Troca do refil e manutenção</h2><p>Troque o refil a cada 6 meses ou antes, se a vazão cair ou a água mudar de gosto. Higienize o reservatório no mesmo intervalo e limpe torneiras e aparador todos os dias. Registrar as datas em uma etiqueta no próprio equipamento facilita o controle.</p><p>Veja <a href=\"/artigo/como-trocar-filtro-bebedouro-industrial\">como trocar o filtro</a> e compare com o <a href=\"/filtro-industrial-2-torneiras\">filtro industrial 2 torneiras</a> e o <a href=\"/filtro-industrial-4-torneiras\">filtro industrial 4 torneiras</a>.</p></section>"
+  "html": "<section id=\"o-que-e\"><h2>O que é o filtro industrial 3 torneiras</h2><p>Um <a href=\"/filtro-industrial\">filtro industrial</a> que filtra, gela e serve água para 3 pessoas ao mesmo tempo.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20100%20litros%20inox%203%20torneiras%20robust%20angulo%20fontal.png\" alt=\"bebedouro 100 litros inox 3 torneiras robust angulo fontal\" class=\"flutua-esq\" loading=\"lazy\"/><dl class=\"ficha\"><dt>Reservatório</dt><dd>100 L</dd><dt>Torneiras</dt><dd>3</dd><dt>Atendimento</dt><dd>50 a 150 pessoas por turno</dd><dt>Filtragem</dt><dd>pré-filtro + carvão ativado (conforme modelo)</dd><dt>Gabinete</dt><dd>aço inox</dd></dl><div class=\"limpa\"></div></section><section id=\"vs-galao\"><h2>Filtro industrial x garrafão</h2><div class=\"grade-cards\"><div class=\"card-info\"><h3>Filtro industrial</h3><ul><li>Água ilimitada da rede</li><li>Sem estoque nem frete de galões</li><li>Custo recorrente só de energia e refil</li></ul></div><div class=\"card-info contra\"><h3>O que ele exige</h3><ul><li>Precisa de ponto de água e tomada</li><li>Refil precisa ser trocado no prazo</li></ul></div></div><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Galões de 20 L que a equipe consome por mês</span><p class=\"grafico-sub\">Quanto um bebedouro ligado à rede deixa de comprar</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"10 pessoas: 22 galões\"><span class=\"barra-rotulo\">10 pessoas</span><span class=\"barra-trilho\" style=\"--v:8.0%\"><span class=\"barra-valor\">22 galões</span></span></li><li class=\"barra\" title=\"25 pessoas: 55 galões\"><span class=\"barra-rotulo\">25 pessoas</span><span class=\"barra-trilho\" style=\"--v:20.0%\"><span class=\"barra-valor\">55 galões</span></span></li><li class=\"barra\" title=\"50 pessoas: 110 galões\"><span class=\"barra-rotulo\">50 pessoas</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">110 galões</span></span></li><li class=\"barra\" title=\"100 pessoas: 220 galões\"><span class=\"barra-rotulo\">100 pessoas</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">220 galões</span></span></li></ul><p class=\"grafico-fonte\">Cálculo do Portal do Bebedouro: 2 L por pessoa por dia × 22 dias úteis ÷ 20 L.</p></figure></section><section id=\"onde-usar\"><h2>Onde usar</h2><p>O modelo mais versátil:</p><ul class=\"checklist\"><li>Fábricas e galpões de porte médio.</li><li>Escolas e faculdades, no pátio ou perto da quadra.</li><li>Academias, igrejas e condomínios.</li></ul></section><section id=\"instalacao\"><h2>Instalação</h2><ol class=\"passos\"><li><strong>Ponto de água</strong> com registro.</li><li><strong>Tomada exclusiva e aterrada</strong> na tensão do equipamento.</li><li><strong>Dreno</strong> do aparador ligado ao esgoto, se possível.</li><li><strong>Primeiro uso:</strong> deixe correr alguns litros para eliminar o pó de carvão do refil novo.</li></ol></section><section id=\"manutencao\"><h2>Troca do refil e manutenção</h2><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">De quanto em quanto tempo trocar o filtro</span><p class=\"grafico-sub\">Intervalo máximo em meses, conforme o uso</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"Uso leve, água de boa qualidade: 6 meses\"><span class=\"barra-rotulo\">Uso leve, água de boa qualidade</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">6 meses</span></span></li><li class=\"barra\" title=\"Uso intenso: 4 meses\"><span class=\"barra-rotulo\">Uso intenso</span><span class=\"barra-trilho\" style=\"--v:53.3%\"><span class=\"barra-valor\">4 meses</span></span></li><li class=\"barra\" title=\"Uso muito intenso ou água com sedimentos: 3 meses\"><span class=\"barra-rotulo\">Uso muito intenso ou água com sedimentos</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">3 meses</span></span></li></ul><p class=\"grafico-fonte\">Referência de mercado. O manual do fabricante prevalece.</p></figure><aside class=\"destaque\"><strong class=\"destaque-titulo\">Dica</strong><p>Cole uma etiqueta no equipamento com a data da última troca. Facilita o controle e serve de prova em inspeções. Compare com o <a href=\"/filtro-industrial-2-torneiras\">filtro 2 torneiras</a> e o <a href=\"/filtro-industrial-4-torneiras\">filtro 4 torneiras</a>.</p></aside></section>"
 }

@@ -4,7 +4,7 @@
   "metaDescription": "Bebedouro 4 Torneiras: quantas pessoas atende, capacidade do reservatório, onde usar e como instalar. Guia com modelos em inox.",
   "badge": "Guia Completo",
   "title": "Bebedouro 4 Torneiras: Capacidade, Modelos e Indicações",
-  "excerpt": "O bebedouro com 4 torneiras permite que 4 pessoas se sirvam ao mesmo tempo. Veja a capacidade típica, para quantos usuários ele é indicado e como escolher o modelo.",
+  "excerpt": "O bebedouro com 4 torneiras permite que 4 pessoas se sirvam ao mesmo tempo. Veja a capacidade típica, para quantos usuários ele é indicado e como escolher.",
   "breadcrumbLabel": "Bebedouro 4 Torneiras: Capacidade, Modelos e Indicações",
   "finalCtaTitle": "Procurando um bebedouro 4 torneiras?",
   "finalCtaDesc": "A JG Bebedouros fabrica modelos industriais em inox com entrega e assistência em todo o Brasil.",
@@ -12,6 +12,10 @@
     {
       "href": "#o-que-e",
       "label": "O que é um bebedouro 4 torneiras"
+    },
+    {
+      "href": "#fila",
+      "label": "Por que o número de torneiras importa"
     },
     {
       "href": "#capacidade",
@@ -40,7 +44,7 @@
       "label": "Pessoas servidas ao mesmo tempo"
     },
     {
-      "valor": "150 a 300 pessoas",
+      "valor": "150 a 300",
       "label": "Usuários por turno"
     },
     {
@@ -51,19 +55,19 @@
   "faqs": [
     {
       "question": "Quantas pessoas atende um bebedouro 4 torneiras?",
-      "answer": "Com 200 litros de reservatório, atende de 150 a 300 pessoas por turno. Em obras e locais quentes, onde cada trabalhador pode consumir mais de 3 litros, a referência mais segura é a parte de baixo dessa faixa."
+      "answer": "De 150 a 300 pessoas por turno. Em obras e locais quentes, considere a parte de baixo dessa faixa."
     },
     {
       "question": "Bebedouro 4 torneiras consome muita energia?",
-      "answer": "Consome mais que os modelos menores, porque o compressor é maior, mas o custo por pessoa atendida tende a ser menor do que o de vários bebedouros pequenos. Instalar em local ventilado e longe do sol direto reduz bastante o consumo."
+      "answer": "Mais que os modelos menores, mas o custo por pessoa atendida tende a ser menor do que o de vários bebedouros pequenos. Local ventilado e longe do sol reduz bastante o consumo."
     },
     {
       "question": "Dá para usar bebedouro 4 torneiras em obra?",
-      "answer": "Sim, é o uso mais comum. Em obra, escolha modelo em inox, com pés reguláveis, e planeje o ponto de água e energia antes da chegada do equipamento. A NR-18 e a NR-24 exigem água potável e fresca nas frentes de trabalho."
+      "answer": "Sim, é o uso mais comum. Escolha modelo em inox com pés reguláveis e prepare ponto de água e energia antes da entrega."
     },
     {
-      "question": "Qual a diferença entre o 4 torneiras e dois bebedouros de 2 torneiras?",
-      "answer": "Um único equipamento de 200 litros ocupa menos espaço, exige um ponto de instalação só e concentra a manutenção. Dois equipamentos menores distribuem melhor o acesso em áreas grandes. A escolha depende da planta do local."
+      "question": "Um 4 torneiras ou dois de 2 torneiras?",
+      "answer": "Um único equipamento ocupa menos espaço e concentra a manutenção. Dois menores distribuem melhor o acesso em áreas grandes."
     }
   ],
   "internalLinks": [
@@ -127,7 +131,7 @@
           "name": "Quantas pessoas atende um bebedouro 4 torneiras?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Com 200 litros de reservatório, atende de 150 a 300 pessoas por turno. Em obras e locais quentes, onde cada trabalhador pode consumir mais de 3 litros, a referência mais segura é a parte de baixo dessa faixa."
+            "text": "De 150 a 300 pessoas por turno. Em obras e locais quentes, considere a parte de baixo dessa faixa."
           }
         },
         {
@@ -135,7 +139,7 @@
           "name": "Bebedouro 4 torneiras consome muita energia?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Consome mais que os modelos menores, porque o compressor é maior, mas o custo por pessoa atendida tende a ser menor do que o de vários bebedouros pequenos. Instalar em local ventilado e longe do sol direto reduz bastante o consumo."
+            "text": "Mais que os modelos menores, mas o custo por pessoa atendida tende a ser menor do que o de vários bebedouros pequenos. Local ventilado e longe do sol reduz bastante o consumo."
           }
         },
         {
@@ -143,19 +147,19 @@
           "name": "Dá para usar bebedouro 4 torneiras em obra?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim, é o uso mais comum. Em obra, escolha modelo em inox, com pés reguláveis, e planeje o ponto de água e energia antes da chegada do equipamento. A NR-18 e a NR-24 exigem água potável e fresca nas frentes de trabalho."
+            "text": "Sim, é o uso mais comum. Escolha modelo em inox com pés reguláveis e prepare ponto de água e energia antes da entrega."
           }
         },
         {
           "@type": "Question",
-          "name": "Qual a diferença entre o 4 torneiras e dois bebedouros de 2 torneiras?",
+          "name": "Um 4 torneiras ou dois de 2 torneiras?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Um único equipamento de 200 litros ocupa menos espaço, exige um ponto de instalação só e concentra a manutenção. Dois equipamentos menores distribuem melhor o acesso em áreas grandes. A escolha depende da planta do local."
+            "text": "Um único equipamento ocupa menos espaço e concentra a manutenção. Dois menores distribuem melhor o acesso em áreas grandes."
           }
         }
       ]
     }
   ],
-  "html": "<section id=\"o-que-e\"><h2>O que é um bebedouro 4 torneiras</h2><p>O bebedouro 4 torneiras é um equipamento de água gelada com 4 saídas independentes, pensado para locais onde várias pessoas precisam beber no mesmo momento. Na prática, quase todos os modelos com 4 torneiras são <a href=\"/bebedouro-industrial\">bebedouros industriais</a>, com gabinete em aço inox e reservatório na faixa de 200 L.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros\" class=\"flutua-esq\" loading=\"lazy\"/><p>O número de torneiras não muda a temperatura da água, mas muda a velocidade com que a fila anda. Em intervalos curtos, como pausa de 15 minutos ou troca de turno, ter 4 pontos de saída é o que garante que todos consigam se hidratar sem perder o horário.</p><div class=\"limpa\"></div></section><section id=\"capacidade\"><h2>Capacidade e número de usuários</h2><p>Com reservatório de 200 L, o bebedouro 4 torneiras atende com folga 150 a 300 pessoas por turno, considerando consumo de 1 a 2 litros por pessoa. Em ambientes quentes ou de esforço físico, onde o consumo passa de 3 litros, vale reduzir essa conta pela metade ou instalar um segundo ponto.</p><p>Lembre que o volume do reservatório é a água já gelada disponível. Depois que ela é consumida, o compressor precisa de tempo para resfriar a água que entra. Por isso o pico de uso pesa mais no dimensionamento do que o total do dia.</p></section><section id=\"onde-usar\"><h2>Onde o bebedouro 4 torneiras é indicado</h2><p>O bebedouro 4 torneiras é a opção para quem precisa de muita água gelada em um único ponto:</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros%20ambiente%20obra.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros ambiente obra\" class=\"flutua-esq\" loading=\"lazy\"/><ul><li>Canteiros de obra e frentes de trabalho com equipes grandes e trabalho pesado sob calor.</li><li>Galpões logísticos, centros de distribuição e indústrias com turnos numerosos.</li><li>Refeitórios industriais, onde todos chegam ao mesmo tempo.</li><li>Eventos, ginásios e estádios de pequeno porte.</li></ul><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação e manutenção</h2><p>Os modelos industriais são ligados à rede hidráulica por mangueira com registro e a uma tomada de 127 V ou 220 V, conforme a versão. Instale sobre piso nivelado, com espaço livre atrás e nas laterais para a ventilação do condensador, e longe de fontes de calor como fornos e paredes com sol direto.</p><p>Na rotina, limpe torneiras e aparador diariamente, higienize o reservatório a cada 6 meses e troque o filtro no mesmo intervalo. O passo a passo está em <a href=\"/artigo/como-instalar-bebedouro-industrial\">como instalar o bebedouro industrial</a> e <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar o bebedouro industrial</a>.</p></section><section id=\"comparativo\"><h2>Comparativo: 2, 3 ou 4 torneiras</h2><table><thead><tr><th>Torneiras</th><th>Reservatório típico</th><th>Usuários por turno</th></tr></thead><tbody><tr><td>2</td><td>25 a 50 L</td><td>até 50</td></tr><tr><td>3</td><td>100 L</td><td>50 a 150</td></tr><tr><td>4</td><td>200 L</td><td>150 a 300</td></tr></tbody></table><p>Se o seu caso fica no limite entre duas faixas, prefira a maior: a diferença de preço costuma ser menor do que o custo de uma fila diária. Compare também com o <a href=\"/bebedouro-2-torneiras\">bebedouro 2 torneiras</a> e o <a href=\"/bebedouro-3-torneiras\">bebedouro 3 torneiras</a>.</p></section>"
+  "html": "<section id=\"o-que-e\"><h2>O que é um bebedouro 4 torneiras</h2><p>É um equipamento de água gelada com 4 saídas independentes, feito para locais onde várias pessoas bebem no mesmo momento. Na prática, quase todos os modelos com 4 torneiras são <a href=\"/bebedouro-industrial\">bebedouros industriais</a>.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros\" class=\"flutua-esq\" loading=\"lazy\"/><dl class=\"ficha\"><dt>Reservatório</dt><dd>200 litros</dd><dt>Torneiras</dt><dd>4</dd><dt>Gabinete</dt><dd>aço inox</dd><dt>Tensão</dt><dd>127 V ou 220 V</dd><dt>Peso cheio</dt><dd>cerca de 200 kg só de água</dd></dl><div class=\"limpa\"></div></section><section id=\"fila\"><h2>Por que o número de torneiras importa</h2><p>As torneiras não mudam a temperatura da água, mas mudam a velocidade da fila. Em pausas curtas, é isso que garante que todos bebam:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Tempo para 60 pessoas se servirem</span><p class=\"grafico-sub\">Minutos, considerando 20 segundos por pessoa na torneira</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"1 torneira: 20 min\"><span class=\"barra-rotulo\">1 torneira</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">20 min</span></span></li><li class=\"barra\" title=\"2 torneiras: 10 min\"><span class=\"barra-rotulo\">2 torneiras</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">10 min</span></span></li><li class=\"barra\" title=\"3 torneiras: 6,7 min\"><span class=\"barra-rotulo\">3 torneiras</span><span class=\"barra-trilho\" style=\"--v:26.8%\"><span class=\"barra-valor\">6,7 min</span></span></li><li class=\"barra\" title=\"4 torneiras: 5 min\"><span class=\"barra-rotulo\">4 torneiras</span><span class=\"barra-trilho\" style=\"--v:20.0%\"><span class=\"barra-valor\">5 min</span></span></li></ul><p class=\"grafico-fonte\">Cálculo do Portal do Bebedouro: 60 pessoas × 20 s ÷ número de torneiras.</p></figure></section><section id=\"capacidade\"><h2>Capacidade e número de usuários</h2><p>Com 200 L, o bebedouro 4 torneiras atende 150 a 300 pessoas por turno. Compare com as outras capacidades:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Quantas pessoas cada capacidade atende</span><p class=\"grafico-sub\">Pessoas por turno, limite superior da faixa de referência</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"25 L · 2 torneiras: 25\"><span class=\"barra-rotulo\">25 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:6.7%\"><span class=\"barra-valor\">25</span></span></li><li class=\"barra\" title=\"30 L · 2 torneiras: 30\"><span class=\"barra-rotulo\">30 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:8.0%\"><span class=\"barra-valor\">30</span></span></li><li class=\"barra\" title=\"50 L · 2 torneiras: 50\"><span class=\"barra-rotulo\">50 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:13.3%\"><span class=\"barra-valor\">50</span></span></li><li class=\"barra\" title=\"100 L · 3 torneiras: 150\"><span class=\"barra-rotulo\">100 L · 3 torneiras</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">150</span></span></li><li class=\"barra\" title=\"200 L · 4 torneiras: 300\"><span class=\"barra-rotulo\">200 L · 4 torneiras</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">300</span></span></li></ul><p class=\"grafico-fonte\">Estimativa do Portal do Bebedouro com consumo de 1 a 2 L por pessoa no turno, em trabalho leve.</p></figure><aside class=\"destaque atencao\"><strong class=\"destaque-titulo\">Atenção</strong><p>Em ambientes quentes ou de esforço físico, onde o consumo passa de 3 litros por pessoa, reduza essa conta pela metade ou instale um segundo ponto.</p></aside></section><section id=\"onde-usar\"><h2>Onde o bebedouro 4 torneiras é indicado</h2><p>O 4 torneiras é a opção para muita água gelada em um único ponto:</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros%20ambiente%20obra.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros ambiente obra\" class=\"flutua-esq\" loading=\"lazy\"/><ul class=\"checklist\"><li>Canteiros de obra com equipes grandes e trabalho sob calor.</li><li>Galpões logísticos e centros de distribuição.</li><li>Refeitórios industriais, onde todos chegam juntos.</li><li>Eventos, ginásios e estádios de pequeno porte.</li></ul><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação e manutenção</h2><ol class=\"passos\"><li><strong>Ponto de água</strong> com registro, ligado por mangueira.</li><li><strong>Tomada exclusiva</strong> e aterrada, em 127 V ou 220 V conforme a versão.</li><li><strong>Ventilação</strong> com espaço livre atrás e nas laterais, longe do sol direto.</li><li><strong>Higienização inicial</strong> do reservatório antes do primeiro uso.</li></ol><p>Depois, limpe as torneiras todo dia e higienize o reservatório e troque o filtro a cada 6 meses. Veja <a href=\"/artigo/como-instalar-bebedouro-industrial\">como instalar</a> e <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar</a>.</p></section><section id=\"comparativo\"><h2>Comparativo: 2, 3 ou 4 torneiras</h2><div class=\"tabela-rolagem\"><table><thead><tr><th>Torneiras</th><th>Reservatório típico</th><th>Usuários por turno</th><th>Uso típico</th></tr></thead><tbody><tr><td><a href=\"/bebedouro-2-torneiras\">2</a></td><td>25 a 50 L</td><td>até 50</td><td>Escritórios, oficinas</td></tr><tr><td><a href=\"/bebedouro-3-torneiras\">3</a></td><td>100 L</td><td>50 a 150</td><td>Escolas, fábricas, academias</td></tr><tr><td><a href=\"/bebedouro-4-torneiras\">4</a></td><td>200 L</td><td>150 a 300</td><td>Obras, galpões, refeitórios</td></tr></tbody></table></div><aside class=\"destaque\"><strong class=\"destaque-titulo\">Dica</strong><p>Se o seu caso fica no limite entre duas faixas, prefira a maior: a diferença de preço costuma ser menor do que o custo de uma fila diária.</p></aside></section>"
 }

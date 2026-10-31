@@ -318,6 +318,8 @@ a:hover .foto img {
   border-bottom: var(--filete) solid var(--c-filete);
 }
 .tabela-rolagem {
+  /* largura vem do contêiner, não da tabela: a rolagem fica aqui dentro */
+  contain: inline-size;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -384,6 +386,225 @@ a:hover .foto img {
 }
 .prosa div:not([class]) > div:not([class]) > p {
   margin-top: var(--sp-1);
+}
+
+/* Caixas de destaque: dica (acento) e atenção (alerta) */
+.destaque {
+  padding: var(--sp-4) var(--sp-5);
+  border-left: 3px solid var(--c-acento);
+  background: var(--c-acento-suave);
+  border-radius: var(--raio);
+  font-size: 1rem;
+}
+.destaque.atencao {
+  border-left-color: var(--c-alerta);
+  background: var(--c-superficie-2);
+}
+.destaque-titulo {
+  display: block;
+  font-family: var(--ff-ui);
+  font-size: var(--fs-micro);
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-acento);
+}
+.destaque.atencao .destaque-titulo {
+  color: var(--c-alerta);
+}
+.destaque > * + * {
+  margin-top: var(--sp-2);
+}
+
+/* Passo a passo numerado */
+.prosa ol.passos {
+  padding-left: 0;
+  list-style: none;
+  counter-reset: passo;
+}
+.passos > li {
+  position: relative;
+  padding-left: 3rem;
+  counter-increment: passo;
+}
+.passos > li + li {
+  margin-top: var(--sp-4);
+}
+.passos > li::before {
+  content: counter(passo);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--c-acento);
+  color: var(--c-sobre-acento);
+  font-family: var(--ff-ui);
+  font-size: var(--fs-ui);
+  font-weight: 650;
+}
+
+/* Checklist */
+.prosa ul.checklist,
+.prosa ol.passos {
+  /* ao lado de foto flutuante, a lista recua inteira em vez de passar por baixo */
+  display: flow-root;
+}
+.prosa ul.checklist {
+  padding-left: 0;
+  list-style: none;
+}
+.checklist > li {
+  position: relative;
+  padding-left: 1.75rem;
+}
+.checklist > li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  font-family: var(--ff-ui);
+  font-weight: 650;
+  color: var(--c-ok);
+}
+.card-info ul {
+  padding-left: 1.1em;
+  font-size: var(--fs-ui);
+}
+.card-info.contra h3 {
+  color: var(--c-alerta);
+}
+
+/* Números em destaque dentro do texto */
+.numeros {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: var(--sp-4);
+  padding-block: var(--sp-4);
+  border-block: var(--filete) solid var(--c-filete);
+}
+.numeros strong {
+  display: block;
+  font-family: var(--ff-display);
+  font-size: var(--fs-h3);
+  font-weight: 560;
+  line-height: 1.1;
+  color: var(--c-acento);
+}
+.numeros span {
+  display: block;
+  margin-top: var(--sp-1);
+  font-family: var(--ff-ui);
+  font-size: var(--fs-meta);
+  line-height: 1.35;
+  color: var(--c-texto-3);
+}
+
+/* Ficha técnica (rótulo → valor) */
+.ficha {
+  display: grid;
+  grid-template-columns: minmax(8rem, auto) 1fr;
+  font-family: var(--ff-ui);
+  font-size: var(--fs-ui);
+}
+.ficha dt,
+.ficha dd {
+  padding-block: var(--sp-2);
+  border-bottom: var(--filete) solid var(--c-filete);
+}
+.ficha dt {
+  padding-right: var(--sp-4);
+  font-weight: 650;
+  color: var(--c-texto);
+}
+
+/* Gráfico de barras horizontais (série única, valor rotulado em cada barra) */
+.grafico {
+  margin-inline: 0;
+  padding: var(--sp-5);
+  border: var(--filete) solid var(--c-filete);
+  border-radius: var(--raio);
+  background: var(--c-superficie);
+}
+.grafico-titulo {
+  font-family: var(--ff-ui);
+  font-size: var(--fs-ui);
+  font-weight: 650;
+  color: var(--c-texto);
+}
+.grafico-sub {
+  margin-top: var(--sp-1);
+  font-family: var(--ff-ui);
+  font-size: var(--fs-meta);
+  color: var(--c-texto-3);
+}
+.grafico .barras {
+  margin-top: var(--sp-4);
+  padding: 0;
+  list-style: none;
+}
+.barra {
+  display: grid;
+  grid-template-columns: minmax(6rem, 28%) 1fr;
+  align-items: center;
+  gap: var(--sp-3);
+  padding-block: var(--sp-1);
+  font-family: var(--ff-ui);
+  font-size: var(--fs-meta);
+}
+.prosa .barras li + li {
+  margin-top: var(--sp-1);
+}
+.barra-rotulo {
+  color: var(--c-texto-2);
+}
+.barra-trilho {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+.barra-trilho::before {
+  content: '';
+  width: var(--v);
+  min-width: 4px;
+  height: 1rem;
+  border-radius: 0 4px 4px 0;
+  background: var(--c-grafico);
+  transition: opacity var(--dur);
+}
+.barra:hover .barra-trilho::before {
+  opacity: 0.75;
+}
+.barra-valor {
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: var(--c-texto);
+}
+.foto-larga {
+  width: 100%;
+}
+.grafico-fonte {
+  margin-top: var(--sp-3);
+  font-family: var(--ff-ui);
+  font-size: var(--fs-micro);
+  color: var(--c-texto-3);
+}
+
+@media (max-width: 560px) {
+  .barra {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .ficha {
+    grid-template-columns: 1fr;
+  }
+  .ficha dt {
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
 }
 
 @media (max-width: 560px) {

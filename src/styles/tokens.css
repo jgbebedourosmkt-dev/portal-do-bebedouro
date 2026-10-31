@@ -14,6 +14,7 @@
   --tinta-700: #2c343c;
   --tinta-900: #0f1820;
   --cobalto-300: #8fb0ff;
+  --cobalto-400: #5b84ea;
   --cobalto-500: #1f4fd6;
   --cobalto-600: #1a42b5;
   --cobalto-700: #133390;
@@ -78,6 +79,7 @@
   --c-alerta: var(--alerta-500);
   --c-ok: var(--ok-600);
   --c-foco: var(--cobalto-500);
+  --c-grafico: var(--cobalto-500);
 
   color-scheme: light;
 }
@@ -99,6 +101,7 @@
     --c-invertido: #050a0f;
     --c-sobre-invertido: #ece7dc;
     --c-foco: var(--cobalto-300);
+    --c-grafico: var(--cobalto-400);
     color-scheme: dark;
   }
 }
@@ -119,5 +122,6 @@
   --c-invertido: #050a0f;
   --c-sobre-invertido: #ece7dc;
   --c-foco: var(--cobalto-300);
+  --c-grafico: var(--cobalto-400);
   color-scheme: dark;
 }

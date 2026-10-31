@@ -14,12 +14,16 @@
       "label": "Por que o bebedouro escolar é diferente"
     },
     {
+      "href": "#fila",
+      "label": "O recreio é uma fila contra o relógio"
+    },
+    {
       "href": "#quantos",
       "label": "Quantos bebedouros a escola precisa"
     },
     {
       "href": "#altura",
-      "label": "Altura e acessibilidade"
+      "label": "Altura e acessibilidade (NBR 9050)"
     },
     {
       "href": "#modelo",
@@ -51,19 +55,19 @@
   "faqs": [
     {
       "question": "Quantos bebedouros uma escola deve ter?",
-      "answer": "Uma referência prática é uma torneira para cada 40 a 50 alunos que usam o mesmo intervalo, distribuídas em mais de um ponto. Em escolas com quadra, vale ter um ponto exclusivo perto dela."
+      "answer": "Uma referência prática é uma torneira para cada 40 a 50 alunos que usam o mesmo intervalo, distribuídas em mais de um ponto."
     },
     {
       "question": "Qual a altura certa do bebedouro escolar?",
-      "answer": "Para o bebedouro acessível, a NBR 9050 indica bica a cerca de 90 cm do piso e espaço livre embaixo. Para crianças pequenas, é recomendável um ponto mais baixo ou um degrau fixo."
+      "answer": "A NBR 9050 indica bica a 0,90 m do piso, com altura livre inferior de pelo menos 0,73 m, e uma segunda altura entre 1,00 m e 1,10 m. Para crianças pequenas, vale um ponto mais baixo."
     },
     {
       "question": "Bebedouro escolar precisa de filtro?",
-      "answer": "Sim. O filtro retém partículas e reduz cloro e odor, e sua troca periódica faz parte do plano de manutenção que garante água potável aos alunos."
+      "answer": "Sim. O filtro retém partículas e reduz cloro e odor, e sua troca periódica faz parte do plano de manutenção."
     },
     {
       "question": "Bebedouro de inox é melhor para escola?",
-      "answer": "Para uso escolar, sim. O inox aguenta impacto, não enferruja, não descasca e é fácil de higienizar, o que reduz manutenção e mantém a aparência por muitos anos."
+      "answer": "Sim. O inox aguenta impacto, não enferruja, não descasca e é fácil de higienizar."
     }
   ],
   "internalLinks": [
@@ -119,7 +123,7 @@
           "name": "Quantos bebedouros uma escola deve ter?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Uma referência prática é uma torneira para cada 40 a 50 alunos que usam o mesmo intervalo, distribuídas em mais de um ponto. Em escolas com quadra, vale ter um ponto exclusivo perto dela."
+            "text": "Uma referência prática é uma torneira para cada 40 a 50 alunos que usam o mesmo intervalo, distribuídas em mais de um ponto."
           }
         },
         {
@@ -127,7 +131,7 @@
           "name": "Qual a altura certa do bebedouro escolar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Para o bebedouro acessível, a NBR 9050 indica bica a cerca de 90 cm do piso e espaço livre embaixo. Para crianças pequenas, é recomendável um ponto mais baixo ou um degrau fixo."
+            "text": "A NBR 9050 indica bica a 0,90 m do piso, com altura livre inferior de pelo menos 0,73 m, e uma segunda altura entre 1,00 m e 1,10 m. Para crianças pequenas, vale um ponto mais baixo."
           }
         },
         {
@@ -135,7 +139,7 @@
           "name": "Bebedouro escolar precisa de filtro?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim. O filtro retém partículas e reduz cloro e odor, e sua troca periódica faz parte do plano de manutenção que garante água potável aos alunos."
+            "text": "Sim. O filtro retém partículas e reduz cloro e odor, e sua troca periódica faz parte do plano de manutenção."
           }
         },
         {
@@ -143,11 +147,11 @@
           "name": "Bebedouro de inox é melhor para escola?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Para uso escolar, sim. O inox aguenta impacto, não enferruja, não descasca e é fácil de higienizar, o que reduz manutenção e mantém a aparência por muitos anos."
+            "text": "Sim. O inox aguenta impacto, não enferruja, não descasca e é fácil de higienizar."
           }
         }
       ]
     }
   ],
-  "html": "<section id=\"por-que\"><h2>Por que o bebedouro escolar é diferente</h2><p>Na escola, o consumo de água não é distribuído ao longo do dia: ele se concentra em poucos minutos de recreio e na volta da educação física. Centenas de alunos querem beber ao mesmo tempo, e muitos não têm paciência para fila. O bebedouro precisa de várias torneiras, reserva grande de água gelada e uma construção que aguente uso pesado.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20escola%20infantil.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente escola infantil\" class=\"flutua-esq\" loading=\"lazy\"/><p>Além disso, o público é variado: crianças pequenas, adolescentes, professores e alunos com deficiência precisam alcançar a torneira com conforto.</p><div class=\"limpa\"></div></section><section id=\"quantos\"><h2>Quantos bebedouros a escola precisa</h2><p>Não há uma regra única nacional para escolas, mas uma referência prática é prever uma torneira para cada 40 a 50 alunos que usam o mesmo recreio. Uma escola com 300 alunos no turno, por exemplo, fica bem servida com dois bebedouros de 3 torneiras ou um de 4 torneiras mais um ponto menor perto da quadra.</p><p>Distribua os pontos: um no pátio, um perto da quadra e um no corredor das salas evita que todo mundo vá ao mesmo lugar. Para o dimensionamento de capacidade, veja o <a href=\"/bebedouro-3-torneiras\">bebedouro 3 torneiras</a> e o <a href=\"/bebedouro-4-torneiras\">bebedouro 4 torneiras</a>.</p></section><section id=\"altura\"><h2>Altura e acessibilidade</h2><p>A NBR 9050 pede que pelo menos um bebedouro acessível esteja disponível em locais de uso público, com bica a cerca de 90 cm do piso e espaço livre embaixo para a aproximação de cadeira de rodas. Em escolas de educação infantil, vale prever também um ponto mais baixo ou um degrau fixo e seguro para os menores.</p><p>Os detalhes estão em <a href=\"/artigo/bebedouro-nbr-9050-acessibilidade\">bebedouro e NBR 9050</a>. No projeto, confira as medidas do equipamento com as do espaço disponível antes da compra.</p></section><section id=\"modelo\"><h2>Qual modelo escolher</h2><ul><li><strong>Aço inox:</strong> resiste a impacto, não enferruja e é fácil de higienizar.</li><li><strong>Várias torneiras:</strong> 3 ou 4 saídas reduzem a fila do recreio.</li><li><strong>Reservatório grande:</strong> 100 litros ou mais seguram o pico sem a água esquentar.</li><li><strong>Torneiras de acionamento simples</strong>, que crianças consigam usar sem esforço.</li><li><strong>Filtro com troca fácil</strong>, para que a manutenção não dependa de desmontar o gabinete.</li></ul><p>Um exemplo de projeto completo está no <a href=\"/artigo/case-escola-publica-800-alunos-bebedouros\">case da escola pública com 800 alunos</a>. Veja também o <a href=\"/artigo/guia-bebedouro-escolar\">guia de bebedouro escolar</a>.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20faculdade%20escola.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente faculdade escola\" class=\"flutua-esq\" loading=\"lazy\"/><div class=\"limpa\"></div></section><section id=\"higiene\"><h2>Higiene e manutenção na escola</h2><p>Bebedouro de escola precisa de rotina escrita: limpeza diária das torneiras e do aparador pela equipe de limpeza, higienização do reservatório e troca do filtro a cada 6 meses, com registro em planilha. Esse histórico é o que a vigilância sanitária e os pais costumam pedir quando há dúvida sobre a água.</p><p>Ensinar os alunos a não encostar a boca na torneira e usar garrafinha ou copo individual também reduz a transmissão de doenças. Mais detalhes em <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar o bebedouro industrial</a>.</p></section>"
+  "html": "<section id=\"por-que\"><h2>Por que o bebedouro escolar é diferente</h2><p>Na escola, o consumo de água se concentra em poucos minutos de recreio e na volta da educação física.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20escola%20infantil.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente escola infantil\" class=\"flutua-esq\" loading=\"lazy\"/><div class=\"grade-cards\"><div class=\"card-info\"><h3>Pico concentrado</h3><p>Centenas de alunos querem beber nos mesmos 15 minutos.</p></div><div class=\"card-info\"><h3>Uso pesado</h3><p>Torneiras e gabinete sofrem impacto e uso intenso o ano todo.</p></div><div class=\"card-info\"><h3>Público variado</h3><p>Crianças pequenas, adolescentes, adultos e alunos com deficiência.</p></div></div><div class=\"limpa\"></div></section><section id=\"fila\"><h2>O recreio é uma fila contra o relógio</h2><p>Veja quanto tempo 60 alunos levam para beber água conforme o número de torneiras:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Tempo para 60 pessoas se servirem</span><p class=\"grafico-sub\">Minutos, considerando 20 segundos por pessoa na torneira</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"1 torneira: 20 min\"><span class=\"barra-rotulo\">1 torneira</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">20 min</span></span></li><li class=\"barra\" title=\"2 torneiras: 10 min\"><span class=\"barra-rotulo\">2 torneiras</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">10 min</span></span></li><li class=\"barra\" title=\"3 torneiras: 6,7 min\"><span class=\"barra-rotulo\">3 torneiras</span><span class=\"barra-trilho\" style=\"--v:26.8%\"><span class=\"barra-valor\">6,7 min</span></span></li><li class=\"barra\" title=\"4 torneiras: 5 min\"><span class=\"barra-rotulo\">4 torneiras</span><span class=\"barra-trilho\" style=\"--v:20.0%\"><span class=\"barra-valor\">5 min</span></span></li></ul><p class=\"grafico-fonte\">Cálculo do Portal do Bebedouro: 60 pessoas × 20 s ÷ número de torneiras.</p></figure></section><section id=\"quantos\"><h2>Quantos bebedouros a escola precisa</h2><p>Não há regra nacional única para escolas. Uma referência prática é <strong>uma torneira para cada 40 a 50 alunos</strong> que usam o mesmo recreio.</p><div class=\"tabela-rolagem\"><table><thead><tr><th>Alunos no turno</th><th>Sugestão</th></tr></thead><tbody><tr><td>até 150</td><td>1 bebedouro de <a href=\"/bebedouro-3-torneiras\">3 torneiras</a> (100 L)</td></tr><tr><td>150 a 300</td><td>2 de 3 torneiras, ou 1 de <a href=\"/bebedouro-4-torneiras\">4 torneiras</a> + 1 ponto perto da quadra</td></tr><tr><td>300 a 600</td><td>3 a 4 pontos distribuídos: pátio, quadra e corredores</td></tr></tbody></table></div><aside class=\"destaque\"><strong class=\"destaque-titulo\">Dica</strong><p>Distribua os pontos: pátio, quadra e corredor das salas. Assim ninguém vai ao mesmo lugar ao mesmo tempo.</p></aside></section><section id=\"altura\"><h2>Altura e acessibilidade (NBR 9050)</h2><p>A NBR 9050 define as medidas do bebedouro acessível em locais de uso coletivo:</p><dl class=\"ficha\"><dt>Bica acessível</dt><dd>0,90 m do piso acabado</dd><dt>Altura livre inferior</dt><dd>mínimo de 0,73 m, para aproximação frontal da cadeira de rodas</dd><dt>Segunda altura</dt><dd>bica entre 1,00 m e 1,10 m do piso</dd><dt>Tipo de bica</dt><dd>jato inclinado, no lado frontal, de fácil higienização</dd><dt>Onde se aplica</dt><dd>locais de uso público ou coletivo</dd></dl><p>Em educação infantil, prevê-se também um ponto mais baixo para os menores. Veja <a href=\"/artigo/bebedouro-nbr-9050-acessibilidade\">bebedouro e NBR 9050</a>.</p></section><section id=\"modelo\"><h2>Qual modelo escolher</h2><ul class=\"checklist\"><li><strong>Aço inox:</strong> resiste a impacto, não enferruja e é fácil de higienizar.</li><li><strong>3 ou 4 torneiras</strong> para reduzir a fila do recreio.</li><li><strong>100 litros ou mais</strong> para segurar o pico sem a água esquentar.</li><li><strong>Torneiras de acionamento leve</strong>, que crianças usem sem esforço.</li><li><strong>Filtro de troca fácil</strong>, sem desmontar o gabinete.</li></ul><p>Exemplo de projeto: <a href=\"/artigo/case-escola-publica-800-alunos-bebedouros\">case da escola pública com 800 alunos</a>.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20faculdade%20escola.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente faculdade escola\" class=\"flutua-esq\" loading=\"lazy\"/><div class=\"limpa\"></div></section><section id=\"higiene\"><h2>Higiene e manutenção na escola</h2><div class=\"tabela-rolagem\"><table><thead><tr><th>Tarefa</th><th>Frequência</th><th>Responsável</th></tr></thead><tbody><tr><td>Limpeza de torneiras e aparador</td><td>Diária</td><td>Equipe de limpeza</td></tr><tr><td>Higienização do reservatório</td><td>A cada 6 meses</td><td>Técnico ou equipe treinada</td></tr><tr><td>Troca do filtro</td><td>A cada 6 meses ou antes</td><td>Técnico</td></tr><tr><td>Registro em planilha</td><td>A cada serviço</td><td>Coordenação</td></tr></tbody></table></div><aside class=\"destaque atencao\"><strong class=\"destaque-titulo\">Atenção</strong><p>O histórico de manutenção é o que a vigilância sanitária e os pais pedem quando há dúvida sobre a água. Sem registro, não há como provar que a limpeza foi feita.</p></aside></section>"
 }

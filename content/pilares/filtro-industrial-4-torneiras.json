@@ -1,7 +1,7 @@
 {
   "slug": "filtro-industrial-4-torneiras",
   "metaTitle": "Filtro Industrial 4 Torneiras: Capacidade e Indicações",
-  "metaDescription": "Filtro industrial 4 torneiras (200 L): água filtrada e gelada para 150 a 300 por turno. Veja onde usar, instalação e troca do refil.",
+  "metaDescription": "Filtro industrial 4 torneiras (200 L): água filtrada e gelada para 150 a 300 pessoas por turno. Veja onde usar, instalação e troca do refil.",
   "badge": "Guia Completo",
   "title": "Filtro Industrial 4 Torneiras (200 L)",
   "excerpt": "Água filtrada e gelada com 4 saídas simultâneas e reservatório de 200 L em inox: veja para quem o modelo é indicado e como mantê-lo.",
@@ -12,6 +12,10 @@
     {
       "href": "#o-que-e",
       "label": "O que é o filtro industrial 4 torneiras"
+    },
+    {
+      "href": "#vs-galao",
+      "label": "Filtro industrial x garrafão"
     },
     {
       "href": "#onde-usar",
@@ -50,12 +54,12 @@
       "answer": "De 150 a 300 pessoas por turno. Em obras e locais quentes, considere a parte de baixo da faixa."
     },
     {
-      "question": "O filtro industrial 4 torneiras precisa de tomada especial?",
-      "answer": "Precisa de tomada exclusiva, aterrada e na tensão do equipamento. Evite extensões e benjamins."
+      "question": "Precisa de tomada especial?",
+      "answer": "Precisa de tomada exclusiva, aterrada e na tensão do equipamento. Evite extensões."
     },
     {
-      "question": "Onde instalar o filtro industrial 4 torneiras em obra?",
-      "answer": "Na área de vivência ou próximo ao refeitório, em local coberto, com piso firme e ponto de água e energia preparados antes da entrega."
+      "question": "Onde instalar em obra?",
+      "answer": "Na área de vivência ou perto do refeitório, em local coberto, com piso firme e ponto de água e energia prontos antes da entrega."
     }
   ],
   "internalLinks": [
@@ -116,22 +120,22 @@
         },
         {
           "@type": "Question",
-          "name": "O filtro industrial 4 torneiras precisa de tomada especial?",
+          "name": "Precisa de tomada especial?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Precisa de tomada exclusiva, aterrada e na tensão do equipamento. Evite extensões e benjamins."
+            "text": "Precisa de tomada exclusiva, aterrada e na tensão do equipamento. Evite extensões."
           }
         },
         {
           "@type": "Question",
-          "name": "Onde instalar o filtro industrial 4 torneiras em obra?",
+          "name": "Onde instalar em obra?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Na área de vivência ou próximo ao refeitório, em local coberto, com piso firme e ponto de água e energia preparados antes da entrega."
+            "text": "Na área de vivência ou perto do refeitório, em local coberto, com piso firme e ponto de água e energia prontos antes da entrega."
           }
         }
       ]
     }
   ],
-  "html": "<section id=\"o-que-e\"><h2>O que é o filtro industrial 4 torneiras</h2><p>É um <a href=\"/filtro-industrial\">filtro industrial</a> com 4 torneiras e reservatório de 200 L: a água da rede passa por um elemento filtrante, é armazenada em tanque de aço inox e resfriada por compressor. Ele entrega água filtrada e gelada para 4 pessoas ao mesmo tempo.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros\" class=\"flutua-esq\" loading=\"lazy\"/><p>O modelo substitui galões e bebedouros de garrafão com vantagem: água ilimitada da rede, sem logística de reposição e com custo recorrente limitado à energia e ao refil.</p><div class=\"limpa\"></div></section><section id=\"onde-usar\"><h2>Onde usar</h2><p>O 4 torneiras de 200 litros é para alto fluxo:</p><ul><li>Canteiros de obra com equipes grandes.</li><li>Galpões logísticos e centros de distribuição.</li><li>Refeitórios industriais e indústrias com turnos numerosos.</li></ul></section><section id=\"instalacao\"><h2>Instalação</h2><p>Precisa de ponto de água com registro, tomada exclusiva e aterrada na tensão do equipamento e, idealmente, ponto de esgoto para o dreno do aparador. Deixe espaço livre atrás para ventilação e evite locais com sol direto.</p><p>Antes do primeiro uso, deixe correr alguns litros para eliminar resíduos de carvão do refil novo. O passo a passo completo está em <a href=\"/artigo/como-instalar-bebedouro-industrial\">como instalar o bebedouro industrial</a>.</p></section><section id=\"manutencao\"><h2>Troca do refil e manutenção</h2><p>Troque o refil a cada 6 meses ou antes, se a vazão cair ou a água mudar de gosto. Higienize o reservatório no mesmo intervalo e limpe torneiras e aparador todos os dias. Registrar as datas em uma etiqueta no próprio equipamento facilita o controle.</p><p>Veja <a href=\"/artigo/como-trocar-filtro-bebedouro-industrial\">como trocar o filtro</a> e compare com o <a href=\"/filtro-industrial-2-torneiras\">filtro industrial 2 torneiras</a> e o <a href=\"/filtro-industrial-3-torneiras\">filtro industrial 3 torneiras</a>.</p></section>"
+  "html": "<section id=\"o-que-e\"><h2>O que é o filtro industrial 4 torneiras</h2><p>Um <a href=\"/filtro-industrial\">filtro industrial</a> que filtra, gela e serve água para 4 pessoas ao mesmo tempo.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros\" class=\"flutua-esq\" loading=\"lazy\"/><dl class=\"ficha\"><dt>Reservatório</dt><dd>200 L</dd><dt>Torneiras</dt><dd>4</dd><dt>Atendimento</dt><dd>150 a 300 pessoas por turno</dd><dt>Filtragem</dt><dd>pré-filtro + carvão ativado (conforme modelo)</dd><dt>Gabinete</dt><dd>aço inox</dd></dl><div class=\"limpa\"></div></section><section id=\"vs-galao\"><h2>Filtro industrial x garrafão</h2><div class=\"grade-cards\"><div class=\"card-info\"><h3>Filtro industrial</h3><ul><li>Água ilimitada da rede</li><li>Sem estoque nem frete de galões</li><li>Custo recorrente só de energia e refil</li></ul></div><div class=\"card-info contra\"><h3>O que ele exige</h3><ul><li>Precisa de ponto de água e tomada</li><li>Refil precisa ser trocado no prazo</li></ul></div></div><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Galões de 20 L que a equipe consome por mês</span><p class=\"grafico-sub\">Quanto um bebedouro ligado à rede deixa de comprar</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"10 pessoas: 22 galões\"><span class=\"barra-rotulo\">10 pessoas</span><span class=\"barra-trilho\" style=\"--v:8.0%\"><span class=\"barra-valor\">22 galões</span></span></li><li class=\"barra\" title=\"25 pessoas: 55 galões\"><span class=\"barra-rotulo\">25 pessoas</span><span class=\"barra-trilho\" style=\"--v:20.0%\"><span class=\"barra-valor\">55 galões</span></span></li><li class=\"barra\" title=\"50 pessoas: 110 galões\"><span class=\"barra-rotulo\">50 pessoas</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">110 galões</span></span></li><li class=\"barra\" title=\"100 pessoas: 220 galões\"><span class=\"barra-rotulo\">100 pessoas</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">220 galões</span></span></li></ul><p class=\"grafico-fonte\">Cálculo do Portal do Bebedouro: 2 L por pessoa por dia × 22 dias úteis ÷ 20 L.</p></figure></section><section id=\"onde-usar\"><h2>Onde usar</h2><p>Para alto fluxo:</p><ul class=\"checklist\"><li>Canteiros de obra com equipes grandes.</li><li>Galpões logísticos e centros de distribuição.</li><li>Refeitórios industriais e turnos numerosos.</li></ul></section><section id=\"instalacao\"><h2>Instalação</h2><ol class=\"passos\"><li><strong>Ponto de água</strong> com registro.</li><li><strong>Tomada exclusiva e aterrada</strong> na tensão do equipamento.</li><li><strong>Dreno</strong> do aparador ligado ao esgoto, se possível.</li><li><strong>Primeiro uso:</strong> deixe correr alguns litros para eliminar o pó de carvão do refil novo.</li></ol></section><section id=\"manutencao\"><h2>Troca do refil e manutenção</h2><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">De quanto em quanto tempo trocar o filtro</span><p class=\"grafico-sub\">Intervalo máximo em meses, conforme o uso</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"Uso leve, água de boa qualidade: 6 meses\"><span class=\"barra-rotulo\">Uso leve, água de boa qualidade</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">6 meses</span></span></li><li class=\"barra\" title=\"Uso intenso: 4 meses\"><span class=\"barra-rotulo\">Uso intenso</span><span class=\"barra-trilho\" style=\"--v:53.3%\"><span class=\"barra-valor\">4 meses</span></span></li><li class=\"barra\" title=\"Uso muito intenso ou água com sedimentos: 3 meses\"><span class=\"barra-rotulo\">Uso muito intenso ou água com sedimentos</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">3 meses</span></span></li></ul><p class=\"grafico-fonte\">Referência de mercado. O manual do fabricante prevalece.</p></figure><aside class=\"destaque\"><strong class=\"destaque-titulo\">Dica</strong><p>Cole uma etiqueta no equipamento com a data da última troca. Facilita o controle e serve de prova em inspeções. Compare com o <a href=\"/filtro-industrial-2-torneiras\">filtro 2 torneiras</a> e o <a href=\"/filtro-industrial-3-torneiras\">filtro 3 torneiras</a>.</p></aside></section>"
 }

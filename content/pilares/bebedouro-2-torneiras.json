@@ -4,7 +4,7 @@
   "metaDescription": "Bebedouro 2 Torneiras: quantas pessoas atende, capacidade do reservatório, onde usar e como instalar. Guia com modelos em inox.",
   "badge": "Guia Completo",
   "title": "Bebedouro 2 Torneiras: Capacidade, Modelos e Indicações",
-  "excerpt": "O bebedouro com 2 torneiras permite que 2 pessoas se sirvam ao mesmo tempo. Veja a capacidade típica, para quantos usuários ele é indicado e como escolher o modelo.",
+  "excerpt": "O bebedouro com 2 torneiras permite que 2 pessoas se sirvam ao mesmo tempo. Veja a capacidade típica, para quantos usuários ele é indicado e como escolher.",
   "breadcrumbLabel": "Bebedouro 2 Torneiras: Capacidade, Modelos e Indicações",
   "finalCtaTitle": "Procurando um bebedouro 2 torneiras?",
   "finalCtaDesc": "A JG Bebedouros fabrica modelos industriais em inox com entrega e assistência em todo o Brasil.",
@@ -12,6 +12,10 @@
     {
       "href": "#o-que-e",
       "label": "O que é um bebedouro 2 torneiras"
+    },
+    {
+      "href": "#fila",
+      "label": "Por que o número de torneiras importa"
     },
     {
       "href": "#capacidade",
@@ -40,7 +44,7 @@
       "label": "Pessoas servidas ao mesmo tempo"
     },
     {
-      "valor": "até 50 pessoas",
+      "valor": "até 50",
       "label": "Usuários por turno"
     },
     {
@@ -51,19 +55,19 @@
   "faqs": [
     {
       "question": "Quantas pessoas atende um bebedouro 2 torneiras?",
-      "answer": "Depende do reservatório. Os modelos de 25 a 30 litros atendem bem até cerca de 30 pessoas por turno, e os de 50 litros chegam a cerca de 50 pessoas. Em locais de calor ou esforço físico, reduza essa conta ou instale mais de um ponto."
+      "answer": "Os modelos de 25 a 30 litros atendem cerca de 30 pessoas por turno, e os de 50 litros cerca de 50. Em locais quentes, reduza essa conta ou instale mais de um ponto."
     },
     {
       "question": "Bebedouro 2 torneiras atende à NR-24?",
-      "answer": "Sim, desde que forneça água potável e fresca, em condições higiênicas e sem uso de copo coletivo. A proporção de referência é de um bebedouro para cada 50 trabalhadores, o que coincide com a capacidade de um modelo de 50 litros."
+      "answer": "Sim, desde que forneça água potável e fresca, com higiene e sem copo coletivo. A referência de um bebedouro para cada 50 trabalhadores coincide com a capacidade do modelo de 50 litros."
     },
     {
-      "question": "Qual a diferença entre 25, 30 e 50 litros no bebedouro 2 torneiras?",
-      "answer": "As três versões servem duas pessoas ao mesmo tempo. A diferença está na reserva de água gelada: o de 50 litros aguenta picos maiores sem esquentar a água, enquanto o de 25 litros ocupa menos espaço e consome menos energia."
+      "question": "Qual a diferença entre 25, 30 e 50 litros?",
+      "answer": "As três servem duas pessoas ao mesmo tempo. A diferença é a reserva gelada: o de 50 litros aguenta picos maiores, o de 25 ocupa menos espaço e consome menos energia."
     },
     {
       "question": "Precisa de encanador para instalar?",
-      "answer": "Para os modelos ligados à rede, sim: a instalação exige ponto de água com registro e, idealmente, um ponto de dreno próximo. É um serviço simples, que costuma levar menos de uma hora."
+      "answer": "A instalação exige ponto de água com registro e, de preferência, dreno próximo. É um serviço simples, que costuma levar menos de uma hora."
     }
   ],
   "internalLinks": [
@@ -123,7 +127,7 @@
           "name": "Quantas pessoas atende um bebedouro 2 torneiras?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Depende do reservatório. Os modelos de 25 a 30 litros atendem bem até cerca de 30 pessoas por turno, e os de 50 litros chegam a cerca de 50 pessoas. Em locais de calor ou esforço físico, reduza essa conta ou instale mais de um ponto."
+            "text": "Os modelos de 25 a 30 litros atendem cerca de 30 pessoas por turno, e os de 50 litros cerca de 50. Em locais quentes, reduza essa conta ou instale mais de um ponto."
           }
         },
         {
@@ -131,15 +135,15 @@
           "name": "Bebedouro 2 torneiras atende à NR-24?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim, desde que forneça água potável e fresca, em condições higiênicas e sem uso de copo coletivo. A proporção de referência é de um bebedouro para cada 50 trabalhadores, o que coincide com a capacidade de um modelo de 50 litros."
+            "text": "Sim, desde que forneça água potável e fresca, com higiene e sem copo coletivo. A referência de um bebedouro para cada 50 trabalhadores coincide com a capacidade do modelo de 50 litros."
           }
         },
         {
           "@type": "Question",
-          "name": "Qual a diferença entre 25, 30 e 50 litros no bebedouro 2 torneiras?",
+          "name": "Qual a diferença entre 25, 30 e 50 litros?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "As três versões servem duas pessoas ao mesmo tempo. A diferença está na reserva de água gelada: o de 50 litros aguenta picos maiores sem esquentar a água, enquanto o de 25 litros ocupa menos espaço e consome menos energia."
+            "text": "As três servem duas pessoas ao mesmo tempo. A diferença é a reserva gelada: o de 50 litros aguenta picos maiores, o de 25 ocupa menos espaço e consome menos energia."
           }
         },
         {
@@ -147,11 +151,11 @@
           "name": "Precisa de encanador para instalar?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Para os modelos ligados à rede, sim: a instalação exige ponto de água com registro e, idealmente, um ponto de dreno próximo. É um serviço simples, que costuma levar menos de uma hora."
+            "text": "A instalação exige ponto de água com registro e, de preferência, dreno próximo. É um serviço simples, que costuma levar menos de uma hora."
           }
         }
       ]
     }
   ],
-  "html": "<section id=\"o-que-e\"><h2>O que é um bebedouro 2 torneiras</h2><p>O bebedouro 2 torneiras é um equipamento de água gelada com 2 saídas independentes, pensado para locais onde várias pessoas precisam beber no mesmo momento. Na prática, quase todos os modelos com 2 torneiras são <a href=\"/bebedouro-industrial\">bebedouros industriais</a>, com gabinete em aço inox e reservatório na faixa de 25 a 50 L.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%202%20torneiras%20robust%2050%20litros.png\" alt=\"bebedouro industrial inox 2 torneiras robust 50 litros\" class=\"flutua-esq\" loading=\"lazy\"/><p>O número de torneiras não muda a temperatura da água, mas muda a velocidade com que a fila anda. Em intervalos curtos, como pausa de 15 minutos ou troca de turno, ter 2 pontos de saída é o que garante que todos consigam se hidratar sem perder o horário.</p><div class=\"limpa\"></div></section><section id=\"capacidade\"><h2>Capacidade e número de usuários</h2><p>Com reservatório de 25 a 50 L, o bebedouro 2 torneiras atende com folga até 50 pessoas por turno, considerando consumo de 1 a 2 litros por pessoa. Em ambientes quentes ou de esforço físico, onde o consumo passa de 3 litros, vale reduzir essa conta pela metade ou instalar um segundo ponto.</p><p>Lembre que o volume do reservatório é a água já gelada disponível. Depois que ela é consumida, o compressor precisa de tempo para resfriar a água que entra. Por isso o pico de uso pesa mais no dimensionamento do que o total do dia.</p></section><section id=\"onde-usar\"><h2>Onde o bebedouro 2 torneiras é indicado</h2><p>O modelo de 2 torneiras é o ponto de entrada dos bebedouros industriais e resolve bem ambientes de porte pequeno e médio:</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%2025%2030%20litros%20inox%202%20torneiras%20ambiente%20de%20refeitorio%20de%20obra.png\" alt=\"bebedouro industrial 25 30 litros inox 2 torneiras ambiente de refeitorio de obra\" class=\"flutua-esq\" loading=\"lazy\"/><ul><li>Escritórios, clínicas e lojas com até 30 pessoas, na versão de 25 ou 30 litros.</li><li>Oficinas, pequenas indústrias e depósitos, na versão de 50 litros.</li><li>Refeitórios de obra de equipes reduzidas e frentes de serviço temporárias.</li><li>Escolas pequenas, creches e salas de espera com circulação moderada.</li></ul><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação e manutenção</h2><p>Os modelos industriais são ligados à rede hidráulica por mangueira com registro e a uma tomada de 127 V ou 220 V, conforme a versão. Instale sobre piso nivelado, com espaço livre atrás e nas laterais para a ventilação do condensador, e longe de fontes de calor como fornos e paredes com sol direto.</p><p>Na rotina, limpe torneiras e aparador diariamente, higienize o reservatório a cada 6 meses e troque o filtro no mesmo intervalo. O passo a passo está em <a href=\"/artigo/como-instalar-bebedouro-industrial\">como instalar o bebedouro industrial</a> e <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar o bebedouro industrial</a>.</p></section><section id=\"comparativo\"><h2>Comparativo: 2, 3 ou 4 torneiras</h2><table><thead><tr><th>Torneiras</th><th>Reservatório típico</th><th>Usuários por turno</th></tr></thead><tbody><tr><td>2</td><td>25 a 50 L</td><td>até 50</td></tr><tr><td>3</td><td>100 L</td><td>50 a 150</td></tr><tr><td>4</td><td>200 L</td><td>150 a 300</td></tr></tbody></table><p>Se o seu caso fica no limite entre duas faixas, prefira a maior: a diferença de preço costuma ser menor do que o custo de uma fila diária. Compare também com o <a href=\"/bebedouro-3-torneiras\">bebedouro 3 torneiras</a> e o <a href=\"/bebedouro-4-torneiras\">bebedouro 4 torneiras</a>.</p></section>"
+  "html": "<section id=\"o-que-e\"><h2>O que é um bebedouro 2 torneiras</h2><p>É um equipamento de água gelada com 2 saídas independentes, feito para locais onde várias pessoas bebem no mesmo momento. Na prática, quase todos os modelos com 2 torneiras são <a href=\"/bebedouro-industrial\">bebedouros industriais</a>.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%202%20torneiras%20robust%2050%20litros.png\" alt=\"bebedouro industrial inox 2 torneiras robust 50 litros\" class=\"flutua-esq\" loading=\"lazy\"/><dl class=\"ficha\"><dt>Reservatório</dt><dd>25, 30 ou 50 litros</dd><dt>Torneiras</dt><dd>2</dd><dt>Gabinete</dt><dd>aço inox</dd><dt>Tensão</dt><dd>127 V ou 220 V</dd><dt>Ligação</dt><dd>rede hidráulica com registro</dd></dl><div class=\"limpa\"></div></section><section id=\"fila\"><h2>Por que o número de torneiras importa</h2><p>As torneiras não mudam a temperatura da água, mas mudam a velocidade da fila. Em pausas curtas, é isso que garante que todos bebam:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Tempo para 60 pessoas se servirem</span><p class=\"grafico-sub\">Minutos, considerando 20 segundos por pessoa na torneira</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"1 torneira: 20 min\"><span class=\"barra-rotulo\">1 torneira</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">20 min</span></span></li><li class=\"barra\" title=\"2 torneiras: 10 min\"><span class=\"barra-rotulo\">2 torneiras</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">10 min</span></span></li><li class=\"barra\" title=\"3 torneiras: 6,7 min\"><span class=\"barra-rotulo\">3 torneiras</span><span class=\"barra-trilho\" style=\"--v:26.8%\"><span class=\"barra-valor\">6,7 min</span></span></li><li class=\"barra\" title=\"4 torneiras: 5 min\"><span class=\"barra-rotulo\">4 torneiras</span><span class=\"barra-trilho\" style=\"--v:20.0%\"><span class=\"barra-valor\">5 min</span></span></li></ul><p class=\"grafico-fonte\">Cálculo do Portal do Bebedouro: 60 pessoas × 20 s ÷ número de torneiras.</p></figure></section><section id=\"capacidade\"><h2>Capacidade e número de usuários</h2><p>Com 25 a 50 L, o bebedouro 2 torneiras atende até 50 pessoas por turno. Compare com as outras capacidades:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Quantas pessoas cada capacidade atende</span><p class=\"grafico-sub\">Pessoas por turno, limite superior da faixa de referência</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"25 L · 2 torneiras: 25\"><span class=\"barra-rotulo\">25 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:6.7%\"><span class=\"barra-valor\">25</span></span></li><li class=\"barra\" title=\"30 L · 2 torneiras: 30\"><span class=\"barra-rotulo\">30 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:8.0%\"><span class=\"barra-valor\">30</span></span></li><li class=\"barra\" title=\"50 L · 2 torneiras: 50\"><span class=\"barra-rotulo\">50 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:13.3%\"><span class=\"barra-valor\">50</span></span></li><li class=\"barra\" title=\"100 L · 3 torneiras: 150\"><span class=\"barra-rotulo\">100 L · 3 torneiras</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">150</span></span></li><li class=\"barra\" title=\"200 L · 4 torneiras: 300\"><span class=\"barra-rotulo\">200 L · 4 torneiras</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">300</span></span></li></ul><p class=\"grafico-fonte\">Estimativa do Portal do Bebedouro com consumo de 1 a 2 L por pessoa no turno, em trabalho leve.</p></figure><aside class=\"destaque atencao\"><strong class=\"destaque-titulo\">Atenção</strong><p>Em ambientes quentes ou de esforço físico, onde o consumo passa de 3 litros por pessoa, reduza essa conta pela metade ou instale um segundo ponto.</p></aside></section><section id=\"onde-usar\"><h2>Onde o bebedouro 2 torneiras é indicado</h2><p>O modelo de 2 torneiras é a porta de entrada dos industriais:</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%2025%2030%20litros%20inox%202%20torneiras%20ambiente%20de%20refeitorio%20de%20obra.png\" alt=\"bebedouro industrial 25 30 litros inox 2 torneiras ambiente de refeitorio de obra\" class=\"flutua-esq\" loading=\"lazy\"/><ul class=\"checklist\"><li>Escritórios, clínicas e lojas com até 30 pessoas (25 ou 30 L).</li><li>Oficinas, pequenas indústrias e depósitos (50 L).</li><li>Refeitórios de obra de equipes reduzidas.</li><li>Escolas pequenas, creches e salas de espera.</li></ul><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação e manutenção</h2><ol class=\"passos\"><li><strong>Ponto de água</strong> com registro, ligado por mangueira.</li><li><strong>Tomada exclusiva</strong> e aterrada, em 127 V ou 220 V conforme a versão.</li><li><strong>Ventilação</strong> com espaço livre atrás e nas laterais, longe do sol direto.</li><li><strong>Higienização inicial</strong> do reservatório antes do primeiro uso.</li></ol><p>Depois, limpe as torneiras todo dia e higienize o reservatório e troque o filtro a cada 6 meses. Veja <a href=\"/artigo/como-instalar-bebedouro-industrial\">como instalar</a> e <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar</a>.</p></section><section id=\"comparativo\"><h2>Comparativo: 2, 3 ou 4 torneiras</h2><div class=\"tabela-rolagem\"><table><thead><tr><th>Torneiras</th><th>Reservatório típico</th><th>Usuários por turno</th><th>Uso típico</th></tr></thead><tbody><tr><td><a href=\"/bebedouro-2-torneiras\">2</a></td><td>25 a 50 L</td><td>até 50</td><td>Escritórios, oficinas</td></tr><tr><td><a href=\"/bebedouro-3-torneiras\">3</a></td><td>100 L</td><td>50 a 150</td><td>Escolas, fábricas, academias</td></tr><tr><td><a href=\"/bebedouro-4-torneiras\">4</a></td><td>200 L</td><td>150 a 300</td><td>Obras, galpões, refeitórios</td></tr></tbody></table></div><aside class=\"destaque\"><strong class=\"destaque-titulo\">Dica</strong><p>Se o seu caso fica no limite entre duas faixas, prefira a maior: a diferença de preço costuma ser menor do que o custo de uma fila diária.</p></aside></section>"
 }

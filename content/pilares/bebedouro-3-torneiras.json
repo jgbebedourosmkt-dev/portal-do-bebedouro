@@ -4,7 +4,7 @@
   "metaDescription": "Bebedouro 3 Torneiras: quantas pessoas atende, capacidade do reservatório, onde usar e como instalar. Guia com modelos em inox.",
   "badge": "Guia Completo",
   "title": "Bebedouro 3 Torneiras: Capacidade, Modelos e Indicações",
-  "excerpt": "O bebedouro com 3 torneiras permite que 3 pessoas se sirvam ao mesmo tempo. Veja a capacidade típica, para quantos usuários ele é indicado e como escolher o modelo.",
+  "excerpt": "O bebedouro com 3 torneiras permite que 3 pessoas se sirvam ao mesmo tempo. Veja a capacidade típica, para quantos usuários ele é indicado e como escolher.",
   "breadcrumbLabel": "Bebedouro 3 Torneiras: Capacidade, Modelos e Indicações",
   "finalCtaTitle": "Procurando um bebedouro 3 torneiras?",
   "finalCtaDesc": "A JG Bebedouros fabrica modelos industriais em inox com entrega e assistência em todo o Brasil.",
@@ -12,6 +12,10 @@
     {
       "href": "#o-que-e",
       "label": "O que é um bebedouro 3 torneiras"
+    },
+    {
+      "href": "#fila",
+      "label": "Por que o número de torneiras importa"
     },
     {
       "href": "#capacidade",
@@ -40,7 +44,7 @@
       "label": "Pessoas servidas ao mesmo tempo"
     },
     {
-      "valor": "50 a 150 pessoas",
+      "valor": "50 a 150",
       "label": "Usuários por turno"
     },
     {
@@ -51,19 +55,19 @@
   "faqs": [
     {
       "question": "Quantas pessoas atende um bebedouro 3 torneiras?",
-      "answer": "Com reservatório de 100 litros, atende de 50 a 150 pessoas por turno, dependendo do consumo. Em escolas e academias, onde o uso se concentra em intervalos, as 3 saídas fazem a fila andar três vezes mais rápido do que um bebedouro de uma torneira."
+      "answer": "De 50 a 150 pessoas por turno. Para 60 pessoas em fila, as 3 saídas reduzem a espera de 20 para cerca de 7 minutos em relação a uma torneira."
     },
     {
       "question": "Qual a voltagem do bebedouro 3 torneiras?",
-      "answer": "Os modelos industriais são vendidos em 127 V ou 220 V. Confira a tensão da tomada no ponto de instalação antes da compra, porque a ligação na tensão errada pode queimar o compressor."
+      "answer": "É vendido em 127 V ou 220 V. Confira a tensão da tomada antes da compra: a ligação errada pode queimar o compressor."
     },
     {
       "question": "Bebedouro 3 torneiras serve para escola?",
-      "answer": "Sim, é um dos usos mais comuns. Prefira modelos em inox, de fácil limpeza, e verifique a altura das torneiras para o público. Para crianças pequenas ou cadeirantes, combine com um bebedouro acessível, conforme a NBR 9050."
+      "answer": "Sim, é um dos usos mais comuns. Para crianças pequenas ou cadeirantes, combine com um bebedouro acessível, conforme a NBR 9050."
     },
     {
       "question": "Quanto espaço ocupa um bebedouro de 100 litros?",
-      "answer": "Em geral, cerca de 60 cm de largura por 40 cm de profundidade e 1,20 m a 1,30 m de altura, mais um espaço livre atrás para a ventilação. As medidas exatas variam por fabricante."
+      "answer": "Em geral, cerca de 60 cm de largura, 40 cm de profundidade e 1,20 a 1,30 m de altura, mais espaço livre atrás para ventilação. As medidas variam por fabricante."
     }
   ],
   "internalLinks": [
@@ -127,7 +131,7 @@
           "name": "Quantas pessoas atende um bebedouro 3 torneiras?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Com reservatório de 100 litros, atende de 50 a 150 pessoas por turno, dependendo do consumo. Em escolas e academias, onde o uso se concentra em intervalos, as 3 saídas fazem a fila andar três vezes mais rápido do que um bebedouro de uma torneira."
+            "text": "De 50 a 150 pessoas por turno. Para 60 pessoas em fila, as 3 saídas reduzem a espera de 20 para cerca de 7 minutos em relação a uma torneira."
           }
         },
         {
@@ -135,7 +139,7 @@
           "name": "Qual a voltagem do bebedouro 3 torneiras?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Os modelos industriais são vendidos em 127 V ou 220 V. Confira a tensão da tomada no ponto de instalação antes da compra, porque a ligação na tensão errada pode queimar o compressor."
+            "text": "É vendido em 127 V ou 220 V. Confira a tensão da tomada antes da compra: a ligação errada pode queimar o compressor."
           }
         },
         {
@@ -143,7 +147,7 @@
           "name": "Bebedouro 3 torneiras serve para escola?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Sim, é um dos usos mais comuns. Prefira modelos em inox, de fácil limpeza, e verifique a altura das torneiras para o público. Para crianças pequenas ou cadeirantes, combine com um bebedouro acessível, conforme a NBR 9050."
+            "text": "Sim, é um dos usos mais comuns. Para crianças pequenas ou cadeirantes, combine com um bebedouro acessível, conforme a NBR 9050."
           }
         },
         {
@@ -151,11 +155,11 @@
           "name": "Quanto espaço ocupa um bebedouro de 100 litros?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Em geral, cerca de 60 cm de largura por 40 cm de profundidade e 1,20 m a 1,30 m de altura, mais um espaço livre atrás para a ventilação. As medidas exatas variam por fabricante."
+            "text": "Em geral, cerca de 60 cm de largura, 40 cm de profundidade e 1,20 a 1,30 m de altura, mais espaço livre atrás para ventilação. As medidas variam por fabricante."
           }
         }
       ]
     }
   ],
-  "html": "<section id=\"o-que-e\"><h2>O que é um bebedouro 3 torneiras</h2><p>O bebedouro 3 torneiras é um equipamento de água gelada com 3 saídas independentes, pensado para locais onde várias pessoas precisam beber no mesmo momento. Na prática, quase todos os modelos com 3 torneiras são <a href=\"/bebedouro-industrial\">bebedouros industriais</a>, com gabinete em aço inox e reservatório na faixa de 100 L.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros\" class=\"flutua-esq\" loading=\"lazy\"/><p>O número de torneiras não muda a temperatura da água, mas muda a velocidade com que a fila anda. Em intervalos curtos, como pausa de 15 minutos ou troca de turno, ter 3 pontos de saída é o que garante que todos consigam se hidratar sem perder o horário.</p><div class=\"limpa\"></div></section><section id=\"capacidade\"><h2>Capacidade e número de usuários</h2><p>Com reservatório de 100 L, o bebedouro 3 torneiras atende com folga 50 a 150 pessoas por turno, considerando consumo de 1 a 2 litros por pessoa. Em ambientes quentes ou de esforço físico, onde o consumo passa de 3 litros, vale reduzir essa conta pela metade ou instalar um segundo ponto.</p><p>Lembre que o volume do reservatório é a água já gelada disponível. Depois que ela é consumida, o compressor precisa de tempo para resfriar a água que entra. Por isso o pico de uso pesa mais no dimensionamento do que o total do dia.</p></section><section id=\"onde-usar\"><h2>Onde o bebedouro 3 torneiras é indicado</h2><p>O modelo de 3 torneiras com 100 litros é o mais vendido entre os industriais, por equilibrar capacidade, espaço e consumo:</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20escola%20infantil.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente escola infantil\" class=\"flutua-esq\" loading=\"lazy\"/><ul><li>Fábricas e galpões de porte médio, próximo à linha de produção ou ao refeitório.</li><li>Escolas e faculdades, onde o intervalo concentra centenas de alunos em poucos minutos.</li><li>Academias, clubes e quadras esportivas.</li><li>Igrejas, condomínios e espaços públicos com picos de público em horários definidos.</li></ul><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação e manutenção</h2><p>Os modelos industriais são ligados à rede hidráulica por mangueira com registro e a uma tomada de 127 V ou 220 V, conforme a versão. Instale sobre piso nivelado, com espaço livre atrás e nas laterais para a ventilação do condensador, e longe de fontes de calor como fornos e paredes com sol direto.</p><p>Na rotina, limpe torneiras e aparador diariamente, higienize o reservatório a cada 6 meses e troque o filtro no mesmo intervalo. O passo a passo está em <a href=\"/artigo/como-instalar-bebedouro-industrial\">como instalar o bebedouro industrial</a> e <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar o bebedouro industrial</a>.</p></section><section id=\"comparativo\"><h2>Comparativo: 2, 3 ou 4 torneiras</h2><table><thead><tr><th>Torneiras</th><th>Reservatório típico</th><th>Usuários por turno</th></tr></thead><tbody><tr><td>2</td><td>25 a 50 L</td><td>até 50</td></tr><tr><td>3</td><td>100 L</td><td>50 a 150</td></tr><tr><td>4</td><td>200 L</td><td>150 a 300</td></tr></tbody></table><p>Se o seu caso fica no limite entre duas faixas, prefira a maior: a diferença de preço costuma ser menor do que o custo de uma fila diária. Compare também com o <a href=\"/bebedouro-2-torneiras\">bebedouro 2 torneiras</a> e o <a href=\"/bebedouro-4-torneiras\">bebedouro 4 torneiras</a>.</p></section>"
+  "html": "<section id=\"o-que-e\"><h2>O que é um bebedouro 3 torneiras</h2><p>É um equipamento de água gelada com 3 saídas independentes, feito para locais onde várias pessoas bebem no mesmo momento. Na prática, quase todos os modelos com 3 torneiras são <a href=\"/bebedouro-industrial\">bebedouros industriais</a>.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros\" class=\"flutua-esq\" loading=\"lazy\"/><dl class=\"ficha\"><dt>Reservatório</dt><dd>100 litros</dd><dt>Torneiras</dt><dd>3</dd><dt>Gabinete</dt><dd>aço inox</dd><dt>Tensão</dt><dd>127 V ou 220 V</dd><dt>Medidas típicas</dt><dd>cerca de 60 × 40 cm, 1,20 a 1,30 m de altura</dd></dl><div class=\"limpa\"></div></section><section id=\"fila\"><h2>Por que o número de torneiras importa</h2><p>As torneiras não mudam a temperatura da água, mas mudam a velocidade da fila. Em pausas curtas, é isso que garante que todos bebam:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Tempo para 60 pessoas se servirem</span><p class=\"grafico-sub\">Minutos, considerando 20 segundos por pessoa na torneira</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"1 torneira: 20 min\"><span class=\"barra-rotulo\">1 torneira</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">20 min</span></span></li><li class=\"barra\" title=\"2 torneiras: 10 min\"><span class=\"barra-rotulo\">2 torneiras</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">10 min</span></span></li><li class=\"barra\" title=\"3 torneiras: 6,7 min\"><span class=\"barra-rotulo\">3 torneiras</span><span class=\"barra-trilho\" style=\"--v:26.8%\"><span class=\"barra-valor\">6,7 min</span></span></li><li class=\"barra\" title=\"4 torneiras: 5 min\"><span class=\"barra-rotulo\">4 torneiras</span><span class=\"barra-trilho\" style=\"--v:20.0%\"><span class=\"barra-valor\">5 min</span></span></li></ul><p class=\"grafico-fonte\">Cálculo do Portal do Bebedouro: 60 pessoas × 20 s ÷ número de torneiras.</p></figure></section><section id=\"capacidade\"><h2>Capacidade e número de usuários</h2><p>Com 100 L, o bebedouro 3 torneiras atende 50 a 150 pessoas por turno. Compare com as outras capacidades:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Quantas pessoas cada capacidade atende</span><p class=\"grafico-sub\">Pessoas por turno, limite superior da faixa de referência</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"25 L · 2 torneiras: 25\"><span class=\"barra-rotulo\">25 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:6.7%\"><span class=\"barra-valor\">25</span></span></li><li class=\"barra\" title=\"30 L · 2 torneiras: 30\"><span class=\"barra-rotulo\">30 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:8.0%\"><span class=\"barra-valor\">30</span></span></li><li class=\"barra\" title=\"50 L · 2 torneiras: 50\"><span class=\"barra-rotulo\">50 L · 2 torneiras</span><span class=\"barra-trilho\" style=\"--v:13.3%\"><span class=\"barra-valor\">50</span></span></li><li class=\"barra\" title=\"100 L · 3 torneiras: 150\"><span class=\"barra-rotulo\">100 L · 3 torneiras</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">150</span></span></li><li class=\"barra\" title=\"200 L · 4 torneiras: 300\"><span class=\"barra-rotulo\">200 L · 4 torneiras</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">300</span></span></li></ul><p class=\"grafico-fonte\">Estimativa do Portal do Bebedouro com consumo de 1 a 2 L por pessoa no turno, em trabalho leve.</p></figure><aside class=\"destaque atencao\"><strong class=\"destaque-titulo\">Atenção</strong><p>Em ambientes quentes ou de esforço físico, onde o consumo passa de 3 litros por pessoa, reduza essa conta pela metade ou instale um segundo ponto.</p></aside></section><section id=\"onde-usar\"><h2>Onde o bebedouro 3 torneiras é indicado</h2><p>O 3 torneiras de 100 litros é o industrial mais vendido, por equilibrar capacidade, espaço e consumo:</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20escola%20infantil.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente escola infantil\" class=\"flutua-esq\" loading=\"lazy\"/><ul class=\"checklist\"><li>Fábricas e galpões de porte médio.</li><li>Escolas e faculdades, onde o intervalo concentra centenas de alunos.</li><li>Academias, clubes e quadras esportivas.</li><li>Igrejas, condomínios e espaços públicos.</li></ul><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação e manutenção</h2><ol class=\"passos\"><li><strong>Ponto de água</strong> com registro, ligado por mangueira.</li><li><strong>Tomada exclusiva</strong> e aterrada, em 127 V ou 220 V conforme a versão.</li><li><strong>Ventilação</strong> com espaço livre atrás e nas laterais, longe do sol direto.</li><li><strong>Higienização inicial</strong> do reservatório antes do primeiro uso.</li></ol><p>Depois, limpe as torneiras todo dia e higienize o reservatório e troque o filtro a cada 6 meses. Veja <a href=\"/artigo/como-instalar-bebedouro-industrial\">como instalar</a> e <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar</a>.</p></section><section id=\"comparativo\"><h2>Comparativo: 2, 3 ou 4 torneiras</h2><div class=\"tabela-rolagem\"><table><thead><tr><th>Torneiras</th><th>Reservatório típico</th><th>Usuários por turno</th><th>Uso típico</th></tr></thead><tbody><tr><td><a href=\"/bebedouro-2-torneiras\">2</a></td><td>25 a 50 L</td><td>até 50</td><td>Escritórios, oficinas</td></tr><tr><td><a href=\"/bebedouro-3-torneiras\">3</a></td><td>100 L</td><td>50 a 150</td><td>Escolas, fábricas, academias</td></tr><tr><td><a href=\"/bebedouro-4-torneiras\">4</a></td><td>200 L</td><td>150 a 300</td><td>Obras, galpões, refeitórios</td></tr></tbody></table></div><aside class=\"destaque\"><strong class=\"destaque-titulo\">Dica</strong><p>Se o seu caso fica no limite entre duas faixas, prefira a maior: a diferença de preço costuma ser menor do que o custo de uma fila diária.</p></aside></section>"
 }

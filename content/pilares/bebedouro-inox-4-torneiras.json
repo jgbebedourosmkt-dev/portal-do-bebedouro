@@ -14,6 +14,10 @@
       "label": "O que é o bebedouro inox 4 torneiras"
     },
     {
+      "href": "#fila",
+      "label": "Quatro torneiras, um quarto da fila"
+    },
+    {
       "href": "#capacidade",
       "label": "Capacidade e dimensionamento"
     },
@@ -23,11 +27,7 @@
     },
     {
       "href": "#instalacao",
-      "label": "Instalação"
-    },
-    {
-      "href": "#manutencao",
-      "label": "Manutenção"
+      "label": "Instalação e manutenção"
     }
   ],
   "stats": [
@@ -55,15 +55,15 @@
     },
     {
       "question": "Quanto pesa um bebedouro de 200 litros?",
-      "answer": "Vazio, um modelo industrial de 200 litros costuma pesar algumas dezenas de quilos. Cheio, somam-se cerca de 200 kg de água, por isso ele deve ser posicionado no local definitivo antes do abastecimento."
+      "answer": "Cheio, somam-se cerca de 200 kg de água ao peso do equipamento. Por isso ele deve ser posicionado no local definitivo antes do abastecimento."
     },
     {
-      "question": "O bebedouro inox 4 torneiras precisa de tomada especial?",
-      "answer": "Precisa de tomada exclusiva, na tensão do equipamento e com aterramento. Não ligue em extensões ou benjamins, que aquecem e derrubam a tensão na partida do compressor."
+      "question": "Precisa de tomada especial?",
+      "answer": "Precisa de tomada exclusiva, na tensão do equipamento e com aterramento. Extensões aquecem e derrubam a tensão na partida do compressor."
     },
     {
       "question": "Vale mais um 4 torneiras ou dois 2 torneiras?",
-      "answer": "O 4 torneiras concentra instalação e manutenção em um ponto e tem melhor custo por pessoa atendida. Dois equipamentos menores fazem sentido quando os usuários estão espalhados em áreas distantes."
+      "answer": "O 4 torneiras concentra instalação e manutenção e tem melhor custo por pessoa. Dois menores fazem sentido quando os usuários estão em áreas distantes."
     }
   ],
   "internalLinks": [
@@ -131,15 +131,15 @@
           "name": "Quanto pesa um bebedouro de 200 litros?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Vazio, um modelo industrial de 200 litros costuma pesar algumas dezenas de quilos. Cheio, somam-se cerca de 200 kg de água, por isso ele deve ser posicionado no local definitivo antes do abastecimento."
+            "text": "Cheio, somam-se cerca de 200 kg de água ao peso do equipamento. Por isso ele deve ser posicionado no local definitivo antes do abastecimento."
           }
         },
         {
           "@type": "Question",
-          "name": "O bebedouro inox 4 torneiras precisa de tomada especial?",
+          "name": "Precisa de tomada especial?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Precisa de tomada exclusiva, na tensão do equipamento e com aterramento. Não ligue em extensões ou benjamins, que aquecem e derrubam a tensão na partida do compressor."
+            "text": "Precisa de tomada exclusiva, na tensão do equipamento e com aterramento. Extensões aquecem e derrubam a tensão na partida do compressor."
           }
         },
         {
@@ -147,11 +147,11 @@
           "name": "Vale mais um 4 torneiras ou dois 2 torneiras?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "O 4 torneiras concentra instalação e manutenção em um ponto e tem melhor custo por pessoa atendida. Dois equipamentos menores fazem sentido quando os usuários estão espalhados em áreas distantes."
+            "text": "O 4 torneiras concentra instalação e manutenção e tem melhor custo por pessoa. Dois menores fazem sentido quando os usuários estão em áreas distantes."
           }
         }
       ]
     }
   ],
-  "html": "<section id=\"o-que-e\"><h2>O que é o bebedouro inox 4 torneiras</h2><p>É o <a href=\"/bebedouro-inox\">bebedouro inox</a> de maior capacidade da linha industrial: reservatório de 200 litros, quatro torneiras frontais e gabinete inteiro em aço inoxidável. Foi projetado para ambientes onde centenas de pessoas precisam de água gelada ao longo do dia e muitas delas ao mesmo tempo.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros\" class=\"flutua-esq\" loading=\"lazy\"/><p>Com quatro saídas, a fila do intervalo anda quatro vezes mais rápido do que em um bebedouro de uma torneira, e o reservatório grande segura o pico sem que a água esquente.</p><div class=\"limpa\"></div></section><section id=\"capacidade\"><h2>Capacidade e dimensionamento</h2><p>O modelo atende de 150 a 300 pessoas por turno. A faixa é larga porque o consumo varia muito: em escritório, a média fica perto de 1 litro por pessoa; em obra sob sol, passa facilmente de 3 litros.</p><p>Para usar a referência da NR-24, de um bebedouro para cada 50 trabalhadores, lembre que ela trata de pontos de acesso. Em plantas grandes, pode ser melhor dividir o atendimento entre um 4 torneiras no refeitório e modelos menores nas áreas mais distantes.</p></section><section id=\"onde-usar\"><h2>Onde usar</h2><ul><li>Canteiros de obra e frentes de serviço com equipes grandes.</li><li>Galpões logísticos e centros de distribuição.</li><li>Indústrias com turnos numerosos e refeitórios centrais.</li><li>Ginásios, clubes, eventos e espaços públicos.</li></ul><p>Em obra, ele costuma ficar no vestiário ou na área de vivência, com ponto de água e energia preparados antes da entrega.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros%20ambiente%20obra.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros ambiente obra\" class=\"flutua-esq\" loading=\"lazy\"/><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação</h2><p>Pelo peso e pelo volume, posicione o equipamento no local definitivo antes de encher o reservatório. Use piso firme e nivelado, tomada exclusiva na tensão correta e ligação hidráulica com registro. Um ponto de esgoto próximo facilita o escoamento do aparador.</p><p>Deixe espaço livre atrás e nas laterais para o condensador trocar calor. Em ambientes com poeira, como obras e galpões, limpe a grade de ventilação com frequência.</p></section><section id=\"manutencao\"><h2>Manutenção</h2><p>A rotina é a mesma dos demais industriais, mas com mais atenção pelo volume: limpeza diária das torneiras e do aparador, higienização do reservatório e troca de filtro a cada 6 meses, ou a cada 3 a 4 meses em uso intenso. Veja <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar o bebedouro industrial</a>.</p></section>"
+  "html": "<section id=\"o-que-e\"><h2>O que é o bebedouro inox 4 torneiras</h2><p>É o <a href=\"/bebedouro-inox\">bebedouro inox</a> de maior capacidade da linha industrial, feito para centenas de pessoas por dia, muitas delas ao mesmo tempo.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros\" class=\"flutua-esq\" loading=\"lazy\"/><dl class=\"ficha\"><dt>Reservatório</dt><dd>200 litros</dd><dt>Torneiras</dt><dd>4</dd><dt>Gabinete</dt><dd>aço inox</dd><dt>Atendimento</dt><dd>150 a 300 pessoas por turno</dd><dt>Peso cheio</dt><dd>cerca de 200 kg só de água, além do equipamento</dd></dl><div class=\"limpa\"></div></section><section id=\"fila\"><h2>Quatro torneiras, um quarto da fila</h2><p>Com quatro saídas, a fila do intervalo anda quatro vezes mais rápido do que em uma torneira só:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Tempo para 60 pessoas se servirem</span><p class=\"grafico-sub\">Minutos, considerando 20 segundos por pessoa na torneira</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"1 torneira: 20 min\"><span class=\"barra-rotulo\">1 torneira</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">20 min</span></span></li><li class=\"barra\" title=\"2 torneiras: 10 min\"><span class=\"barra-rotulo\">2 torneiras</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">10 min</span></span></li><li class=\"barra\" title=\"3 torneiras: 6,7 min\"><span class=\"barra-rotulo\">3 torneiras</span><span class=\"barra-trilho\" style=\"--v:26.8%\"><span class=\"barra-valor\">6,7 min</span></span></li><li class=\"barra\" title=\"4 torneiras: 5 min\"><span class=\"barra-rotulo\">4 torneiras</span><span class=\"barra-trilho\" style=\"--v:20.0%\"><span class=\"barra-valor\">5 min</span></span></li></ul><p class=\"grafico-fonte\">Cálculo do Portal do Bebedouro: 60 pessoas × 20 s ÷ número de torneiras.</p></figure></section><section id=\"capacidade\"><h2>Capacidade e dimensionamento</h2><p>A faixa de 150 a 300 pessoas é larga porque o consumo varia muito com o trabalho:</p><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">Consumo de água por pessoa no turno</span><p class=\"grafico-sub\">Litros por pessoa, conforme o tipo de trabalho</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"Escritório: ≈ 1 L\"><span class=\"barra-rotulo\">Escritório</span><span class=\"barra-trilho\" style=\"--v:26.7%\"><span class=\"barra-valor\">≈ 1 L</span></span></li><li class=\"barra\" title=\"Trabalho moderado: ≈ 2 L\"><span class=\"barra-rotulo\">Trabalho moderado</span><span class=\"barra-trilho\" style=\"--v:53.3%\"><span class=\"barra-valor\">≈ 2 L</span></span></li><li class=\"barra\" title=\"Trabalho pesado ou calor: 3 L ou mais\"><span class=\"barra-rotulo\">Trabalho pesado ou calor</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">3 L ou mais</span></span></li></ul><p class=\"grafico-fonte\">Referência de dimensionamento do Portal do Bebedouro. Em calor intenso, o consumo pode ser ainda maior.</p></figure><aside class=\"destaque\"><strong class=\"destaque-titulo\">Dica</strong><p>Em plantas grandes, combine um 4 torneiras no refeitório com modelos menores nas áreas mais distantes. A NR-24 trata de pontos de acesso, não só de litros.</p></aside></section><section id=\"onde-usar\"><h2>Onde usar</h2><ul class=\"checklist\"><li>Canteiros de obra e frentes de serviço com equipes grandes.</li><li>Galpões logísticos e centros de distribuição.</li><li>Indústrias com turnos numerosos e refeitórios centrais.</li><li>Ginásios, clubes, eventos e espaços públicos.</li></ul><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação e manutenção</h2><ol class=\"passos\"><li><strong>Posicione antes de encher:</strong> cheio, ele pesa centenas de quilos.</li><li><strong>Piso firme e nivelado,</strong> com pés reguláveis ajustados.</li><li><strong>Tomada exclusiva e aterrada,</strong> sem extensão nem benjamim.</li><li><strong>Registro e dreno</strong> próximos ao equipamento.</li><li><strong>Espaço livre</strong> atrás e nas laterais para o condensador.</li></ol><figure class=\"grafico\"><figcaption><span class=\"grafico-titulo\">De quanto em quanto tempo trocar o filtro</span><p class=\"grafico-sub\">Intervalo máximo em meses, conforme o uso</p></figcaption><ul class=\"barras\"><li class=\"barra\" title=\"Uso leve, água de boa qualidade: 6 meses\"><span class=\"barra-rotulo\">Uso leve, água de boa qualidade</span><span class=\"barra-trilho\" style=\"--v:80.0%\"><span class=\"barra-valor\">6 meses</span></span></li><li class=\"barra\" title=\"Uso intenso: 4 meses\"><span class=\"barra-rotulo\">Uso intenso</span><span class=\"barra-trilho\" style=\"--v:53.3%\"><span class=\"barra-valor\">4 meses</span></span></li><li class=\"barra\" title=\"Uso muito intenso ou água com sedimentos: 3 meses\"><span class=\"barra-rotulo\">Uso muito intenso ou água com sedimentos</span><span class=\"barra-trilho\" style=\"--v:40.0%\"><span class=\"barra-valor\">3 meses</span></span></li></ul><p class=\"grafico-fonte\">Referência de mercado. O manual do fabricante prevalece.</p></figure></section>"
 }
