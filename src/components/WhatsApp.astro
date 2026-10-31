@@ -78,7 +78,9 @@ const href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(mensagem)
     height: 44px;
     padding: var(--sp-2);
     border-radius: 50%;
-    background: color-mix(in srgb, var(--c-sobre-acento) 16%, transparent);
+    /* ícone sempre branco sobre cobalto escuro, nos dois temas */
+    color: var(--papel-50);
+    background: var(--cobalto-700);
     animation: balancar 3s ease-in-out 2s infinite;
   }
   .whatsapp:hover svg {
