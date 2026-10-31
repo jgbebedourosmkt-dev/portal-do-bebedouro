@@ -1,0 +1,149 @@
+{
+  "slug": "bebedouro-para-academia",
+  "metaTitle": "Bebedouro para Academia: Modelo, Capacidade e Higiene",
+  "metaDescription": "Bebedouro para academia: quanto de água os alunos consomem, quantas torneiras, por que inox e como manter a higiene em ambiente de treino.",
+  "badge": "Guia Completo",
+  "title": "Bebedouro para Academia: Como Escolher",
+  "excerpt": "Aluno de academia bebe mais água e com mais pressa. Veja como dimensionar o bebedouro, onde posicionar e como manter a higiene em ambiente de treino.",
+  "breadcrumbLabel": "Bebedouro para Academia: Como Escolher",
+  "finalCtaTitle": "Vai equipar uma academia?",
+  "finalCtaDesc": "A JG Bebedouros fabrica bebedouros industriais em inox com entrega para todo o Brasil.",
+  "tocItems": [
+    {
+      "href": "#demanda",
+      "label": "A demanda de água em uma academia"
+    },
+    {
+      "href": "#dimensionamento",
+      "label": "Qual capacidade escolher"
+    },
+    {
+      "href": "#onde",
+      "label": "Onde posicionar"
+    },
+    {
+      "href": "#higiene",
+      "label": "Higiene em ambiente de treino"
+    }
+  ],
+  "stats": [
+    {
+      "valor": "0,5–1 L",
+      "label": "Consumo por hora de treino"
+    },
+    {
+      "valor": "3",
+      "label": "Torneiras recomendadas"
+    },
+    {
+      "valor": "100 L",
+      "label": "Reservatório indicado"
+    },
+    {
+      "valor": "Inox",
+      "label": "Para suor e umidade"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual o melhor bebedouro para academia?",
+      "answer": "Para a maioria das academias, um bebedouro industrial em inox de 100 litros com 3 torneiras. Ele segura o pico de saída das aulas e aguenta a limpeza frequente. Estúdios menores podem usar modelos de 25 a 50 litros."
+    },
+    {
+      "question": "Quantos litros de água um aluno bebe no treino?",
+      "answer": "A recomendação geral fica entre meio litro e um litro por hora de exercício, podendo ser maior em treinos intensos, aulas de alta intensidade ou ambientes quentes."
+    },
+    {
+      "question": "Bebedouro de academia precisa de filtro?",
+      "answer": "Sim. O filtro garante água com sabor agradável e retém partículas da rede. A troca deve seguir o prazo do fabricante, em geral a cada 6 meses."
+    },
+    {
+      "question": "Posso colocar o bebedouro perto da piscina?",
+      "answer": "Pode, desde que em área coberta, com tomada protegida e aterrada e com dreno do aparador ligado ao esgoto para não formar poças."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/bebedouro-industrial",
+      "label": "bebedouro industrial"
+    },
+    {
+      "href": "/bebedouro-3-torneiras",
+      "label": "bebedouro 3 torneiras"
+    },
+    {
+      "href": "/bebedouro-inox",
+      "label": "bebedouro inox"
+    },
+    {
+      "href": "/artigo/saude-hidratacao-trabalho",
+      "label": "hidratação e saúde"
+    },
+    {
+      "href": "/artigo/bebedouro-industrial-preco-2025",
+      "label": "veja a faixa de preço"
+    },
+    {
+      "href": "/local/bebedouro-industrial-sao-paulo",
+      "label": "em São Paulo"
+    }
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://portaldobebedouro.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bebedouro para Academia: Como Escolher"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o melhor bebedouro para academia?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para a maioria das academias, um bebedouro industrial em inox de 100 litros com 3 torneiras. Ele segura o pico de saída das aulas e aguenta a limpeza frequente. Estúdios menores podem usar modelos de 25 a 50 litros."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quantos litros de água um aluno bebe no treino?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A recomendação geral fica entre meio litro e um litro por hora de exercício, podendo ser maior em treinos intensos, aulas de alta intensidade ou ambientes quentes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bebedouro de academia precisa de filtro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. O filtro garante água com sabor agradável e retém partículas da rede. A troca deve seguir o prazo do fabricante, em geral a cada 6 meses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Posso colocar o bebedouro perto da piscina?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Pode, desde que em área coberta, com tomada protegida e aterrada e com dreno do aparador ligado ao esgoto para não formar poças."
+          }
+        }
+      ]
+    }
+  ],
+  "html": "<section id=\"demanda\"><h2>A demanda de água em uma academia</h2><p>Durante o exercício, a perda de água pelo suor aumenta bastante, e a recomendação geral para treinos de uma hora fica entre meio litro e um litro de água, mais em aulas intensas ou ambientes quentes. Multiplicado pelo número de alunos no horário de pico, o volume é alto.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20academia.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente academia\" class=\"flutua-esq\" loading=\"lazy\"/><p>O uso também é concentrado: a fila se forma no fim de cada aula coletiva, quando 20 ou 30 pessoas saem da sala ao mesmo tempo. Um bebedouro de garrafão ou de pressão simples não dá conta desse padrão.</p><div class=\"limpa\"></div></section><section id=\"dimensionamento\"><h2>Qual capacidade escolher</h2><table><thead><tr><th>Porte da academia</th><th>Alunos no pico</th><th>Sugestão</th></tr></thead><tbody><tr><td>Estúdio / box</td><td>até 30</td><td><a href=\"/bebedouro-industrial-2-torneiras\">industrial 2 torneiras</a>, 25 a 50 L</td></tr><tr><td>Academia de bairro</td><td>30 a 100</td><td><a href=\"/bebedouro-3-torneiras\">3 torneiras</a>, 100 L</td></tr><tr><td>Academia grande / clube</td><td>mais de 100</td><td><a href=\"/bebedouro-4-torneiras\">4 torneiras</a>, 200 L, ou dois pontos</td></tr></tbody></table><p>Se houver salas de aula coletiva longe da área de musculação, vale um ponto próximo a elas, mesmo que menor.</p></section><section id=\"onde\"><h2>Onde posicionar</h2><p>O lugar ideal fica no caminho entre as salas de aula e a musculação, sem bloquear a circulação e longe de equipamentos de cardio, para não atrapalhar quem está treinando. Evite o lado das janelas com sol e o canto fechado, porque o compressor precisa de ventilação.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20pscina%20olimpica%20atletas.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente pscina olimpica atletas\" class=\"flutua-esq\" loading=\"lazy\"/><p>Em áreas de piscina e pista, instale em área coberta e com piso que não acumule água. O aparador com dreno ligado ao esgoto evita poças e escorregões.</p><div class=\"limpa\"></div></section><section id=\"higiene\"><h2>Higiene em ambiente de treino</h2><p>Academias reúnem suor, mãos que tocam aparelhos e muita gente usando o mesmo ponto. Por isso o gabinete em aço inox, que não absorve sujeira e aguenta desinfetante, é a escolha mais segura. Inclua as torneiras no roteiro de limpeza dos aparelhos, várias vezes ao dia.</p><p>Incentive o uso de garrafinha própria, o que reduz o contato da boca com a torneira e o desperdício de copos descartáveis. Higienize o reservatório e troque o filtro a cada 6 meses, ou antes em uso intenso.</p></section>"
+}

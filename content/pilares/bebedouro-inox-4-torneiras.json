@@ -1,0 +1,157 @@
+{
+  "slug": "bebedouro-inox-4-torneiras",
+  "metaTitle": "Bebedouro Inox 4 Torneiras 200 Litros: Guia Completo",
+  "metaDescription": "Bebedouro inox 4 torneiras de 200 litros: capacidade, para quantas pessoas, onde usar, instalação e manutenção.",
+  "badge": "Guia Completo",
+  "title": "Bebedouro Inox 4 Torneiras: 200 Litros para Alto Fluxo",
+  "excerpt": "O bebedouro inox 4 torneiras é o maior da linha industrial: 200 litros de água gelada e quatro saídas para obras, galpões e refeitórios.",
+  "breadcrumbLabel": "Bebedouro Inox 4 Torneiras: 200 Litros para Alto Fluxo",
+  "finalCtaTitle": "Precisa de um bebedouro inox 4 torneiras?",
+  "finalCtaDesc": "A JG Bebedouros fabrica o modelo de 200 litros em inox, com entrega para todo o Brasil.",
+  "tocItems": [
+    {
+      "href": "#o-que-e",
+      "label": "O que é o bebedouro inox 4 torneiras"
+    },
+    {
+      "href": "#capacidade",
+      "label": "Capacidade e dimensionamento"
+    },
+    {
+      "href": "#onde-usar",
+      "label": "Onde usar"
+    },
+    {
+      "href": "#instalacao",
+      "label": "Instalação"
+    },
+    {
+      "href": "#manutencao",
+      "label": "Manutenção"
+    }
+  ],
+  "stats": [
+    {
+      "valor": "200 L",
+      "label": "Reservatório"
+    },
+    {
+      "valor": "4",
+      "label": "Torneiras"
+    },
+    {
+      "valor": "150–300",
+      "label": "Pessoas por turno"
+    },
+    {
+      "valor": "Inox 304",
+      "label": "Gabinete"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Quantas pessoas atende o bebedouro inox 4 torneiras?",
+      "answer": "De 150 a 300 pessoas por turno, conforme o consumo. Em locais quentes ou de trabalho pesado, considere a parte de baixo da faixa."
+    },
+    {
+      "question": "Quanto pesa um bebedouro de 200 litros?",
+      "answer": "Vazio, um modelo industrial de 200 litros costuma pesar algumas dezenas de quilos. Cheio, somam-se cerca de 200 kg de água, por isso ele deve ser posicionado no local definitivo antes do abastecimento."
+    },
+    {
+      "question": "O bebedouro inox 4 torneiras precisa de tomada especial?",
+      "answer": "Precisa de tomada exclusiva, na tensão do equipamento e com aterramento. Não ligue em extensões ou benjamins, que aquecem e derrubam a tensão na partida do compressor."
+    },
+    {
+      "question": "Vale mais um 4 torneiras ou dois 2 torneiras?",
+      "answer": "O 4 torneiras concentra instalação e manutenção em um ponto e tem melhor custo por pessoa atendida. Dois equipamentos menores fazem sentido quando os usuários estão espalhados em áreas distantes."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/bebedouro-inox",
+      "label": "bebedouro inox"
+    },
+    {
+      "href": "/bebedouro-4-torneiras",
+      "label": "bebedouro 4 torneiras"
+    },
+    {
+      "href": "/bebedouro-industrial-4-torneiras",
+      "label": "bebedouro industrial 4 torneiras"
+    },
+    {
+      "href": "/bebedouro-industrial-200-litros",
+      "label": "bebedouro industrial 200 litros"
+    },
+    {
+      "href": "/bebedouro-de-obra",
+      "label": "bebedouro de obra"
+    },
+    {
+      "href": "/artigo/bebedouro-industrial-preco-2025",
+      "label": "veja a faixa de preço"
+    },
+    {
+      "href": "/local/bebedouro-industrial-sao-paulo",
+      "label": "em São Paulo"
+    }
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://portaldobebedouro.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bebedouro Inox 4 Torneiras: 200 Litros para Alto Fluxo"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Quantas pessoas atende o bebedouro inox 4 torneiras?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "De 150 a 300 pessoas por turno, conforme o consumo. Em locais quentes ou de trabalho pesado, considere a parte de baixo da faixa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto pesa um bebedouro de 200 litros?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Vazio, um modelo industrial de 200 litros costuma pesar algumas dezenas de quilos. Cheio, somam-se cerca de 200 kg de água, por isso ele deve ser posicionado no local definitivo antes do abastecimento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O bebedouro inox 4 torneiras precisa de tomada especial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Precisa de tomada exclusiva, na tensão do equipamento e com aterramento. Não ligue em extensões ou benjamins, que aquecem e derrubam a tensão na partida do compressor."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Vale mais um 4 torneiras ou dois 2 torneiras?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O 4 torneiras concentra instalação e manutenção em um ponto e tem melhor custo por pessoa atendida. Dois equipamentos menores fazem sentido quando os usuários estão espalhados em áreas distantes."
+          }
+        }
+      ]
+    }
+  ],
+  "html": "<section id=\"o-que-e\"><h2>O que é o bebedouro inox 4 torneiras</h2><p>É o <a href=\"/bebedouro-inox\">bebedouro inox</a> de maior capacidade da linha industrial: reservatório de 200 litros, quatro torneiras frontais e gabinete inteiro em aço inoxidável. Foi projetado para ambientes onde centenas de pessoas precisam de água gelada ao longo do dia e muitas delas ao mesmo tempo.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros\" class=\"flutua-esq\" loading=\"lazy\"/><p>Com quatro saídas, a fila do intervalo anda quatro vezes mais rápido do que em um bebedouro de uma torneira, e o reservatório grande segura o pico sem que a água esquente.</p><div class=\"limpa\"></div></section><section id=\"capacidade\"><h2>Capacidade e dimensionamento</h2><p>O modelo atende de 150 a 300 pessoas por turno. A faixa é larga porque o consumo varia muito: em escritório, a média fica perto de 1 litro por pessoa; em obra sob sol, passa facilmente de 3 litros.</p><p>Para usar a referência da NR-24, de um bebedouro para cada 50 trabalhadores, lembre que ela trata de pontos de acesso. Em plantas grandes, pode ser melhor dividir o atendimento entre um 4 torneiras no refeitório e modelos menores nas áreas mais distantes.</p></section><section id=\"onde-usar\"><h2>Onde usar</h2><ul><li>Canteiros de obra e frentes de serviço com equipes grandes.</li><li>Galpões logísticos e centros de distribuição.</li><li>Indústrias com turnos numerosos e refeitórios centrais.</li><li>Ginásios, clubes, eventos e espaços públicos.</li></ul><p>Em obra, ele costuma ficar no vestiário ou na área de vivência, com ponto de água e energia preparados antes da entrega.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%204%20torneiras%20robust%20200%20litros%20ambiente%20obra.png\" alt=\"bebedouro industrial inox 4 torneiras robust 200 litros ambiente obra\" class=\"flutua-esq\" loading=\"lazy\"/><div class=\"limpa\"></div></section><section id=\"instalacao\"><h2>Instalação</h2><p>Pelo peso e pelo volume, posicione o equipamento no local definitivo antes de encher o reservatório. Use piso firme e nivelado, tomada exclusiva na tensão correta e ligação hidráulica com registro. Um ponto de esgoto próximo facilita o escoamento do aparador.</p><p>Deixe espaço livre atrás e nas laterais para o condensador trocar calor. Em ambientes com poeira, como obras e galpões, limpe a grade de ventilação com frequência.</p></section><section id=\"manutencao\"><h2>Manutenção</h2><p>A rotina é a mesma dos demais industriais, mas com mais atenção pelo volume: limpeza diária das torneiras e do aparador, higienização do reservatório e troca de filtro a cada 6 meses, ou a cada 3 a 4 meses em uso intenso. Veja <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar o bebedouro industrial</a>.</p></section>"
+}

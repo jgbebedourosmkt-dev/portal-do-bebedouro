@@ -1,0 +1,153 @@
+{
+  "slug": "filtro-industrial",
+  "metaTitle": "Filtro Industrial de Água: Como Funciona e Qual Escolher",
+  "metaDescription": "Filtro industrial de água gelada: como funciona, diferença para o bebedouro comum, capacidades de 25 a 200 litros, troca de refil e normas.",
+  "badge": "Guia Completo",
+  "title": "Filtro Industrial: Água Filtrada e Gelada em Alto Volume",
+  "excerpt": "O filtro industrial combina filtragem e refrigeração em um equipamento de inox de 25 a 200 litros. Entenda como funciona e como escolher a capacidade.",
+  "breadcrumbLabel": "Filtro Industrial: Água Filtrada e Gelada em Alto Volume",
+  "finalCtaTitle": "Precisa de um filtro industrial?",
+  "finalCtaDesc": "A JG Bebedouros fabrica filtros e bebedouros industriais em inox com entrega para todo o Brasil.",
+  "tocItems": [
+    {
+      "href": "#o-que-e",
+      "label": "O que é um filtro industrial"
+    },
+    {
+      "href": "#como-funciona",
+      "label": "Como funciona"
+    },
+    {
+      "href": "#capacidades",
+      "label": "Capacidades e torneiras"
+    },
+    {
+      "href": "#troca-do-refil",
+      "label": "Troca do refil"
+    },
+    {
+      "href": "#onde-usar",
+      "label": "Onde usar"
+    }
+  ],
+  "stats": [
+    {
+      "valor": "25–200 L",
+      "label": "Capacidades"
+    },
+    {
+      "valor": "2 a 4",
+      "label": "Torneiras"
+    },
+    {
+      "valor": "6 meses",
+      "label": "Troca do refil"
+    },
+    {
+      "valor": "Inox 304",
+      "label": "Gabinete"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual a diferença entre filtro industrial e bebedouro industrial?",
+      "answer": "Na prática comercial, são o mesmo tipo de equipamento: gelam a água da rede em reservatório de inox. O nome \"filtro industrial\" destaca o elemento filtrante na entrada de água, presente na maioria dos modelos."
+    },
+    {
+      "question": "O filtro industrial deixa a água potável?",
+      "answer": "Ele melhora sabor e odor e retém partículas de água que já vem tratada pela rede pública. Ele não substitui o tratamento de água de poço ou de fonte sem controle, que precisa de análise e sistema próprio."
+    },
+    {
+      "question": "De quanto em quanto tempo trocar o refil do filtro industrial?",
+      "answer": "A referência é a cada 6 meses. Em uso intenso ou com água de pior qualidade, o prazo pode cair para 3 ou 4 meses."
+    },
+    {
+      "question": "Qual capacidade de filtro industrial eu preciso?",
+      "answer": "Até 50 pessoas por turno, de 25 a 50 litros com 2 torneiras; de 50 a 150 pessoas, 100 litros com 3 torneiras; acima disso, 200 litros com 4 torneiras."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/filtro-de-agua-industrial",
+      "label": "filtro de água industrial"
+    },
+    {
+      "href": "/filtro-industrial-200-litros",
+      "label": "filtro industrial 200 litros"
+    },
+    {
+      "href": "/bebedouro-com-filtro",
+      "label": "bebedouro com filtro"
+    },
+    {
+      "href": "/bebedouro-industrial",
+      "label": "bebedouro industrial"
+    },
+    {
+      "href": "/artigo/bebedouro-industrial-preco-2025",
+      "label": "veja a faixa de preço"
+    },
+    {
+      "href": "/local/bebedouro-industrial-sao-paulo",
+      "label": "em São Paulo"
+    }
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://portaldobebedouro.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Filtro Industrial: Água Filtrada e Gelada em Alto Volume"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre filtro industrial e bebedouro industrial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Na prática comercial, são o mesmo tipo de equipamento: gelam a água da rede em reservatório de inox. O nome \"filtro industrial\" destaca o elemento filtrante na entrada de água, presente na maioria dos modelos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O filtro industrial deixa a água potável?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ele melhora sabor e odor e retém partículas de água que já vem tratada pela rede pública. Ele não substitui o tratamento de água de poço ou de fonte sem controle, que precisa de análise e sistema próprio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De quanto em quanto tempo trocar o refil do filtro industrial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A referência é a cada 6 meses. Em uso intenso ou com água de pior qualidade, o prazo pode cair para 3 ou 4 meses."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual capacidade de filtro industrial eu preciso?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Até 50 pessoas por turno, de 25 a 50 litros com 2 torneiras; de 50 a 150 pessoas, 100 litros com 3 torneiras; acima disso, 200 litros com 4 torneiras."
+          }
+        }
+      ]
+    }
+  ],
+  "html": "<section id=\"o-que-e\"><h2>O que é um filtro industrial</h2><p>No mercado, \"filtro industrial\" é o nome usado para o equipamento que filtra e gela a água da rede em grande volume, com reservatório em aço inox e várias torneiras. Na prática, é um <a href=\"/bebedouro-industrial\">bebedouro industrial</a> com elemento filtrante na entrada de água.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros\" class=\"flutua-esq\" loading=\"lazy\"/><p>Ele é diferente do <a href=\"/filtro-de-agua-industrial\">filtro de água industrial</a> de tratamento, como filtros de areia e de cartucho para processos e caixas d'água, que não gelam a água e não são pontos de consumo.</p><div class=\"limpa\"></div></section><section id=\"como-funciona\"><h2>Como funciona</h2><ul><li><strong>Entrada:</strong> a água da rede passa pelo elemento filtrante, normalmente de carvão ativado com pré-filtro de sedimentos.</li><li><strong>Reservatório:</strong> a água filtrada fica em um tanque de inox, resfriado por um compressor como o de uma geladeira.</li><li><strong>Controle:</strong> um termostato liga e desliga o compressor para manter a temperatura.</li><li><strong>Saída:</strong> as torneiras servem a água gelada, e o aparador com dreno recolhe o que cai.</li></ul><p>O carvão ativado reduz cloro, gosto e odor, e o pré-filtro segura areia e partículas. Para tratar contaminação microbiológica ou química da fonte, é preciso um sistema de tratamento adequado antes do ponto de consumo.</p></section><section id=\"capacidades\"><h2>Capacidades e torneiras</h2><table><thead><tr><th>Modelo</th><th>Reservatório</th><th>Pessoas por turno</th></tr></thead><tbody><tr><td><a href=\"/filtro-industrial-2-torneiras\">Filtro industrial 2 torneiras</a></td><td>25 a 50 L</td><td>até 50</td></tr><tr><td><a href=\"/filtro-industrial-3-torneiras\">Filtro industrial 3 torneiras</a></td><td>100 L</td><td>50 a 150</td></tr><tr><td><a href=\"/filtro-industrial-4-torneiras\">Filtro industrial 4 torneiras</a></td><td>200 L</td><td>150 a 300</td></tr></tbody></table><p>O detalhamento do maior modelo está em <a href=\"/filtro-industrial-200-litros\">filtro industrial 200 litros</a>.</p></section><section id=\"troca-do-refil\"><h2>Troca do refil</h2><p>O elemento filtrante satura com o uso. A referência é trocar a cada 6 meses, ou antes se a vazão cair ou a água mudar de gosto. Filtro vencido não só deixa de filtrar como pode acumular sujeira e liberar o que reteve.</p><p>Veja o passo a passo em <a href=\"/artigo/como-trocar-filtro-bebedouro-industrial\">como trocar o filtro do bebedouro industrial</a>.</p></section><section id=\"onde-usar\"><h2>Onde usar</h2><p>Indústrias, obras, escolas, academias, igrejas, condomínios e qualquer local que precise substituir galões por água ilimitada da rede. Em empresas, o equipamento ajuda a cumprir a NR-24, que exige água potável e fresca para os trabalhadores. Veja <a href=\"/bebedouro-para-empresa\">bebedouro para empresa</a>.</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20industrial%20inox%203%20torneiras%20robust%20100%20litros%20ambiente%20industria.png\" alt=\"bebedouro industrial inox 3 torneiras robust 100 litros ambiente industria\" class=\"flutua-esq\" loading=\"lazy\"/><div class=\"limpa\"></div></section>"
+}

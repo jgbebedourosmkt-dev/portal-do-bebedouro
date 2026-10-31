@@ -1,0 +1,161 @@
+{
+  "slug": "bebedouro",
+  "metaTitle": "Bebedouro: Tipos, Capacidades e Como Escolher o Modelo Certo",
+  "metaDescription": "Guia do bebedouro: tipos (coluna, pressão, bancada, industrial), capacidade por número de pessoas, normas e manutenção.",
+  "badge": "Guia Completo",
+  "title": "Bebedouro: Tipos, Capacidades e Como Escolher",
+  "excerpt": "Do bebedouro de garrafão ao industrial de 200 litros: entenda as diferenças entre os tipos, quantas pessoas cada um atende e o que a lei exige de empresas e escolas.",
+  "breadcrumbLabel": "Bebedouro: Tipos, Capacidades e Como Escolher",
+  "finalCtaTitle": "Precisa de um bebedouro para o seu ambiente?",
+  "finalCtaDesc": "A JG Bebedouros fabrica modelos industriais em inox de 25 a 200 litros, com entrega para todo o Brasil.",
+  "tocItems": [
+    {
+      "href": "#o-que-e",
+      "label": "O que é um bebedouro"
+    },
+    {
+      "href": "#tipos",
+      "label": "Tipos de bebedouro"
+    },
+    {
+      "href": "#capacidade",
+      "label": "Capacidade: quantas pessoas cada bebedouro atende"
+    },
+    {
+      "href": "#normas",
+      "label": "O que a lei exige"
+    },
+    {
+      "href": "#manutencao",
+      "label": "Manutenção e higiene"
+    },
+    {
+      "href": "#como-escolher",
+      "label": "Como escolher em 4 passos"
+    }
+  ],
+  "stats": [
+    {
+      "valor": "25–200 L",
+      "label": "Faixa dos modelos industriais"
+    },
+    {
+      "valor": "1 : 50",
+      "label": "Bebedouro por trabalhadores (NR-24)"
+    },
+    {
+      "valor": "6 meses",
+      "label": "Troca de filtro recomendada"
+    },
+    {
+      "valor": "Inox 304",
+      "label": "Material de referência"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual o melhor tipo de bebedouro para empresa?",
+      "answer": "Para equipes de até 30 pessoas, um bebedouro de pressão ou um industrial de 25 a 30 litros costuma bastar. Acima disso, os modelos industriais em inox de 50 a 200 litros, com 2 a 4 torneiras, evitam filas e atendem à NR-24, que exige água potável, fresca e sem copos coletivos."
+    },
+    {
+      "question": "Quantos bebedouros minha empresa precisa ter?",
+      "answer": "A referência adotada a partir da NR-24 é de um bebedouro para cada 50 trabalhadores. Uma empresa com 120 pessoas, por exemplo, deve prever ao menos três pontos de água, ou equipamentos de maior capacidade e mais torneiras distribuídos pelas áreas de maior circulação."
+    },
+    {
+      "question": "Bebedouro de garrafão ou ligado na rede: qual compensa?",
+      "answer": "O de garrafão dispensa instalação, mas gera custo recorrente com galões, frete e espaço de estoque. O ligado à rede tem custo de instalação único e água ilimitada, com filtro para garantir a qualidade. Em uso diário com mais de 15 pessoas, o modelo ligado à rede costuma se pagar rapidamente."
+    },
+    {
+      "question": "De quanto em quanto tempo trocar o filtro do bebedouro?",
+      "answer": "A recomendação mais comum é a cada 6 meses. Em uso intenso ou com água de rede de pior qualidade, o prazo pode cair para 3 ou 4 meses. Queda de vazão, gosto ou cheiro diferentes na água são sinais de que a troca deve ser antecipada."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/bebedouro-industrial",
+      "label": "bebedouro industrial"
+    },
+    {
+      "href": "/tipos-de-bebedouro",
+      "label": "tipos de bebedouro"
+    },
+    {
+      "href": "/bebedouro-de-agua",
+      "label": "bebedouro de água"
+    },
+    {
+      "href": "/bebedouro-para-empresa",
+      "label": "bebedouro para empresa"
+    },
+    {
+      "href": "/bebedouro-inox",
+      "label": "bebedouro inox"
+    },
+    {
+      "href": "/artigo/bebedouro-industrial-preco-2025",
+      "label": "veja a faixa de preço"
+    },
+    {
+      "href": "/local/bebedouro-industrial-sao-paulo",
+      "label": "em São Paulo"
+    }
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://portaldobebedouro.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bebedouro: Tipos, Capacidades e Como Escolher"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual o melhor tipo de bebedouro para empresa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para equipes de até 30 pessoas, um bebedouro de pressão ou um industrial de 25 a 30 litros costuma bastar. Acima disso, os modelos industriais em inox de 50 a 200 litros, com 2 a 4 torneiras, evitam filas e atendem à NR-24, que exige água potável, fresca e sem copos coletivos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quantos bebedouros minha empresa precisa ter?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A referência adotada a partir da NR-24 é de um bebedouro para cada 50 trabalhadores. Uma empresa com 120 pessoas, por exemplo, deve prever ao menos três pontos de água, ou equipamentos de maior capacidade e mais torneiras distribuídos pelas áreas de maior circulação."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bebedouro de garrafão ou ligado na rede: qual compensa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O de garrafão dispensa instalação, mas gera custo recorrente com galões, frete e espaço de estoque. O ligado à rede tem custo de instalação único e água ilimitada, com filtro para garantir a qualidade. Em uso diário com mais de 15 pessoas, o modelo ligado à rede costuma se pagar rapidamente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "De quanto em quanto tempo trocar o filtro do bebedouro?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A recomendação mais comum é a cada 6 meses. Em uso intenso ou com água de rede de pior qualidade, o prazo pode cair para 3 ou 4 meses. Queda de vazão, gosto ou cheiro diferentes na água são sinais de que a troca deve ser antecipada."
+          }
+        }
+      ]
+    }
+  ],
+  "html": "<section id=\"o-que-e\"><h2>O que é um bebedouro</h2><p>Bebedouro é todo equipamento que disponibiliza água potável para consumo direto, em geral resfriada, a partir de um reservatório próprio, de um garrafão ou da rede hidráulica. A palavra cobre desde o pequeno modelo de garrafão de escritório até o <a href=\"/bebedouro-industrial\">bebedouro industrial</a> de 200 litros instalado em canteiros de obra e fábricas.</p><p>O que separa um tipo do outro é a forma de abastecimento, a capacidade de resfriamento e o número de pessoas que o equipamento atende ao mesmo tempo. Escolher pelo preço da etiqueta, sem olhar esses três pontos, é o erro mais comum, e costuma terminar em fila, água morna no meio da tarde ou troca precoce do aparelho.</p></section><section id=\"tipos\"><h2>Tipos de bebedouro</h2><p>Os principais formatos encontrados no mercado brasileiro são:</p><img src=\"https://raw.githubusercontent.com/jgbebedourosmkt-dev/portal-do-bebedouro-imagens/main/bebedouro%20100%20e%2050%20litros%20inox%203%20e%202%20torneiras%20lado%20a%20lado.png\" alt=\"bebedouro 100 e 50 litros inox 3 e 2 torneiras lado a lado\" class=\"flutua-esq\" loading=\"lazy\"/><ul><li><strong>Bebedouro de garrafão:</strong> usa galões de 10 ou 20 litros. Não precisa de ponto hidráulico, mas depende de logística de reposição e higienização do suporte.</li><li><strong>Bebedouro de pressão:</strong> ligado à rede de água, resfria por serpentina e serve por jato ou torneira. É comum em corredores de empresas e escolas.</li><li><strong><a href=\"/bebedouro-de-coluna\">Bebedouro de coluna</a>:</strong> fica de pé no chão, com o reservatório no corpo do aparelho.</li><li><strong><a href=\"/bebedouro-de-bancada\">Bebedouro de bancada</a>:</strong> compacto, apoiado sobre balcão ou mesa.</li><li><strong>Bebedouro industrial:</strong> reservatório de 25 a 200 litros em aço inox, de 2 a 4 torneiras, feito para uso contínuo e alto fluxo.</li></ul><p>Para um panorama com prós e contras de cada formato, veja o guia de <a href=\"/tipos-de-bebedouro\">tipos de bebedouro</a>.</p><div class=\"limpa\"></div></section><section id=\"capacidade\"><h2>Capacidade: quantas pessoas cada bebedouro atende</h2><p>A conta prática parte do consumo médio de água por pessoa no turno, que fica entre 1 e 2 litros em trabalho leve e pode passar de 3 litros em atividades físicas ou ambientes quentes. A partir daí, o reservatório e o número de torneiras definem o atendimento:</p><table><thead><tr><th>Capacidade</th><th>Torneiras</th><th>Uso típico</th></tr></thead><tbody><tr><td>25 a 30 L</td><td>2</td><td>Escritórios e equipes de até 30 pessoas</td></tr><tr><td>50 L</td><td>2</td><td>Pequenas indústrias, oficinas, escolas pequenas</td></tr><tr><td>100 L</td><td>3</td><td>Fábricas, escolas, academias, igrejas</td></tr><tr><td>200 L</td><td>4</td><td>Obras, galpões e refeitórios de alto fluxo</td></tr></tbody></table><p>Dimensione pelo horário de pico, como intervalo, troca de turno e saída de treino, e não pela média do dia. Um equipamento subdimensionado obriga o compressor a trabalhar sem parar e entrega água menos gelada justamente quando mais gente quer beber.</p></section><section id=\"normas\"><h2>O que a lei exige</h2><p>Para empresas, a referência é a NR-24, que trata das condições sanitárias e de conforto nos locais de trabalho. Ela exige fornecimento de água potável e fresca, em condições higiênicas e sem copos coletivos, e o mercado adota a proporção de um bebedouro para cada 50 trabalhadores. Veja como isso se aplica em <a href=\"/bebedouro-para-empresa\">bebedouro para empresa</a>.</p><p>Em locais abertos ao público, a NBR 9050 pede ao menos um bebedouro acessível a pessoas em cadeira de rodas, e a qualidade da água segue o padrão de potabilidade do Ministério da Saúde. Detalhamos isso em <a href=\"/artigo/bebedouro-nbr-9050-acessibilidade\">bebedouro e NBR 9050</a>.</p></section><section id=\"manutencao\"><h2>Manutenção e higiene</h2><p>Qualquer bebedouro precisa de três cuidados: limpeza externa das torneiras e do aparador, higienização interna do reservatório e troca do elemento filtrante. A referência mais usada é a troca do filtro a cada 6 meses, encurtando o prazo em uso intenso ou com água de rede de qualidade irregular.</p><p>O passo a passo está em <a href=\"/artigo/como-trocar-filtro-bebedouro-industrial\">como trocar o filtro do bebedouro industrial</a> e em <a href=\"/artigo/como-limpar-bebedouro-industrial\">como limpar o bebedouro industrial</a>.</p></section><section id=\"como-escolher\"><h2>Como escolher em 4 passos</h2><ul><li><strong>Conte as pessoas no pico</strong> e multiplique pelo consumo do turno para chegar ao volume de que você precisa.</li><li><strong>Defina o abastecimento:</strong> rede hidráulica (pressão ou industrial com entrada de água) ou reservatório abastecido manualmente.</li><li><strong>Escolha o material:</strong> aço inox 304 para ambientes úmidos, industriais ou de muito uso; plástico ou chapa pintada para uso leve.</li><li><strong>Confira certificação, garantia e assistência técnica</strong> na sua região antes de fechar.</li></ul><p>Para comparar valores, consulte a <a href=\"/artigo/bebedouro-industrial-preco-2025\">faixa de preço do bebedouro industrial</a>.</p></section>"
+}
