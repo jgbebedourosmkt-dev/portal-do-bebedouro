@@ -40,8 +40,8 @@ const href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(mensagem)
     align-items: center;
     gap: var(--sp-3);
     padding: var(--sp-2) var(--sp-5) var(--sp-2) var(--sp-2);
-    background: var(--c-whatsapp);
-    color: var(--c-sobre-whatsapp);
+    background: var(--c-acento);
+    color: var(--c-sobre-acento);
     border-radius: 999px;
     box-shadow: 0 6px 24px color-mix(in srgb, var(--tinta-900) 28%, transparent);
     font-family: var(--ff-ui);
@@ -51,9 +51,22 @@ const href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(mensagem)
       transform var(--dur) var(--ease);
     animation: entrar 400ms var(--ease) 1.2s backwards;
   }
+  /* Onda que se espalha a partir do botão, de tempos em tempos */
+  .whatsapp::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: inherit;
+    background: var(--c-acento);
+    animation: onda 3s var(--ease) 2s infinite;
+  }
   .whatsapp:hover {
-    background: var(--c-whatsapp-hover);
+    background: var(--c-acento-hover);
     transform: translateY(-2px);
+  }
+  .whatsapp:hover::after {
+    animation: none;
   }
   .whatsapp:focus-visible {
     outline: 2px solid var(--c-foco);
@@ -65,7 +78,11 @@ const href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(mensagem)
     height: 44px;
     padding: var(--sp-2);
     border-radius: 50%;
-    background: color-mix(in srgb, var(--papel-50) 30%, transparent);
+    background: color-mix(in srgb, var(--c-sobre-acento) 16%, transparent);
+    animation: balancar 3s ease-in-out 2s infinite;
+  }
+  .whatsapp:hover svg {
+    animation-play-state: paused;
   }
   .rotulo {
     display: grid;
@@ -85,6 +102,36 @@ const href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(mensagem)
       transform: translateY(var(--sp-4));
     }
   }
+  @keyframes onda {
+    0% {
+      opacity: 0.55;
+      transform: scale(1);
+    }
+    60%,
+    100% {
+      opacity: 0;
+      transform: scale(1.15, 1.45);
+    }
+  }
+  @keyframes balancar {
+    0%,
+    70%,
+    100% {
+      transform: rotate(0);
+    }
+    75% {
+      transform: rotate(-14deg);
+    }
+    80% {
+      transform: rotate(12deg);
+    }
+    85% {
+      transform: rotate(-8deg);
+    }
+    90% {
+      transform: rotate(4deg);
+    }
+  }
   /* No celular fica só a chamada curta, para cobrir menos texto */
   @media (max-width: 640px) {
     .whatsapp {
@@ -97,7 +144,9 @@ const href = `https://wa.me/${SITE.whatsapp}?text=${encodeURIComponent(mensagem)
     }
   }
   @media (prefers-reduced-motion: reduce) {
-    .whatsapp {
+    .whatsapp,
+    .whatsapp::after,
+    svg {
       animation: none;
       transition: none;
     }
