@@ -76,13 +76,21 @@ const jsonLd = [websiteSchema(), ...schemas]
       }
       gtag('js', new Date())
       gtag('config', ga4)
-      // O gtag.js (~180 KB) só entra depois que a página carregou, fora do caminho crítico
-      addEventListener('load', () => {
+      // O gtag.js (~180 KB) só entra na primeira interação ou 6 s após o load,
+      // fora do caminho crítico. Os eventos ficam na fila do dataLayer até lá.
+      let carregado = false
+      const eventos = ['scroll', 'pointerdown', 'keydown', 'touchstart']
+      const carregar = () => {
+        if (carregado) return
+        carregado = true
+        eventos.forEach((e) => removeEventListener(e, carregar))
         const s = document.createElement('script')
         s.async = true
         s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4
-        ;(window.requestIdleCallback || setTimeout)(() => document.head.append(s))
-      })
+        document.head.append(s)
+      }
+      eventos.forEach((e) => addEventListener(e, carregar, { once: true, passive: true }))
+      addEventListener('load', () => setTimeout(carregar, 6000))
     </script>
   </head>
   <body>
