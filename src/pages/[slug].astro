@@ -1,0 +1,24 @@
+---
+// Raiz do site: editorias (/mercado, /legislacao…) e páginas pilar (/bebedouro-inox…)
+import type { GetStaticPaths } from 'astro'
+import { getCollection, type CollectionEntry } from 'astro:content'
+import Editoria from '@/components/Editoria.astro'
+import Pilar from '@/components/Pilar.astro'
+import { CATEGORIAS, type Categoria } from '@/lib/site'
+
+type Props = { categoria: Categoria; pilar?: never } | { pilar: CollectionEntry<'pilares'>; categoria?: never }
+
+export const getStaticPaths = (async () => {
+  const pilares = await getCollection('pilares')
+  const colisao = pilares.find((p) => p.id in CATEGORIAS)
+  if (colisao) throw new Error(`Página pilar "${colisao.id}" conflita com uma editoria`)
+  return [
+    ...(Object.keys(CATEGORIAS) as Categoria[]).map((categoria) => ({ params: { slug: categoria }, props: { categoria } })),
+    ...pilares.map((pilar) => ({ params: { slug: pilar.id }, props: { pilar } })),
+  ]
+}) satisfies GetStaticPaths
+
+const { categoria, pilar } = Astro.props as Props
+---
+
+{pilar ? <Pilar pilar={pilar} /> : <Editoria categoria={categoria!} />}

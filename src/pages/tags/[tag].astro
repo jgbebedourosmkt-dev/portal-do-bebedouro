@@ -1,0 +1,23 @@
+---
+import type { GetStaticPaths } from 'astro'
+import ListaPosts from '@/components/ListaPosts.astro'
+import { getPosts, getTags } from '@/lib/posts'
+
+export const getStaticPaths = (async () => {
+  const posts = await getPosts()
+  return getTags(posts).map((tag) => ({
+    params: { tag },
+    props: { tag, posts: posts.filter((p) => p.data.tags.includes(tag)) },
+  }))
+}) satisfies GetStaticPaths
+
+const { tag, posts } = Astro.props
+---
+
+<ListaPosts
+  title={`Tag: ${tag}`}
+  description={`Artigos com a tag "${tag}" no Portal do Bebedouro.`}
+  kicker="Tag"
+  titulo={tag}
+  posts={posts}
+/>

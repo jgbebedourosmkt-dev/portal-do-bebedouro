@@ -1,0 +1,140 @@
+---
+import { getEntry } from 'astro:content'
+import PaginaTexto from '@/components/PaginaTexto.astro'
+
+const pagina = await getEntry('paginas', 'contato')
+---
+
+<PaginaTexto
+  title={pagina?.data.title ?? 'Contato'}
+  description="Entre em contato com a equipe do Portal do Bebedouro."
+  html={pagina?.data.content}
+>
+  <form class="contato" data-contato>
+    <div class="linha">
+      <label>
+        <span>Nome *</span>
+        <input name="nome" type="text" required autocomplete="name" placeholder="Seu nome completo" />
+      </label>
+      <label>
+        <span>E-mail *</span>
+        <input name="email" type="email" required autocomplete="email" placeholder="seu@email.com" />
+      </label>
+    </div>
+    <label>
+      <span>Assunto</span>
+      <input name="assunto" type="text" placeholder="Ex.: publicidade, pauta editorial, parceria…" />
+    </label>
+    <label>
+      <span>Mensagem *</span>
+      <textarea name="mensagem" required rows="6" placeholder="Escreva sua mensagem…"></textarea>
+    </label>
+    <button type="submit">Enviar mensagem</button>
+  </form>
+  <div class="ok" hidden>
+    <p class="titulo">Mensagem enviada.</p>
+    <p>Recebemos seu contato e responderemos em até 2 dias úteis.</p>
+  </div>
+</PaginaTexto>
+
+<script>
+  const form = document.querySelector<HTMLFormElement>('[data-contato]')
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault()
+    const botao = form.querySelector('button')!
+    botao.disabled = true
+    botao.textContent = 'Enviando…'
+    const res = await fetch('/api/contato', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(Object.fromEntries(new FormData(form))),
+    }).catch(() => null)
+    if (res?.ok) {
+      form.hidden = true
+      form.nextElementSibling?.removeAttribute('hidden')
+      return
+    }
+    botao.disabled = false
+    botao.textContent = 'Enviar mensagem'
+    let erro = form.querySelector('.form-erro')
+    if (!erro) {
+      erro = document.createElement('p')
+      erro.className = 'form-erro'
+      erro.setAttribute('role', 'alert')
+      form.append(erro)
+    }
+    erro.textContent = 'Erro ao enviar. Tente novamente ou escreva para jgbebedourosmkt@gmail.com.'
+  })
+</script>
+
+<style>
+  .contato {
+    display: grid;
+    gap: var(--sp-5);
+    margin-top: var(--sp-7);
+    padding-top: var(--sp-5);
+    border-top: var(--filete) solid var(--c-filete);
+  }
+  .contato[hidden] {
+    display: none;
+  }
+  .linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-5);
+  }
+  label {
+    display: grid;
+    gap: var(--sp-2);
+  }
+  label span {
+    font-size: var(--fs-micro);
+    font-weight: 650;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--c-texto-3);
+  }
+  input,
+  textarea {
+    padding: var(--sp-3);
+    background: var(--c-superficie);
+    border: var(--filete) solid var(--c-filete);
+    border-radius: var(--raio);
+    font-family: var(--ff-texto);
+    font-size: 1.0625rem;
+    resize: vertical;
+  }
+  input:focus,
+  textarea:focus {
+    outline: 0;
+    border-color: var(--c-acento);
+  }
+  button {
+    justify-self: start;
+    padding: var(--sp-3) var(--sp-6);
+    background: var(--c-texto);
+    color: var(--c-fundo);
+    border: 0;
+    border-radius: var(--raio);
+    font-weight: 650;
+    cursor: pointer;
+    transition: background var(--dur);
+  }
+  button:hover {
+    background: var(--c-acento);
+  }
+  .ok {
+    margin-top: var(--sp-7);
+    padding: var(--sp-5);
+    border-left: 3px solid var(--c-ok);
+    background: var(--c-superficie);
+  }
+  .ok .titulo {
+    font-size: var(--fs-h4);
+  }
+  @media (max-width: 640px) {
+    .linha {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,0 +1,38 @@
+---
+// Página institucional simples (sobre, contato, /pagina/<slug>)
+import Base from '@/layouts/Base.astro'
+
+interface Props {
+  title: string
+  description?: string
+  html?: string
+}
+const { title, description, html } = Astro.props
+---
+
+<Base title={title} description={description}>
+  <article class="container pagina">
+    <header>
+      <p class="kicker">Portal do Bebedouro</p>
+      <h1 class="manchete">{title}</h1>
+    </header>
+    {html && <div class="prosa" set:html={html} />}
+    <slot />
+  </article>
+</Base>
+
+<style>
+  .pagina {
+    max-width: calc(46rem + 2 * var(--gutter));
+    padding-block: var(--sp-7) var(--sp-8);
+  }
+  header {
+    padding-bottom: var(--sp-5);
+    margin-bottom: var(--sp-6);
+    border-bottom: 2px solid var(--c-filete-forte);
+  }
+  .manchete {
+    margin-top: var(--sp-2);
+    font-size: var(--fs-h1);
+  }
+</style>

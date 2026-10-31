@@ -1,0 +1,316 @@
+---
+import type { GetStaticPaths } from 'astro'
+import Base from '@/layouts/Base.astro'
+import Faq from '@/components/Faq.astro'
+import CtaOrcamento from '@/components/CtaOrcamento.astro'
+import { getLocais, type Local } from '@/lib/locais'
+import { localBusinessSchema, breadcrumbSchema, faqSchema } from '@/lib/schema'
+
+export const getStaticPaths = (async () => {
+  const locais = await getLocais()
+  return locais.map((local) => ({
+    params: { slug: local.slug },
+    props: {
+      local,
+      vizinhas: locais.filter((l) => l.stateAbbr === local.stateAbbr && l.slug !== local.slug).slice(0, 12),
+    },
+  }))
+}) satisfies GetStaticPaths
+
+const { local, vizinhas } = Astro.props as { local: Local; vizinhas: Local[] }
+const ref = `${local.name}/${local.stateAbbr}`
+
+const schemas = [
+  localBusinessSchema({ name: `JG Bebedouros — ${local.name}`, city: local.name, state: local.state, slug: `local/${local.slug}` }),
+  breadcrumbSchema([{ name: 'Home', slug: '' }, { name: 'Bebedouro Industrial', slug: 'bebedouro-industrial' }, { name: local.name }]),
+  faqSchema(local.faqs),
+]
+
+const DADOS = [
+  { valor: '4+', label: 'Modelos disponíveis' },
+  { valor: '100 L/h', label: 'Capacidade máxima' },
+  { valor: '3–7 dias', label: 'Prazo de entrega' },
+  { valor: '12 meses', label: 'Garantia inclusa' },
+]
+const GUIAS = [
+  { href: '/bebedouro-industrial', label: 'Guia: Bebedouro Industrial' },
+  { href: '/tipos-de-bebedouro', label: 'Tipos de Bebedouro' },
+  { href: '/bebedouro-para-empresa', label: 'Bebedouro para Empresa' },
+  { href: '/bebedouro-inox', label: 'Bebedouro Inox' },
+]
+---
+
+<Base title={local.metaTitle} description={local.metaDescription} schemas={schemas}>
+  <header class="hero">
+    <div class="container hero-interno">
+      <nav class="trilha" aria-label="Trilha">
+        <a href="/">Início</a>
+        <span aria-hidden="true">/</span>
+        <a href="/bebedouro-industrial">Bebedouro Industrial</a>
+        <span aria-hidden="true">/</span>
+        <span aria-current="page">{local.name}</span>
+      </nav>
+      <p class="kicker surgir">
+        <span class="uf">{local.stateAbbr}</span> Atendimento local
+      </p>
+      <h1 class="manchete surgir" style="--i:1">{local.h1}</h1>
+      {local.intro && <p class="linha-fina surgir" style="--i:2">{local.intro}</p>}
+      <button type="button" class="cta surgir" style="--i:3" data-orcamento>
+        Pedir orçamento grátis <span aria-hidden="true">→</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="container corpo">
+    <main class="texto">
+      {local.html && <div class="prosa" set:html={local.html} />}
+
+      <Faq titulo={`Dúvidas sobre bebedouro industrial ${local.prep} ${local.name}`} itens={local.faqs} />
+
+      {
+        vizinhas.length > 0 && (
+          <nav class="vizinhas" aria-labelledby="viz-titulo">
+            <h2 id="viz-titulo">Também atendemos em {local.state}</h2>
+            <ul>
+              {vizinhas.map((v) => (
+                <li>
+                  <a href={`/local/${v.slug}`}>{v.name}</a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        )
+      }
+
+      <CtaOrcamento
+        titulo={`Bebedouro industrial ${local.prep} ${local.name} com entrega rápida`}
+        descricao={`JG Bebedouros oferece venda e manutenção com atendimento ${local.prep} ${ref}.`}
+      />
+    </main>
+
+    <aside class="lateral">
+      <div class="fixa">
+        <section class="bloco pedido">
+          <p class="titulo">Precisa de orçamento?</p>
+          <p>Atendimento {local.prep} {ref}</p>
+          <button type="button" data-orcamento>Orçamento grátis</button>
+        </section>
+
+        <section class="bloco">
+          <h2 class="bloco-titulo">Dados do equipamento</h2>
+          <dl class="numeros">
+            {
+              DADOS.map((s) => (
+                <div>
+                  <dd>{s.valor}</dd>
+                  <dt>{s.label}</dt>
+                </div>
+              ))
+            }
+          </dl>
+        </section>
+
+        <nav class="bloco" aria-labelledby="guias-titulo">
+          <h2 id="guias-titulo" class="bloco-titulo">Leia também</h2>
+          <ul class="guias">
+            {
+              GUIAS.map((g) => (
+                <li>
+                  <a href={g.href}>{g.label}</a>
+                </li>
+              ))
+            }
+          </ul>
+        </nav>
+      </div>
+    </aside>
+  </div>
+</Base>
+
+<style>
+  .hero {
+    padding-block: var(--sp-6) var(--sp-7);
+    border-bottom: 2px solid var(--c-filete-forte);
+  }
+  .hero-interno > * {
+    max-width: 58rem;
+  }
+  .trilha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    margin-bottom: var(--sp-5);
+    font-size: var(--fs-meta);
+    color: var(--c-texto-3);
+  }
+  .trilha a:hover {
+    color: var(--c-acento);
+  }
+  .uf {
+    display: inline-block;
+    margin-right: var(--sp-2);
+    padding: 0.15em 0.5em;
+    background: var(--c-acento);
+    color: var(--c-sobre-acento);
+    border-radius: var(--raio);
+  }
+  .manchete {
+    margin-top: var(--sp-3);
+    font-size: var(--fs-h1);
+  }
+  .linha-fina {
+    margin-top: var(--sp-4);
+    max-width: 42rem;
+    font-family: var(--ff-texto);
+    font-size: clamp(1.125rem, 1rem + 0.6vw, 1.375rem);
+    font-style: italic;
+    line-height: 1.5;
+    color: var(--c-texto-2);
+  }
+  .cta {
+    margin-top: var(--sp-5);
+    padding: var(--sp-3) var(--sp-5);
+    background: var(--c-acento);
+    color: var(--c-sobre-acento);
+    border: 0;
+    border-radius: var(--raio);
+    font-weight: 650;
+    cursor: pointer;
+    transition: background var(--dur);
+  }
+  .cta:hover {
+    background: var(--c-acento-hover);
+  }
+  .corpo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--lateral);
+    gap: var(--sp-8);
+    margin-top: var(--sp-7);
+  }
+  .texto {
+    max-width: 46rem;
+  }
+  .vizinhas {
+    margin-top: var(--sp-8);
+  }
+  .vizinhas h2 {
+    padding-top: var(--sp-2);
+    margin-bottom: var(--sp-3);
+    border-top: 2px solid var(--c-filete-forte);
+    font-size: var(--fs-micro);
+    font-weight: 650;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .vizinhas ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--sp-2);
+    padding: 0;
+    list-style: none;
+  }
+  .vizinhas a {
+    display: inline-block;
+    padding: var(--sp-1) var(--sp-3);
+    border: var(--filete) solid var(--c-filete);
+    border-radius: 999px;
+    font-size: var(--fs-meta);
+    color: var(--c-texto-2);
+    transition: border-color var(--dur), color var(--dur);
+  }
+  .vizinhas a:hover {
+    border-color: var(--c-acento);
+    color: var(--c-acento);
+  }
+  .fixa {
+    position: sticky;
+    top: 5rem;
+    display: grid;
+    gap: var(--sp-6);
+  }
+  .bloco-titulo {
+    padding-top: var(--sp-2);
+    margin-bottom: var(--sp-3);
+    border-top: 2px solid var(--c-filete-forte);
+    font-size: var(--fs-micro);
+    font-weight: 650;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+  }
+  .numeros {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-4) var(--sp-3);
+  }
+  .numeros div {
+    display: flex;
+    flex-direction: column;
+  }
+  .numeros dd {
+    margin: 0;
+    font-family: var(--ff-display);
+    font-size: var(--fs-h4);
+    line-height: 1.1;
+    color: var(--c-acento);
+  }
+  .numeros dt {
+    margin-top: var(--sp-1);
+    font-size: var(--fs-meta);
+    color: var(--c-texto-3);
+  }
+  .guias {
+    list-style: none;
+    padding: 0;
+  }
+  .guias a {
+    display: block;
+    padding-block: var(--sp-2);
+    border-bottom: var(--filete) solid var(--c-filete);
+    font-family: var(--ff-display);
+    font-size: 1.0625rem;
+    transition: color var(--dur), padding var(--dur) var(--ease);
+  }
+  .guias a:hover {
+    color: var(--c-acento);
+    padding-left: var(--sp-2);
+  }
+  .pedido {
+    padding: var(--sp-5);
+    background: var(--c-invertido);
+    color: var(--c-sobre-invertido);
+    border-radius: var(--raio);
+  }
+  .pedido .titulo {
+    font-size: var(--fs-h4);
+  }
+  .pedido p:not(.titulo) {
+    margin-top: var(--sp-1);
+    font-size: var(--fs-meta);
+    opacity: 0.7;
+  }
+  .pedido button {
+    width: 100%;
+    margin-top: var(--sp-4);
+    padding: var(--sp-3);
+    background: var(--c-sobre-invertido);
+    color: var(--c-invertido);
+    border: 0;
+    border-radius: var(--raio);
+    font-weight: 650;
+    cursor: pointer;
+  }
+  .pedido button:hover {
+    background: var(--cobalto-300);
+  }
+  @media (max-width: 1024px) {
+    .corpo {
+      grid-template-columns: 1fr;
+    }
+    .texto {
+      max-width: none;
+    }
+    .lateral {
+      display: none;
+    }
+  }
+</style>

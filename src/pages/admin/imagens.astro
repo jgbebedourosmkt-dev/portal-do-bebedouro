@@ -1,0 +1,241 @@
+---
+import '@/styles/global.css'
+---
+
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Banco de imagens | Portal do Bebedouro</title>
+  </head>
+  <body>
+    <main class="container admin">
+      <section class="entrar" data-tela="entrar">
+        <p class="kicker">Área restrita</p>
+        <h1 class="titulo">Banco de imagens</h1>
+        <form data-login>
+          <label class="sr-only" for="senha">Senha</label>
+          <input id="senha" type="password" placeholder="Senha" autocomplete="current-password" required autofocus />
+          <button type="submit">Entrar</button>
+          <p class="form-erro" data-erro hidden>Senha incorreta.</p>
+        </form>
+      </section>
+
+      <section class="painel" data-tela="painel" hidden>
+        <header>
+          <div>
+            <p class="kicker">Portal do Bebedouro</p>
+            <h1 class="titulo">Banco de imagens</h1>
+          </div>
+          <p class="meta" data-total></p>
+        </header>
+
+        <div class="soltar" data-soltar tabindex="0" role="button" aria-label="Enviar imagens">
+          <input type="file" accept="image/*" multiple hidden data-arquivo />
+          <p data-soltar-texto><strong>Arraste imagens aqui</strong> ou clique para escolher</p>
+        </div>
+
+        <p class="meta" data-carregando hidden>Carregando…</p>
+        <ul class="grade" data-grade></ul>
+      </section>
+    </main>
+
+    <script>
+      interface Blob {
+        url: string
+        pathname: string
+        size: number
+      }
+
+      let senha = ''
+      const $ = <T extends Element>(s: string) => document.querySelector<T>(s)!
+      const cabecalho = () => ({ 'x-admin-password': senha })
+      const tamanho = (b: number) =>
+        b < 1024 ? `${b} B` : b < 1048576 ? `${(b / 1024).toFixed(0)} KB` : `${(b / 1048576).toFixed(1)} MB`
+
+      async function listar() {
+        $('[data-carregando]').toggleAttribute('hidden', false)
+        const res = await fetch('/api/imagens', { headers: cabecalho() })
+        $('[data-carregando]').toggleAttribute('hidden', true)
+        if (!res.ok) return
+        const imagens: Blob[] = await res.json()
+        $('[data-total]').textContent = `${imagens.length} ${imagens.length === 1 ? 'imagem' : 'imagens'}`
+        const grade = $<HTMLUListElement>('[data-grade]')
+        grade.replaceChildren(
+          ...imagens.map((img) => {
+            const li = document.createElement('li')
+            const nome = img.pathname.replace('imagens/', '')
+            li.innerHTML = `
+              <img loading="lazy" alt="">
+              <div class="info"><p class="nome"></p><p class="meta"></p></div>
+              <div class="botoes"><button data-copiar>Copiar URL</button><button data-excluir aria-label="Excluir">✕</button></div>`
+            li.querySelector('img')!.src = img.url
+            li.querySelector('.nome')!.textContent = nome
+            li.querySelector('.info .meta')!.textContent = tamanho(img.size)
+            li.querySelector<HTMLButtonElement>('[data-copiar]')!.onclick = async (e) => {
+              await navigator.clipboard.writeText(img.url)
+              const b = e.currentTarget as HTMLButtonElement
+              b.textContent = 'Copiado!'
+              setTimeout(() => (b.textContent = 'Copiar URL'), 2000)
+            }
+            li.querySelector<HTMLButtonElement>('[data-excluir]')!.onclick = async () => {
+              if (!confirm('Excluir esta imagem?')) return
+              await fetch('/api/imagens', {
+                method: 'DELETE',
+                headers: { ...cabecalho(), 'Content-Type': 'application/json' },
+                body: JSON.stringify({ url: img.url }),
+              })
+              li.remove()
+            }
+            return li
+          }),
+        )
+      }
+
+      async function enviar(arquivos: FileList | File[]) {
+        const texto = $('[data-soltar-texto]')
+        texto.textContent = 'Enviando…'
+        for (const arquivo of Array.from(arquivos)) {
+          const form = new FormData()
+          form.append('file', arquivo)
+          await fetch('/api/upload', { method: 'POST', headers: cabecalho(), body: form })
+        }
+        texto.innerHTML = '<strong>Arraste imagens aqui</strong> ou clique para escolher'
+        await listar()
+      }
+
+      $<HTMLFormElement>('[data-login]').addEventListener('submit', async (e) => {
+        e.preventDefault()
+        senha = $<HTMLInputElement>('#senha').value
+        const res = await fetch('/api/imagens', { headers: cabecalho() })
+        if (!res.ok) {
+          $('[data-erro]').toggleAttribute('hidden', false)
+          return
+        }
+        $('[data-tela="entrar"]').toggleAttribute('hidden', true)
+        $('[data-tela="painel"]').toggleAttribute('hidden', false)
+        listar()
+      })
+
+      const soltar = $<HTMLElement>('[data-soltar]')
+      const arquivo = $<HTMLInputElement>('[data-arquivo]')
+      soltar.addEventListener('click', () => arquivo.click())
+      soltar.addEventListener('keydown', (e) => (e.key === 'Enter' || e.key === ' ') && arquivo.click())
+      arquivo.addEventListener('change', () => arquivo.files?.length && enviar(arquivo.files))
+      soltar.addEventListener('dragover', (e) => {
+        e.preventDefault()
+        soltar.classList.add('ativo')
+      })
+      soltar.addEventListener('dragleave', () => soltar.classList.remove('ativo'))
+      soltar.addEventListener('drop', (e) => {
+        e.preventDefault()
+        soltar.classList.remove('ativo')
+        if (e.dataTransfer?.files.length) enviar(e.dataTransfer.files)
+      })
+    </script>
+
+    <style>
+      .admin {
+        padding-block: var(--sp-7);
+      }
+      [hidden] {
+        display: none !important;
+      }
+      .entrar {
+        max-width: 22rem;
+        margin: var(--sp-8) auto;
+      }
+      .entrar .titulo,
+      .painel .titulo {
+        margin-top: var(--sp-1);
+        font-size: var(--fs-h2);
+      }
+      .entrar form {
+        display: grid;
+        gap: var(--sp-3);
+        margin-top: var(--sp-5);
+      }
+      input[type='password'] {
+        padding: var(--sp-3);
+        background: var(--c-superficie);
+        border: var(--filete) solid var(--c-filete);
+        border-radius: var(--raio);
+      }
+      button {
+        padding: var(--sp-3);
+        background: var(--c-texto);
+        color: var(--c-fundo);
+        border: 0;
+        border-radius: var(--raio);
+        font-weight: 650;
+        cursor: pointer;
+      }
+      .painel header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        padding-bottom: var(--sp-4);
+        border-bottom: 2px solid var(--c-filete-forte);
+      }
+      .soltar {
+        margin-block: var(--sp-6);
+        padding: var(--sp-8) var(--sp-5);
+        border: 2px dashed var(--c-filete);
+        border-radius: var(--raio);
+        text-align: center;
+        color: var(--c-texto-2);
+        cursor: pointer;
+        transition: border-color var(--dur), background var(--dur);
+      }
+      .soltar:hover,
+      .soltar.ativo {
+        border-color: var(--c-acento);
+        background: var(--c-acento-suave);
+      }
+      .grade {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr));
+        gap: var(--sp-5);
+        padding: 0;
+        list-style: none;
+      }
+      .grade :global(li) {
+        border: var(--filete) solid var(--c-filete);
+        border-radius: var(--raio);
+        background: var(--c-superficie);
+        overflow: hidden;
+      }
+      .grade :global(img) {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+        background: var(--c-superficie-2);
+      }
+      .grade :global(.info) {
+        padding: var(--sp-3);
+      }
+      .grade :global(.nome) {
+        font-size: var(--fs-meta);
+        font-weight: 600;
+        overflow-wrap: anywhere;
+      }
+      .grade :global(.botoes) {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: var(--sp-2);
+        padding: 0 var(--sp-3) var(--sp-3);
+      }
+      .grade :global(.botoes button) {
+        padding: var(--sp-2) var(--sp-3);
+        font-size: var(--fs-meta);
+      }
+      .grade :global([data-excluir]) {
+        background: var(--c-alerta);
+        color: #fff;
+      }
+    </style>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+{
+  "slug": "bebedouro-industrial",
+  "metaTitle": "Bebedouro Industrial: Guia Completo para Indústrias e Empresas",
+  "metaDescription": "Tudo sobre bebedouro industrial: tipos, capacidades, normas ABNT NBR 13713, manutenção e como escolher o modelo ideal para sua indústria ou empresa.",
+  "badge": "Guia Completo",
+  "title": "Bebedouro Industrial",
+  "excerpt": "Guia completo para indústrias e empresas: tipos, capacidades, normas ABNT NBR 13713 e como escolher o modelo certo.",
+  "breadcrumbLabel": "Bebedouro Industrial",
+  "finalCtaTitle": "Precisa de bebedouro industrial?",
+  "finalCtaDesc": "Venda e manutenção de bebedouros industriais com atendimento em todo o Brasil.",
+  "tocItems": [
+    {
+      "href": "#o-que-e",
+      "label": "O que é bebedouro industrial"
+    },
+    {
+      "href": "#tipos",
+      "label": "Tipos disponíveis"
+    },
+    {
+      "href": "#capacidade",
+      "label": "Capacidade e dimensionamento"
+    },
+    {
+      "href": "#normas",
+      "label": "Normas e certificações"
+    },
+    {
+      "href": "#faq",
+      "label": "Perguntas frequentes"
+    }
+  ],
+  "stats": [
+    {
+      "valor": "1 / 50",
+      "label": "colaboradores por bebedouro"
+    },
+    {
+      "valor": "20–200",
+      "label": "litros por hora (capacidade)"
+    },
+    {
+      "valor": "6 meses",
+      "label": "frequência de higienização"
+    },
+    {
+      "valor": "NBR 13713",
+      "label": "norma ABNT aplicável"
+    }
+  ],
+  "faqs": [
+    {
+      "question": "Qual a capacidade ideal de um bebedouro industrial?",
+      "answer": "A regra do setor é 1 bebedouro para cada 50 colaboradores em uso contínuo. Para galpões e indústrias de alta demanda, recomenda-se 1 para cada 30 pessoas. Modelos industriais partem de 20 L/h e chegam a mais de 200 L/h de produção de água gelada."
+    },
+    {
+      "question": "Bebedouro industrial precisa de certificação INMETRO?",
+      "answer": "Sim. A certificação INMETRO é obrigatória para bebedouros comercializados no Brasil, conforme a NBR 13713. Exija o laudo do fabricante antes de adquirir qualquer equipamento."
+    },
+    {
+      "question": "Qual a diferença entre bebedouro industrial e purificador?",
+      "answer": "O bebedouro industrial resfria e dispensa água da rede, geralmente sem sistema de filtragem avançado. O purificador adiciona um ou mais estágios de filtragem (carvão ativado, osmose reversa ou UV), sendo obrigatório em locais onde a qualidade da rede é duvidosa."
+    },
+    {
+      "question": "Com que frequência fazer a manutenção do bebedouro industrial?",
+      "answer": "A higienização deve ser feita a cada 6 meses, conforme a RDC 275/2005 da Anvisa. A troca de filtros varia por modelo: geralmente a cada 6 a 12 meses, dependendo do volume de uso e da qualidade da água local."
+    }
+  ],
+  "internalLinks": [
+    {
+      "href": "/tipos-de-bebedouro",
+      "label": "Todos os tipos de bebedouro explicados"
+    },
+    {
+      "href": "/bebedouro-para-empresa",
+      "label": "Como escolher bebedouro para sua empresa"
+    },
+    {
+      "href": "/artigo/como-escolher-bebedouro-corporativo",
+      "label": "Guia: bebedouro corporativo passo a passo"
+    },
+    {
+      "href": "/artigo/nbr-13713-atualizada-2025",
+      "label": "NBR 13713 atualizada 2025"
+    }
+  ],
+  "schemas": [
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://portaldobebedouro.com.br/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Bebedouro Industrial"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Qual a capacidade ideal de um bebedouro industrial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A regra do setor é 1 bebedouro para cada 50 colaboradores em uso contínuo. Para galpões e indústrias de alta demanda, recomenda-se 1 para cada 30 pessoas. Modelos industriais partem de 20 L/h e chegam a mais de 200 L/h de produção de água gelada."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Bebedouro industrial precisa de certificação INMETRO?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sim. A certificação INMETRO é obrigatória para bebedouros comercializados no Brasil, conforme a NBR 13713. Exija o laudo do fabricante antes de adquirir qualquer equipamento."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre bebedouro industrial e purificador?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O bebedouro industrial resfria e dispensa água da rede, geralmente sem sistema de filtragem avançado. O purificador adiciona um ou mais estágios de filtragem (carvão ativado, osmose reversa ou UV), sendo obrigatório em locais onde a qualidade da rede é duvidosa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Com que frequência fazer a manutenção do bebedouro industrial?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A higienização deve ser feita a cada 6 meses, conforme a RDC 275/2005 da Anvisa. A troca de filtros varia por modelo: geralmente a cada 6 a 12 meses, dependendo do volume de uso e da qualidade da água local."
+          }
+        }
+      ]
+    }
+  ],
+  "html": "<section id=\"o-que-e\"><h2>O que é um bebedouro industrial?</h2><p>Bebedouro industrial é um equipamento de grande porte projetado para atender dezenas ou centenas de pessoas simultaneamente. Diferente dos modelos residenciais, ele é construído em aço inox ou polietileno de alta densidade, possui compressor de alta performance e capacidade de produção de água gelada de <strong>20 L/h a 200 L/h</strong>.</p><p>A <strong>NBR 13713 da ABNT</strong> regulamenta os requisitos mínimos de fabricação, desempenho e segurança para esses equipamentos no mercado brasileiro.</p></section><section id=\"tipos\"><h2>Tipos de bebedouro industrial</h2><div class=\"grade-cards\"><div class=\"card-info\"><p>🏭</p><h3>Inox</h3><p>Corpo em aço inox 304. Alta durabilidade, fácil higienização e resistência à corrosão. Ideal para indústrias alimentícias e farmacêuticas.</p></div><div class=\"card-info\"><p>❄️</p><h3>Gelado de alta vazão</h3><p>Compressor dedicado que mantém a água entre 4 °C e 10 °C. Essencial para ambientes quentes como siderúrgicas e galpões logísticos.</p></div><div class=\"card-info\"><p>🔬</p><h3>Com filtro</h3><p>Combina resfriamento com filtração por carvão ativado ou osmose reversa. Recomendado quando a qualidade da rede é incerta.</p></div><div class=\"card-info\"><p>💧</p><h3>De pressão (sem copo)</h3><p>Sem copo, dispensa água por jato. Menor custo de manutenção e ideal para ambientes onde o uso de copos descartáveis precisa ser eliminado.</p></div></div></section><section id=\"capacidade\"><h2>Capacidade: quantos bebedouros você precisa?</h2><p>A regra básica do setor é <strong>1 bebedouro para cada 50 colaboradores</strong> em uso contínuo. Em ambientes de alta demanda (galpões quentes, turnos noturnos), reduza para 1 a cada 30 pessoas.</p><div class=\"tabela-rolagem\"><table><thead><tr><th>Nº de colaboradores</th><th>Bebedouros recomendados</th><th>Capacidade sugerida</th></tr></thead><tbody><tr><td>Até 50</td><td>1</td><td>20–30 L/h</td></tr><tr><td>51 a 150</td><td>2–3</td><td>30–50 L/h cada</td></tr><tr><td>151 a 300</td><td>4–6</td><td>50–100 L/h cada</td></tr><tr><td>Acima de 300</td><td>Calcule 1 por 50</td><td>100–200 L/h cada</td></tr></tbody></table></div></section><section id=\"normas\"><h2>Normas e certificações obrigatórias</h2><div><div><span>NBR 13713</span><p>Define requisitos de fabricação, desempenho e segurança elétrica para bebedouros.</p></div><div><span>INMETRO</span><p>Certificação compulsória para comercialização no Brasil. Exija o laudo do fabricante.</p></div><div><span>RDC 275/2005</span><p>Determina higienização semestral e registro dos procedimentos (Anvisa).</p></div><div><span>NR-24 (MTE)</span><p>Estabelece que todo local de trabalho deve fornecer água potável em quantidade suficiente.</p></div></div></section>"
+}

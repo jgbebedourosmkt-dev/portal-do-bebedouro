@@ -1,0 +1,79 @@
+---
+// Cabeçalho + grade de posts + lateral: usado em /blog e /tags/<tag>
+import Base from '@/layouts/Base.astro'
+import CardPost from '@/components/CardPost.astro'
+import Lateral from '@/components/Lateral.astro'
+import { getPosts, type Post } from '@/lib/posts'
+
+interface Props {
+  title: string
+  description: string
+  kicker: string
+  titulo: string
+  posts: Post[]
+}
+const { title, description, kicker, titulo, posts } = Astro.props
+const todos = await getPosts()
+---
+
+<Base title={title} description={description}>
+  <header class="container cab">
+    <p class="kicker">{kicker}</p>
+    <h1 class="manchete">{titulo}</h1>
+    <p class="meta"><span>{posts.length} {posts.length === 1 ? 'artigo publicado' : 'artigos publicados'}</span></p>
+  </header>
+  <div class="container corpo">
+    <main>
+      {
+        posts.length === 0 ? (
+          <p class="vazio">Nenhum artigo publicado ainda.</p>
+        ) : (
+          <div class="grade">
+            {posts.map((p) => (
+              <CardPost post={p} nivel="h2" resumo />
+            ))}
+          </div>
+        )
+      }
+    </main>
+    <Lateral posts={todos} />
+  </div>
+</Base>
+
+<style>
+  .cab {
+    padding-block: var(--sp-7) var(--sp-6);
+    border-bottom: 2px solid var(--c-filete-forte);
+    margin-bottom: var(--sp-6);
+  }
+  .cab .manchete {
+    margin-top: var(--sp-2);
+    font-size: var(--fs-mega);
+  }
+  .cab .meta {
+    margin-top: var(--sp-3);
+  }
+  .corpo {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) var(--lateral);
+    gap: var(--sp-8);
+  }
+  .grade {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-7) var(--sp-6);
+  }
+  .vazio {
+    color: var(--c-texto-3);
+  }
+  @media (max-width: 1024px) {
+    .corpo {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: 640px) {
+    .grade {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portal do Bebedouro
 
-## Getting Started
+Site em [Astro](https://astro.build) com design system "Jornal da Água", publicado na Vercel (branch `main`).
+Páginas são estáticas; as rotas de `src/pages/api/` rodam como funções serverless.
 
-First, run the development server:
+## Rodar localmente
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev       # http://localhost:4321
+npm run build     # build de produção (igual ao da Vercel)
+npm run preview   # serve o build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Para testar formulários e o admin localmente, crie um `.env` com as mesmas variáveis da Vercel:
+`RESEND_API_KEY`, `ADMIN_PASSWORD` e `BLOB_READ_WRITE_TOKEN`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Conteúdo
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Pasta | Vira | Observação |
+|---|---|---|
+| `content/posts/*.json` | `/artigo/<slug>` | HTML em `content`; o `slug` do JSON define a URL |
+| `content/pilares/*.json` | `/<slug>` | páginas pilar/subpilar |
+| `content/local/*.json` | `/local/<slug>` | SEO local (+ 10 cidades fixas em `src/lib/locais.ts`) |
+| `content/pages/*.json` | `/sobre`, `/contato`, `/pagina/<slug>` | |
+| `public/images/` | `/images/...` | |
 
-## Learn More
+### Páginas pilar no formato antigo (`app/<slug>/page.tsx`)
 
-To learn more about Next.js, take a look at the following resources:
+O pipeline `seo-automation-pbr/paginas_pilar.py` ainda entrega cada página como `app/<slug>/page.tsx`.
+Não precisa mudar nada nele: `npm run build` (e `npm run dev`) roda antes `scripts/pilares-tsx.mjs`,
+que converte esses arquivos em `content/pilares/<slug>.json`.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para fixar a conversão no repositório (e apagar o `.tsx`): `npm run pilares:converter`.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Estrutura
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `src/styles/tokens.css` — tokens do design system (cor, tipo, espaço, modo escuro)
+- `src/styles/global.css` — base, utilitários e estilo de texto corrido (`.prosa`)
+- `src/components/` — componentes (`Masthead`, `Pilar`, `CardPost`, `Orcamento`, `Faq`…)
+- `src/pages/` — rotas
+- `routines/` — rotinas de SEO (`daily-briefing`, `internal-linking`, `paginas-pilar.md`)

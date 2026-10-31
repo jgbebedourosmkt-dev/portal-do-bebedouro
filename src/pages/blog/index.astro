@@ -1,0 +1,14 @@
+---
+import ListaPosts from '@/components/ListaPosts.astro'
+import { getPosts } from '@/lib/posts'
+
+const posts = await getPosts()
+---
+
+<ListaPosts
+  title="Blog"
+  description="Todos os artigos do Portal do Bebedouro — notícias, guias, legislação, saúde da água e muito mais."
+  kicker="Arquivo"
+  titulo="Todos os artigos"
+  posts={posts}
+/>

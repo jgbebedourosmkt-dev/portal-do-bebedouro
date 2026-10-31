@@ -1,0 +1,406 @@
+@import '@fontsource-variable/fraunces/full.css';
+@import '@fontsource-variable/fraunces/full-italic.css';
+@import '@fontsource-variable/source-serif-4/opsz.css';
+@import '@fontsource-variable/source-serif-4/opsz-italic.css';
+@import '@fontsource-variable/instrument-sans';
+@import './tokens.css';
+
+/* ---------- Base ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  min-height: 100dvh;
+  background: var(--c-fundo);
+  color: var(--c-texto);
+  font-family: var(--ff-ui);
+  font-size: var(--fs-ui);
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--c-foco);
+  outline-offset: 3px;
+}
+
+::selection {
+  background: var(--c-acento);
+  color: var(--c-sobre-acento);
+}
+
+/* ---------- Utilitários do sistema ---------- */
+.container {
+  width: 100%;
+  max-width: var(--largura);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* Rótulo de editoria / kicker */
+.kicker {
+  font-family: var(--ff-ui);
+  font-size: var(--fs-micro);
+  font-weight: 650;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--c-acento);
+}
+
+/* Metadados (data · leitura) */
+.meta {
+  font-family: var(--ff-ui);
+  font-size: var(--fs-meta);
+  color: var(--c-texto-3);
+  font-variant-numeric: tabular-nums;
+}
+
+.meta > * + *::before {
+  content: '·';
+  margin-inline: 0.5em;
+}
+
+/* Manchetes */
+.manchete {
+  font-family: var(--ff-display);
+  font-weight: 560;
+  font-variation-settings: 'opsz' 96, 'SOFT' 30, 'WONK' 0;
+  letter-spacing: -0.02em;
+  line-height: 1.04;
+  text-wrap: balance;
+}
+
+.titulo {
+  font-family: var(--ff-display);
+  font-weight: 520;
+  font-variation-settings: 'opsz' 36, 'SOFT' 50;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  text-wrap: balance;
+}
+
+/* Link de título: sublinhado que cresce */
+.link-titulo {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  transition: background-size var(--dur) var(--ease), color var(--dur) var(--ease);
+}
+
+a:hover .link-titulo,
+.link-titulo:hover {
+  background-size: 100% 1px;
+  color: var(--c-acento);
+}
+
+.clamp-2,
+.clamp-3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.clamp-2 { -webkit-line-clamp: 2; }
+.clamp-3 { -webkit-line-clamp: 3; }
+
+/* Moldura de imagem com fallback "água" */
+.foto {
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(120% 80% at 20% 0%, color-mix(in srgb, var(--c-acento) 35%, transparent), transparent 60%),
+    linear-gradient(160deg, var(--cobalto-700), var(--tinta-900));
+  border-radius: var(--raio);
+}
+
+.foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 600ms var(--ease);
+}
+
+a:hover .foto img {
+  transform: scale(1.03);
+}
+
+/* ---------- Movimento ---------- */
+@keyframes surgir {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+.surgir {
+  animation: surgir 700ms var(--ease) both;
+  animation-delay: calc(var(--i, 0) * 80ms);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 1ms !important;
+    animation-delay: 0ms !important;
+    transition-duration: 1ms !important;
+  }
+}
+
+/* ---------- Prosa: corpo de artigos, pilares, locais e páginas ---------- */
+.prosa {
+  font-family: var(--ff-texto);
+  font-size: var(--fs-corpo);
+  font-variation-settings: 'opsz' 20;
+  line-height: 1.7;
+  color: var(--c-texto-2);
+}
+.prosa > * + *,
+.prosa section > * + * {
+  margin-top: 1.1em;
+}
+.prosa section {
+  scroll-margin-top: 5rem;
+}
+.prosa section + section {
+  margin-top: 2.5em;
+}
+.prosa h2 {
+  margin-top: 2em;
+  font-family: var(--ff-display);
+  font-size: var(--fs-h3);
+  font-weight: 560;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  color: var(--c-texto);
+  text-wrap: balance;
+}
+.prosa section > h2:first-child {
+  margin-top: 0;
+  padding-top: var(--sp-3);
+  border-top: 2px solid var(--c-filete-forte);
+}
+.prosa h3 {
+  margin-top: 1.6em;
+  font-family: var(--ff-display);
+  font-size: var(--fs-h4);
+  font-weight: 560;
+  line-height: 1.2;
+  color: var(--c-texto);
+}
+.prosa h2 + *,
+.prosa h3 + * {
+  margin-top: 0.6em;
+}
+.prosa strong {
+  font-weight: 650;
+  color: var(--c-texto);
+}
+.prosa a {
+  color: var(--c-acento);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.prosa a:hover {
+  color: var(--c-acento-hover);
+}
+.prosa ul,
+.prosa ol {
+  padding-left: 1.25em;
+}
+.prosa li + li {
+  margin-top: 0.4em;
+}
+.prosa li::marker {
+  color: var(--c-acento);
+}
+.prosa blockquote {
+  margin-block: 2em;
+  padding-left: var(--sp-5);
+  border-left: 3px solid var(--c-acento);
+  font-family: var(--ff-display);
+  font-size: var(--fs-h4);
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--c-texto);
+}
+.prosa hr {
+  margin-block: 2.5em;
+  border: 0;
+  text-align: center;
+}
+.prosa hr::after {
+  content: '• • •';
+  letter-spacing: 1em;
+  color: var(--c-texto-3);
+}
+.prosa img {
+  border-radius: var(--raio);
+}
+.prosa figure figcaption {
+  margin-top: var(--sp-2);
+  font-family: var(--ff-ui);
+  font-size: var(--fs-meta);
+  color: var(--c-texto-3);
+}
+
+/* Tabelas */
+.prosa table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--ff-ui);
+  font-size: var(--fs-ui);
+  line-height: 1.45;
+  font-variant-numeric: tabular-nums;
+}
+.prosa th {
+  text-align: left;
+  font-size: var(--fs-micro);
+  font-weight: 650;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--c-texto);
+  border-bottom: 2px solid var(--c-filete-forte);
+}
+.prosa th,
+.prosa td {
+  padding: var(--sp-3) var(--sp-4) var(--sp-3) 0;
+  vertical-align: top;
+}
+.prosa td {
+  border-bottom: var(--filete) solid var(--c-filete);
+}
+.tabela-rolagem {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+.tabela-rolagem table {
+  min-width: 32rem;
+}
+
+/* Imagens flutuantes (vindas das páginas pilar) */
+.flutua-esq,
+.flutua-dir {
+  width: 40%;
+  margin-bottom: var(--sp-3);
+}
+.flutua-esq {
+  float: left;
+  margin-right: var(--sp-5);
+}
+.flutua-dir {
+  float: right;
+  margin-left: var(--sp-5);
+}
+.limpa {
+  clear: both;
+}
+
+/* Grade de cards informativos */
+.grade-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  gap: var(--sp-4);
+}
+.card-info {
+  padding: var(--sp-5);
+  border: var(--filete) solid var(--c-filete);
+  border-radius: var(--raio);
+  background: var(--c-superficie);
+  font-size: 1rem;
+  transition: border-color var(--dur);
+}
+.card-info:hover {
+  border-color: var(--c-acento);
+}
+.card-info h3 {
+  margin-top: var(--sp-2);
+  font-size: var(--fs-h5);
+}
+.card-info > * + * {
+  margin-top: var(--sp-2);
+}
+
+/* Listas de rótulo + descrição sem marcação (ex.: normas) */
+.prosa div:not([class]) > div:not([class]) {
+  padding-block: var(--sp-3);
+  border-bottom: var(--filete) solid var(--c-filete);
+}
+.prosa div:not([class]) > div:not([class]) > span:first-child {
+  display: block;
+  font-family: var(--ff-ui);
+  font-size: var(--fs-meta);
+  font-weight: 650;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--c-acento);
+}
+.prosa div:not([class]) > div:not([class]) > p {
+  margin-top: var(--sp-1);
+}
+
+@media (max-width: 560px) {
+  .flutua-esq,
+  .flutua-dir {
+    float: none;
+    width: 100%;
+    margin-inline: 0;
+  }
+}
+
+/* ---------- Feedback de formulários ---------- */
+.form-ok {
+  font-family: var(--ff-display);
+  font-size: var(--fs-h4);
+}
+.form-erro {
+  margin-top: var(--sp-2);
+  font-size: var(--fs-meta);
+  color: var(--c-alerta);
+}

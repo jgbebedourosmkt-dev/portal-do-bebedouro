@@ -1,0 +1,14 @@
+---
+import type { GetStaticPaths } from 'astro'
+import { getCollection } from 'astro:content'
+import PaginaTexto from '@/components/PaginaTexto.astro'
+
+export const getStaticPaths = (async () => {
+  const paginas = await getCollection('paginas')
+  return paginas.map((p) => ({ params: { slug: p.id }, props: { pagina: p.data } }))
+}) satisfies GetStaticPaths
+
+const { pagina } = Astro.props
+---
+
+<PaginaTexto title={pagina.title} description={pagina.description} html={pagina.content} />

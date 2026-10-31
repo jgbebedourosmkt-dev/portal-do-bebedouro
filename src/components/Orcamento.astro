@@ -1,0 +1,174 @@
+<dialog id="orcamento" class="orcamento" aria-labelledby="orc-titulo">
+  <div class="caixa">
+    <form method="dialog" class="fechar-form">
+      <button class="fechar" aria-label="Fechar">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+          <path d="M18 6 6 18M6 6l12 12"></path>
+        </svg>
+      </button>
+    </form>
+
+    <p class="kicker">JG Bebedouros</p>
+    <h2 id="orc-titulo" class="titulo">Orçamento grátis</h2>
+    <p class="sub">Preencha e entraremos em contato em até 24h.</p>
+
+    <form class="campos">
+      <label>
+        <span>Nome *</span>
+        <input name="nome" type="text" required autocomplete="name" placeholder="Seu nome completo" />
+      </label>
+      <div class="linha">
+        <label>
+          <span>E-mail *</span>
+          <input name="email" type="email" required autocomplete="email" placeholder="seu@email.com" />
+        </label>
+        <label>
+          <span>Telefone / WhatsApp</span>
+          <input name="telefone" type="tel" autocomplete="tel" placeholder="(00) 00000-0000" />
+        </label>
+      </div>
+      <label>
+        <span>Empresa</span>
+        <input name="empresa" type="text" autocomplete="organization" placeholder="Nome da empresa (opcional)" />
+      </label>
+      <label>
+        <span>Mensagem *</span>
+        <textarea name="mensagem" required rows="3" placeholder="Quantas pessoas, tipo de ambiente, cidade…"></textarea>
+      </label>
+      <button type="submit" class="enviar">Solicitar orçamento</button>
+    </form>
+
+    <div class="ok" data-ok hidden>
+      <p class="titulo">Solicitação enviada.</p>
+      <p>Nossa equipe entra em contato em breve.</p>
+      <form method="dialog"><button class="enviar">Fechar</button></form>
+    </div>
+  </div>
+</dialog>
+
+<style>
+  .orcamento {
+    /* o reset global zera margens; o <dialog> centraliza com margin auto */
+    margin: auto;
+    width: min(100% - 2rem, 30rem);
+    max-height: calc(100dvh - 2rem);
+    padding: 0;
+    border: var(--filete) solid var(--c-filete-forte);
+    border-radius: var(--raio);
+    background: var(--c-superficie);
+    color: var(--c-texto);
+  }
+  .orcamento::backdrop {
+    background: color-mix(in srgb, var(--tinta-900) 60%, transparent);
+    backdrop-filter: blur(3px);
+  }
+  .orcamento[open] {
+    animation: surgir 260ms var(--ease);
+  }
+  .caixa {
+    position: relative;
+    padding: var(--sp-6);
+  }
+  .fechar {
+    position: absolute;
+    top: var(--sp-3);
+    right: var(--sp-3);
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    background: none;
+    border: 0;
+    color: var(--c-texto-3);
+    cursor: pointer;
+  }
+  .fechar:hover {
+    color: var(--c-texto);
+  }
+  h2 {
+    margin-top: var(--sp-1);
+    font-size: var(--fs-h3);
+  }
+  .sub {
+    margin-top: var(--sp-1);
+    margin-bottom: var(--sp-5);
+    font-family: var(--ff-texto);
+    color: var(--c-texto-2);
+  }
+  .campos {
+    display: grid;
+    gap: var(--sp-4);
+  }
+  .campos[hidden] {
+    display: none;
+  }
+  .linha {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-4);
+  }
+  label {
+    display: grid;
+    gap: var(--sp-1);
+  }
+  label span {
+    font-size: var(--fs-micro);
+    font-weight: 650;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--c-texto-3);
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: var(--sp-2) var(--sp-3);
+    background: var(--c-fundo);
+    border: var(--filete) solid var(--c-filete);
+    border-radius: var(--raio);
+    resize: vertical;
+  }
+  input:focus,
+  textarea:focus {
+    outline: 0;
+    border-color: var(--c-acento);
+  }
+  .enviar {
+    width: 100%;
+    padding: var(--sp-3);
+    background: var(--c-acento);
+    color: var(--c-sobre-acento);
+    border: 0;
+    border-radius: var(--raio);
+    font-weight: 650;
+    cursor: pointer;
+    transition: background var(--dur);
+  }
+  .enviar:hover {
+    background: var(--c-acento-hover);
+  }
+  .enviar:disabled {
+    opacity: 0.6;
+    cursor: wait;
+  }
+  .ok {
+    display: grid;
+    gap: var(--sp-3);
+    padding-top: var(--sp-2);
+    font-family: var(--ff-texto);
+  }
+  .ok[hidden] {
+    display: none;
+  }
+  .ok .titulo {
+    font-size: var(--fs-h4);
+    color: var(--c-ok);
+  }
+  @media (max-width: 480px) {
+    .caixa {
+      padding: var(--sp-5);
+    }
+    .linha {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

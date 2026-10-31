@@ -1,0 +1,67 @@
+---
+interface Props {
+  titulo?: string
+  descricao?: string
+}
+const {
+  titulo = 'Precisa de bebedouro?',
+  descricao = 'A JG Bebedouros oferece venda e manutenção com atendimento em todo o Brasil.',
+} = Astro.props
+---
+
+<aside class="cta">
+  <div>
+    <p class="kicker">Orçamento sem compromisso</p>
+    <p class="titulo">{titulo}</p>
+    <p class="desc">{descricao}</p>
+  </div>
+  <button type="button" data-orcamento>Pedir orçamento grátis <span aria-hidden="true">→</span></button>
+</aside>
+
+<style>
+  .cta {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    gap: var(--sp-5);
+    margin-top: var(--sp-8);
+    padding: var(--sp-6);
+    border-radius: var(--raio);
+    background:
+      radial-gradient(70% 140% at 100% 0%, color-mix(in srgb, var(--cobalto-500) 45%, transparent), transparent 70%),
+      var(--c-invertido);
+    color: var(--c-sobre-invertido);
+  }
+  .kicker {
+    color: var(--cobalto-300);
+  }
+  .titulo {
+    margin-top: var(--sp-2);
+    font-size: var(--fs-h3);
+  }
+  .desc {
+    margin-top: var(--sp-2);
+    font-family: var(--ff-texto);
+    opacity: 0.8;
+  }
+  button {
+    padding: var(--sp-3) var(--sp-5);
+    background: var(--c-sobre-invertido);
+    color: var(--c-invertido);
+    border: 0;
+    border-radius: var(--raio);
+    font-weight: 650;
+    white-space: nowrap;
+    cursor: pointer;
+    transition: background var(--dur);
+  }
+  button:hover {
+    background: var(--cobalto-300);
+  }
+  @media (max-width: 640px) {
+    .cta {
+      grid-template-columns: 1fr;
+      padding: var(--sp-5);
+    }
+  }
+</style>

@@ -1,0 +1,83 @@
+---
+import type { Faq } from '@/lib/schema'
+
+interface Props {
+  titulo?: string
+  itens: Faq[]
+}
+const { titulo = 'Perguntas frequentes', itens } = Astro.props
+---
+
+{
+  itens.length > 0 && (
+    <section id="faq" class="faq" aria-labelledby="faq-titulo">
+      <h2 id="faq-titulo" class="titulo">
+        {titulo}
+      </h2>
+      <div class="lista">
+        {itens.map(({ question, answer }) => (
+          <details>
+            <summary>
+              <span>{question}</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" />
+              </svg>
+            </summary>
+            <p>{answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  )
+}
+
+<style>
+  .faq {
+    margin-top: var(--sp-8);
+    padding-top: var(--sp-4);
+    border-top: 2px solid var(--c-filete-forte);
+  }
+  h2 {
+    font-size: var(--fs-h3);
+    margin-bottom: var(--sp-4);
+  }
+  details {
+    border-bottom: var(--filete) solid var(--c-filete);
+  }
+  summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--sp-4);
+    padding-block: var(--sp-4);
+    font-family: var(--ff-display);
+    font-size: var(--fs-h5);
+    font-weight: 520;
+    line-height: 1.3;
+    list-style: none;
+    cursor: pointer;
+    transition: color var(--dur);
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  summary:hover {
+    color: var(--c-acento);
+  }
+  summary svg {
+    flex-shrink: 0;
+    color: var(--c-acento);
+    transition: transform var(--dur) var(--ease);
+  }
+  details[open] summary svg {
+    transform: rotate(45deg);
+  }
+  details p {
+    padding-bottom: var(--sp-5);
+    max-width: var(--leitura);
+    font-family: var(--ff-texto);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+    color: var(--c-texto-2);
+  }
+</style>
