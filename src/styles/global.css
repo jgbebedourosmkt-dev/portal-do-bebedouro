@@ -183,6 +183,57 @@ a:hover .foto img {
   animation-delay: calc(var(--i, 0) * 80ms);
 }
 
+/* ---------- Botões de orçamento (qualquer [data-orcamento]) ----------
+ * Cor e tamanho ficam em cada componente; aqui entram forma e movimento.
+ * A elevação usa `translate` (e não `transform`) para não brigar com a
+ * animação .surgir, que mantém transform: none depois de terminar.
+ * O !important vence os estilos com escopo dos componentes (mais específicos). */
+[data-orcamento] {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-radius: var(--raio-pilula) !important;
+  transition:
+    background var(--dur),
+    translate var(--dur) var(--ease),
+    box-shadow var(--dur) var(--ease) !important;
+}
+[data-orcamento]:hover {
+  translate: 0 -2px;
+  box-shadow: 0 8px 20px -6px color-mix(in srgb, var(--cobalto-500) 55%, transparent);
+}
+[data-orcamento]:active {
+  translate: 0;
+}
+/* faixa de brilho que atravessa o botão a cada poucos segundos */
+[data-orcamento]::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(
+    105deg,
+    transparent 35%,
+    color-mix(in srgb, var(--papel-50) 45%, transparent) 50%,
+    transparent 65%
+  );
+  translate: -100% 0;
+  animation: brilho 4s var(--ease) 1.5s infinite;
+  pointer-events: none;
+}
+[data-orcamento] > span {
+  display: inline-block;
+  transition: translate var(--dur) var(--ease);
+}
+[data-orcamento]:hover > span {
+  translate: var(--sp-1) 0;
+}
+
+@keyframes brilho {
+  0% { translate: -100% 0; }
+  30%, 100% { translate: 100% 0; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -190,6 +241,9 @@ a:hover .foto img {
     animation-duration: 1ms !important;
     animation-delay: 0ms !important;
     transition-duration: 1ms !important;
+  }
+  [data-orcamento]::after {
+    animation: none;
   }
 }
 
