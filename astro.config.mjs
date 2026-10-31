@@ -7,6 +7,8 @@ export default defineConfig({
   output: 'static',
   adapter: vercel(),
   trailingSlash: 'never',
+  // CSS é pequeno: embutir no HTML evita a cadeia HTML → CSS → fonte
+  build: { inlineStylesheets: 'always' },
   redirects: {
     // Links antigos apontavam para /blog/<slug>; os artigos vivem em /artigo/<slug>
     '/blog/[slug]': '/artigo/[slug]',

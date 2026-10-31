@@ -5,6 +5,7 @@ import Selo from '@/components/Selo.astro'
 import SecaoCabecalho from '@/components/SecaoCabecalho.astro'
 import Lateral from '@/components/Lateral.astro'
 import Newsletter from '@/components/Newsletter.astro'
+import { imagem } from '@/lib/imagem'
 import { CATEGORIAS, rotuloCategoria } from '@/lib/site'
 import { getCollection } from 'astro:content'
 import { getPosts, byCategoria, url, dataLonga, dataCurta } from '@/lib/posts'
@@ -37,7 +38,7 @@ const pilares = (await getCollection('pilares'))
             <a href={url(lead)}>
               <div class="foto lead-foto">
                 {lead.data.ogImage && (
-                  <img src={lead.data.ogImage} alt="" width="1200" height="750" fetchpriority="high" />
+                  <img {...imagem(lead.data.ogImage)} sizes="(max-width: 900px) 100vw, 60vw" alt="" width="1200" height="750" fetchpriority="high" />
                 )}
               </div>
               <div class="lead-texto">

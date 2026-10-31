@@ -5,6 +5,9 @@ import Rodape from '@/components/Rodape.astro'
 import Orcamento from '@/components/Orcamento.astro'
 import { SITE } from '@/lib/site'
 import { websiteSchema } from '@/lib/schema'
+import fonteDisplay from '@fontsource-variable/fraunces/files/fraunces-latin-full-normal.woff2?url'
+import fonteTexto from '@fontsource-variable/source-serif-4/files/source-serif-4-latin-wght-normal.woff2?url'
+import fonteUi from '@fontsource-variable/instrument-sans/files/instrument-sans-latin-wght-normal.woff2?url'
 
 interface Props {
   title?: string
@@ -42,6 +45,7 @@ const jsonLd = [websiteSchema(), ...schemas]
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="sitemap" href="/sitemap.xml" />
+    {[fonteDisplay, fonteTexto, fonteUi].map((href) => <link rel="preload" href={href} as="font" type="font/woff2" crossorigin />)}
     <meta name="theme-color" content="#f5f1e8" media="(prefers-color-scheme: light)" />
     <meta name="theme-color" content="#0e141a" media="(prefers-color-scheme: dark)" />
     <meta name="robots" content={noindex ? 'noindex, nofollow' : 'index, follow'} />
@@ -65,7 +69,6 @@ const jsonLd = [websiteSchema(), ...schemas]
     </script>
     {jsonLd.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
 
-    <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${SITE.ga4}`}></script>
     <script is:inline define:vars={{ ga4: SITE.ga4 }}>
       window.dataLayer = window.dataLayer || []
       function gtag() {
@@ -73,6 +76,13 @@ const jsonLd = [websiteSchema(), ...schemas]
       }
       gtag('js', new Date())
       gtag('config', ga4)
+      // O gtag.js (~180 KB) só entra depois que a página carregou, fora do caminho crítico
+      addEventListener('load', () => {
+        const s = document.createElement('script')
+        s.async = true
+        s.src = 'https://www.googletagmanager.com/gtag/js?id=' + ga4
+        ;(window.requestIdleCallback || setTimeout)(() => document.head.append(s))
+      })
     </script>
   </head>
   <body>

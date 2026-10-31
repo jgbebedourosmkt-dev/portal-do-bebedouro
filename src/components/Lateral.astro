@@ -1,6 +1,7 @@
 ---
 import { CATEGORIAS, type Categoria } from '@/lib/site'
 import { url, type Post } from '@/lib/posts'
+import { imagem } from '@/lib/imagem'
 
 interface Props {
   posts: Post[]
@@ -12,7 +13,7 @@ const contagem = (c: Categoria) => posts.filter((p) => p.data.categoria === c).l
 <aside class="lateral" aria-label="Destaques e parceiros">
   <div class="publi">
     <span class="publi-rotulo">Publicidade</span>
-    <a href="#" rel="sponsored"><img src="/images/banner-jg.png" alt="JG Bebedouros" width="268" height="380" loading="lazy" /></a>
+    <a href="#" rel="sponsored"><img {...imagem('/images/banner-jg.png', 800)} sizes="268px" alt="JG Bebedouros" width="268" height="380" loading="lazy" /></a>
   </div>
 
   <section class="bloco">
@@ -33,7 +34,7 @@ const contagem = (c: Categoria) => posts.filter((p) => p.data.categoria === c).l
 
   <div class="publi">
     <span class="publi-rotulo">Publicidade</span>
-    <a href="#" rel="sponsored"><img src="/images/banner-ozean.png" alt="Ozean Purificadores" width="268" height="380" loading="lazy" /></a>
+    <a href="#" rel="sponsored"><img {...imagem('/images/banner-ozean.png', 800)} sizes="268px" alt="Ozean Purificadores" width="268" height="380" loading="lazy" /></a>
   </div>
 
   <section class="bloco carta">
