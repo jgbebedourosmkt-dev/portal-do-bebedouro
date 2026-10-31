@@ -35,7 +35,7 @@ const isHome = path === '/'
     <p class="lema">O jornal do setor de bebedouros e purificadores no Brasil</p>
   </div>
 
-  <nav class="barra" aria-label="Editorias">
+  <nav class="barra-menu" aria-label="Editorias">
     <div class="container barra-interna">
       <a href="/" class="logo-mini" aria-label="Página inicial">P<em>d</em>B</a>
       <ul class="editorias" id="menu">
@@ -174,7 +174,7 @@ const isHome = path === '/'
   }
 
   /* Barra de editorias */
-  .barra {
+  .barra-menu {
     position: sticky;
     top: 0;
     z-index: 40;
@@ -186,7 +186,7 @@ const isHome = path === '/'
   .barra-interna {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     gap: var(--sp-4);
     min-height: 52px;
   }
