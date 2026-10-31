@@ -5,6 +5,7 @@ export const SITE = {
     'O portal de referência do setor de bebedouros no Brasil. Notícias, normas ABNT, saúde da água e mercado.',
   ga4: 'G-Q90NPN1G7N',
   emailContato: 'jgbebedourosmkt@gmail.com',
+  whatsapp: '5511926444545',
 }
 
 export type Categoria = 'mercado' | 'legislacao' | 'saude' | 'guias' | 'reviews' | 'eventos'

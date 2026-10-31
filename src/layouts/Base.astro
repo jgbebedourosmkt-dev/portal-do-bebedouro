@@ -3,6 +3,7 @@ import '@/styles/global.css'
 import Masthead from '@/components/Masthead.astro'
 import Rodape from '@/components/Rodape.astro'
 import Orcamento from '@/components/Orcamento.astro'
+import WhatsApp from '@/components/WhatsApp.astro'
 import { SITE } from '@/lib/site'
 import { websiteSchema } from '@/lib/schema'
 import fonteDisplay from '@fontsource-variable/fraunces/files/fraunces-latin-full-normal.woff2?url'
@@ -101,6 +102,7 @@ const jsonLd = [websiteSchema(), ...schemas]
     </div>
     <Rodape />
     <Orcamento />
+    <WhatsApp />
     <script>
       import '@/scripts/formularios'
     </script>

@@ -21,6 +21,8 @@
   --cobalto-50: #e8eeff;
   --alerta-500: #c2410c;
   --ok-600: #15803d;
+  --whatsapp-500: #25d366;
+  --whatsapp-600: #1ebe5b;
 
   /* ---------- Primitivos: tipografia ---------- */
   --ff-display: 'Fraunces Variable', 'Iowan Old Style', Georgia, serif;
@@ -80,6 +82,9 @@
   --c-ok: var(--ok-600);
   --c-foco: var(--cobalto-500);
   --c-grafico: var(--cobalto-500);
+  --c-whatsapp: var(--whatsapp-500);
+  --c-whatsapp-hover: var(--whatsapp-600);
+  --c-sobre-whatsapp: var(--tinta-900);
 
   color-scheme: light;
 }
