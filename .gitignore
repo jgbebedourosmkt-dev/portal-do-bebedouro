@@ -45,5 +45,3 @@ next-env.d.ts
 .vercel
 .env*.local
 
-# routines com tokens — manter só local, nunca commitar
-routines/posts-blog.md

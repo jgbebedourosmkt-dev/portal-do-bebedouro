@@ -25,18 +25,9 @@ Para testar formulários e o admin localmente, crie um `.env` com as mesmas vari
 | `content/pages/*.json` | `/sobre`, `/contato`, `/pagina/<slug>` | |
 | `public/images/` | `/images/...` | |
 
-### Páginas pilar no formato antigo (`app/<slug>/page.tsx`)
-
-O pipeline `seo-automation-pbr/paginas_pilar.py` ainda entrega cada página como `app/<slug>/page.tsx`.
-Não precisa mudar nada nele: `npm run build` (e `npm run dev`) roda antes `scripts/pilares-tsx.mjs`,
-que converte esses arquivos em `content/pilares/<slug>.json`.
-
-Para fixar a conversão no repositório (e apagar o `.tsx`): `npm run pilares:converter`.
-
 ## Estrutura
 
 - `src/styles/tokens.css` — tokens do design system (cor, tipo, espaço, modo escuro)
 - `src/styles/global.css` — base, utilitários e estilo de texto corrido (`.prosa`)
 - `src/components/` — componentes (`Masthead`, `Pilar`, `CardPost`, `Orcamento`, `Faq`…)
 - `src/pages/` — rotas
-- `routines/` — rotinas de SEO (`daily-briefing`, `internal-linking`, `paginas-pilar.md`)
